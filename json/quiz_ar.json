@@ -1,0 +1,336 @@
+[
+  {
+    "post_title": "ما مدى معرفتك ببصمتك الكربونية؟",
+    "slug": "ar-how-aware-are-you-of-your-carbon-footprint",
+    "has_long_title": "has_long_title",
+    "answers": [
+      {
+        "answer": "لدي فهم واضح لتأثير المنتجات التي أشتريها على البيئة والمناخ",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 45
+      },
+      {
+        "answer": "أفهم المبادئ الأساسية حول تأثير شراء المنتجات المستوردة وتلك المصنعة بدون/ مراعاة الحد الأدنى من التأثيرات",
+        "point": "3",
+        "behavior": ["none"],
+        "POSTID": 45
+      },
+      {
+        "answer": "لستُ متأكداً من طريقة تأثير خياراتي على المناخ",
+        "point": "1",
+        "behavior": ["none"],
+        "POSTID": 45
+      },
+      {
+        "answer": "لستُ مدركاً بأن خياراتي لها أي تأثير على المناخ والبيئة",
+        "point": "1",
+        "behavior": ["none"],
+        "POSTID": 45
+      }
+    ]
+  },
+  {
+    "post_title": "أين تذهب نفاياتك المنزلية؟",
+    "slug": "%d8%a3%d9%8a%d9%86-%d8%aa%d8%b0%d9%87%d8%a8-%d9%86%d9%81%d8%a7%d9%8a%d8%a7%d8%aa%d9%83-%d8%a7%d9%84%d9%85%d9%86%d8%b2%d9%84%d9%8a%d8%a9%d8%9f",
+    "has_long_title": "normal",
+    "answers": [
+      {
+        "answer": "صفر نفايات، أقوم بالتسميد وأُنتج أقل قدر من النفايات غير العضوية",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 108
+      },
+      {
+        "answer": "مكبّ النفايات",
+        "point": "3",
+        "behavior": ["none"],
+        "POSTID": 108
+      },
+      {
+        "answer": "مُنشأة لإعادة التدوير",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 108
+      },
+      {
+        "answer": "لا شيء من هذه الخيارات",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 108
+      },
+      {
+        "answer": "لا أعلم",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 108
+      }
+    ]
+  },
+  {
+    "post_title": "هل أنت على دراية بكمية الطاقة المستخدمة لإيصال المياه إلى منزلك؟",
+    "slug": "%d9%87%d9%84-%d8%a3%d9%86%d8%aa-%d8%b9%d9%84%d9%89-%d8%af%d8%b1%d8%a7%d9%8a%d8%a9-%d8%a8%d9%83%d9%85%d9%8a%d8%a9-%d8%a7%d9%84%d8%b7%d8%a7%d9%82%d8%a9-%d8%a7%d9%84%d9%85%d8%b3%d8%aa%d8%ae%d8%af%d9%85",
+    "has_long_title": "has_long_title",
+    "answers": [
+      {
+        "answer": "يتم ضخّ المياه إلى منزلي باستخدام مياه نهر/ بحيرة / مياه جوفية قريبة وعبر شبكة إمدادات وطنية فعالة",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 109
+      },
+      {
+        "answer": "يتم ضخّ المياه إلى منزلي على بعد أكثر من 100 كيلومتر من مصدرها باستخدام الوقود الأحفوري",
+        "point": "3",
+        "behavior": ["none"],
+        "POSTID": 109
+      },
+      {
+        "answer": "يتم ضخّ المياه إلى منزلي من بئر محلي باستخدام الوقود الأحفوري",
+        "point": "2",
+        "behavior": ["none"],
+        "POSTID": 109
+      },
+      {
+        "answer": "المياه الجارية لا تصل إلى منزلي وأعتمد على الشاحنات التي تستخدم الوقود الأحفوري",
+        "point": "1",
+        "behavior": ["none"],
+        "POSTID": 109
+      }
+    ]
+  },
+  {
+    "post_title": "ما هي التغييرات المُستدامة التي أجريتها في منزلك حتى الآن؟",
+    "slug": "%d9%85%d8%a7-%d9%87%d9%8a-%d8%a7%d9%84%d8%aa%d8%ba%d9%8a%d9%8a%d8%b1%d8%a7%d8%aa-%d8%a7%d9%84%d9%85%d9%8f%d8%b3%d8%aa%d8%af%d8%a7%d9%85%d8%a9-%d8%a7%d9%84%d8%aa%d9%8a-%d8%a3%d8%ac%d8%b1%d9%8a%d8%aa",
+    "has_long_title": "normal",
+    "answers": [
+      {
+        "answer": "التقليل من استهلاك المياه",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 110
+      },
+      {
+        "answer": "لا شيء من هذه الخيارات",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 110
+      },
+      {
+        "answer": "تقليل كمية النفايات",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 110
+      },
+      {
+        "answer": "تركيب ألواح طاقة شمسية",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 110
+      }
+    ]
+  },
+  {
+    "post_title": "وسيلة النقل الرئيسية الخاصة بك هي:",
+    "slug": "%d9%88%d8%b3%d9%8a%d9%84%d8%a9-%d8%a7%d9%84%d9%86%d9%82%d9%84-%d8%a7%d9%84%d8%b1%d8%a6%d9%8a%d8%b3%d9%8a%d8%a9-%d8%a7%d9%84%d8%ae%d8%a7%d8%b5%d8%a9-%d8%a8%d9%83-%d9%87%d9%8a",
+    "has_long_title": "normal",
+    "answers": [
+      {
+        "answer": "ركوب الدراجة أو المشي",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 111
+      },
+      {
+        "answer": "سكوتر كهربائي أو سيارة كهربائية",
+        "point": "5",
+        "behavior": ["none"],
+        "POSTID": 111
+      },
+      {
+        "answer": "الحافلة، القطار أو غيرها من وسائل النقل المشترك",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 111
+      },
+      {
+        "answer": "دراجة نارية",
+        "point": "2",
+        "behavior": ["none"],
+        "POSTID": 111
+      },
+      {
+        "answer": "سيارة",
+        "point": "1",
+        "behavior": ["none"],
+        "POSTID": 111
+      }
+    ]
+  },
+  {
+    "post_title": "كيف تقلّل استهلاك البلاستيك أحادي الاستخدام؟",
+    "slug": "%d9%83%d9%8a%d9%81-%d8%aa%d9%82%d9%84%d9%91%d9%84-%d8%a7%d8%b3%d8%aa%d9%87%d9%84%d8%a7%d9%83-%d8%a7%d9%84%d8%a8%d9%84%d8%a7%d8%b3%d8%aa%d9%8a%d9%83-%d8%a3%d8%ad%d8%a7%d8%af%d9%8a-%d8%a7%d9%84%d8%a7",
+    "has_long_title": "has_long_title",
+    "answers": [
+      {
+        "answer": "أستخدم زجاجة مياه خاصة بي قابلة لإعادة الاستخدام بدلاً من شراء عبوات المياه البلاستيكية",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 112
+      },
+      {
+        "answer": "أتجنب استخدام قشّة الشرب وأدوات المائدة البلاستيكية وأعواد تنظيف الأذن القطنية",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 112
+      },
+      {
+        "answer": "أستخدم حاويات قابلة لإعادة الاستخدام بدلاً من الأكياس البلاستيكية لتوضيب طعامي",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 112
+      },
+      {
+        "answer": "لا شيء من هذه الخيارات لأكون صادقاً",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 112
+      },
+      {
+        "answer": "أطبّق كل ما سبق",
+        "point": "4",
+        "behavior": "all",
+        "POSTID": 112
+      }
+    ]
+  },
+  {
+    "post_title": "هل تغلق الماء أثناء تنظيف أسنانك؟",
+    "slug": "%d9%87%d9%84-%d8%aa%d8%ba%d9%84%d9%82-%d8%a7%d9%84%d9%85%d8%a7%d8%a1-%d8%a3%d8%ab%d9%86%d8%a7%d8%a1-%d8%aa%d9%86%d8%b8%d9%8a%d9%81-%d8%a3%d8%b3%d9%86%d8%a7%d9%86%d9%83%d8%9f",
+    "has_long_title": "normal",
+    "answers": [
+      {
+        "answer": "في بعض الأحيان",
+        "point": "3",
+        "behavior": ["none"],
+        "POSTID": 113
+      },
+      {
+        "answer": "كلا",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 113
+      },
+      {
+        "answer": "نعم",
+        "point": "4",
+        "behavior": "none",
+        "POSTID": 113
+      }
+    ]
+  },
+  {
+    "post_title": "ماذا تستخدم لتعبئة وحمل البقالة الخاصة بك؟",
+    "slug": "%d9%85%d8%a7%d8%b0%d8%a7-%d8%aa%d8%b3%d8%aa%d8%ae%d8%af%d9%85-%d9%84%d8%aa%d8%b9%d8%a8%d8%a6%d8%a9-%d9%88%d8%ad%d9%85%d9%84-%d8%a7%d9%84%d8%a8%d9%82%d8%a7%d9%84%d8%a9-%d8%a7%d9%84%d8%ae%d8%a7%d8%b5",
+    "has_long_title": "normal",
+    "answers": [
+      {
+        "answer": "أكياس قماشية قابلة لإعادة الاستخدام",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 114
+      },
+      {
+        "answer": "الورق أو البلاستيك الذي أعيد تدويره لاحقاً",
+        "point": "3",
+        "behavior": ["none"],
+        "POSTID": 114
+      },
+      {
+        "answer": "كيس بلاستيكي",
+        "point": "1",
+        "behavior": ["none"],
+        "POSTID": 114
+      },
+      {
+        "answer": "الأكياس الورقية",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 114
+      }
+    ]
+  },
+  {
+    "post_title": "كيف تتسوّق عادةً لشراء الطعام؟",
+    "slug": "%d9%83%d9%8a%d9%81-%d8%aa%d8%aa%d8%b3%d9%88%d9%91%d9%82-%d8%b9%d8%a7%d8%af%d8%a9%d9%8b-%d9%84%d8%b4%d8%b1%d8%a7%d8%a1-%d8%a7%d9%84%d8%b7%d8%b9%d8%a7%d9%85%d8%9f",
+    "has_long_title": "has_long_title",
+    "answers": [
+      {
+        "answer": "نادراً ما أفعل ذلك، معظمه يُنتج محلياً",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 115
+      },
+      {
+        "answer": "أشتري طعاماً عضوياً",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 115
+      },
+      {
+        "answer": "أشتري منتجات محلية فقط",
+        "point": "2",
+        "behavior": ["none"],
+        "POSTID": 115
+      },
+      {
+        "answer": "أشتري كل ما هو متوفر في السوبر ماركت",
+        "point": "1",
+        "behavior": ["none"],
+        "POSTID": 115
+      }
+    ]
+  },
+  {
+    "post_title": "كيف تجعل صوتك مسموعاً؟",
+    "slug": "%d9%83%d9%8a%d9%81-%d8%aa%d8%ac%d8%b9%d9%84-%d8%b5%d9%88%d8%aa%d9%83-%d9%85%d8%b3%d9%85%d9%88%d8%b9%d8%a7%d9%8b%d8%9f",
+    "has_long_title": "has_long_title",
+    "answers": [
+      {
+        "answer": "التحدث مع الأصدقاء والعائلة",
+        "point": "2",
+        "behavior": ["none"],
+        "POSTID": 116
+      },
+      {
+        "answer": "الاجتماع بالمجلس البلدي",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 116
+      },
+      {
+        "answer": "المشاركة في المسيرات",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 116
+      },
+      {
+        "answer": "توقيع العرائض",
+        "point": "4",
+        "behavior": ["none"],
+        "POSTID": 116
+      },
+      {
+        "answer": "أتطوّع بوقتي لدعم العمل البيئي",
+        "point": "3",
+        "behavior": ["none"],
+        "POSTID": 116
+      },
+      {
+        "answer": "لا شيء من هذه الخيارات",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 116
+      }
+    ]
+  }
+]
