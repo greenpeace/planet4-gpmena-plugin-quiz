@@ -38,7 +38,7 @@ function quiz_post_type() {
         )
     );
 }
-add_action( 'init', 'quiz_post_type' );
+//add_action( 'init', 'quiz_post_type' );
 //// Add  taxonomy
 function create_recipes_taxonomy() {
     register_taxonomy('cuisines','recipes',array(
