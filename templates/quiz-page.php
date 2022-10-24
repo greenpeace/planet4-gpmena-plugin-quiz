@@ -15,11 +15,18 @@ $tran = file_get_contents( PLUGIN_DIR."/json/strings.json" );
 $trand = json_decode($tran, true);
 
 $json = json_decode($string, true);
+$redirect = isset($_GET['r']) ? $_GET['r'] : 0;
+$pts = isset($_GET['pts']) ? $_GET['pts'] : 0;
 ?>
+
+<script type="text/javascript">
+var templateUrl = '<?php echo get_option('siteurl');?>';
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <div class="QUIZ-proj-wrapper<?php echo($ln=='ar' ? ' lang_ar' :'')." PID:".$post->ID?>">
-<div class="quiz_main">
+<div class="quiz_main<?php echo $redirect != 0 ? ' hidden' :''?>">
 <div class="panel-start-quiz flex-center-column">
     <div class="quiz_image">
         <img src="<?php echo plugin_dir_url(__DIR__)?>/img/find-action-for-you.png" />
@@ -64,12 +71,12 @@ $json = json_decode($string, true);
             src="<?php echo plugin_dir_url(__DIR__)?>img/arrow-right.png" /></div>
 </div>
 </div>
-<div class="result_main hidden">
+<div class="result_main <?php echo $redirect != 0 ? '' :' hidden'?>">
 <div class="result_inner flex">
     <div class="txtc">
         <div class="big-tit"><?php echo $ln=='ar' ? $trand['Your Result'] : 'Your Result'; ?></div>
         <div class="quote"><?php echo $ln=='ar' ? $trand['You don’t just live by principlesYour Result'] : 'You don’t just live by principlesYour Result'; ?></div>
-        <div class="percentage-phrase" >&nbsp;<span class="perc">61%</span>&nbsp;<span><?php echo $ln=='ar' ? $trand['of people get this result'] : 'of people get this result';?></span>&nbsp;</div>
+        <div class="percentage-phrase">&nbsp;<span class="perc"><?php echo $pts;?>%</span>&nbsp;<span><?php echo $ln=='ar' ? $trand['of people get this result'] : 'of people get this result';?></span>&nbsp;</div>
         <div class="share-btn flex">
             <div class="inner flex">
                 <img src="<?php echo plugin_dir_url(__DIR__)?>img/share.png" width="13" height="13" />
@@ -78,9 +85,9 @@ $json = json_decode($string, true);
         </div>    
     </div>
     <div class="qrel">
-        <img src="<?php echo plugin_dir_url(__DIR__)?>img/Above-60-per.png" class="res_image_glob per_above-60 hidden" />
-        <img src="<?php echo plugin_dir_url(__DIR__)?>img/30-60-per.png" class="res_image_glob per_30-60 hidden" />
-        <img src="<?php echo plugin_dir_url(__DIR__)?>img/below-60.png" class="res_image_glob per_below_60 hidden" />
+        <img src="<?php echo plugin_dir_url(__DIR__)?>img/below-60.png" class="res_image_glob per_below_60 <?php echo $redirect != 1 ? ' hidden' :''?>" />
+        <img src="<?php echo plugin_dir_url(__DIR__)?>img/30-60-per.png" class="res_image_glob per_30-60 <?php echo $redirect != 2 ? ' hidden' :''?>" />
+        <img src="<?php echo plugin_dir_url(__DIR__)?>img/Above-60-per.png" class="res_image_glob per_above-60 <?php echo $redirect != 3 ? ' hidden' :''?>" />
         <div class="donateBtn"><?php echo $ln=='ar' ? $trand['Donate Now'] : 'Donate Now'; ?></div>
     </div>
 </div>

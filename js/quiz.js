@@ -48,6 +48,7 @@ jQuery(document).ready(function ($) {
     }
     var perc = calculatePoints();
     
+    var redirect=0;
     
     if (step == totalSteps - 1) {
       $(".res_image_glob ").addClass("hidden");
@@ -55,19 +56,23 @@ jQuery(document).ready(function ($) {
       $(".result_main").removeClass("hidden");
       if (perc < 30) {
         perc_txt = "Below 30%";
-        class_name = "below_60";
+        redirect = 1;
         $(".res_image_glob.per_below_60").removeClass("hidden");
       }
       if (perc > 60) {
         perc_txt = "Above 60%";
         $(".res_image_glob.per_above-60").removeClass("hidden");
+        redirect = 3;
       }
       if (perc >= 30 && perc <= 60) {
         perc_txt = "30-60%";
         $(".res_image_glob.per_30-60").removeClass("hidden");
+        redirect = 2;
       }
       $(".perc").html(perc + "%");
-      //$(".per_text").html(perc_txt);
+      
+      window.location.href = templateUrl+'/find-action-for-you?r='+redirect+'&pts='+perc;
+      
     }
 
     

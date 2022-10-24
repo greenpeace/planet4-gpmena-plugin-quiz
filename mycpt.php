@@ -1,6 +1,10 @@
 <?php
 /**
-Plugin Name: My CPT plugin
+Plugin Name: Planet 4 Quiz
+Description: Creates the Greenpeace quiz functionality and a template to be selected when creating the quiz landing page from Wordpress dashboard. To get started, got to Pages (from the left side menu) then add new. In the page attributes (Right Side), under template select _Quiz. 
+Version: 0.0.1
+Author: Aimtech
+Author URI: https://aimtech.am/
 **/
 //// Create recipes CPT
 function quiz_post_type() {
@@ -38,7 +42,7 @@ function quiz_post_type() {
         )
     );
 }
-//add_action( 'init', 'quiz_post_type' );
+add_action( 'init', 'quiz_post_type' );
 //// Add  taxonomy
 function create_recipes_taxonomy() {
     register_taxonomy('cuisines','recipes',array(
@@ -158,11 +162,8 @@ add_action('rest_api_init', function () {
     return $response;
 }
 function add_google_fonts() {
-    wp_enqueue_style( ' add_google_fonts ', 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;800;900&display=swap', false );
-    
-
+    wp_enqueue_style( ' add_google_fonts ', 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;800;900&display=swap', false );  
 }
-
 add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
 
 if(function_exists('pll_register_string')){
@@ -177,6 +178,7 @@ if(function_exists('pll_register_string')){
     });
     
 }
+
 
 
 function mts($key){
