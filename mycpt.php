@@ -1,8 +1,8 @@
 <?php
 /**
-Plugin Name: Planet 4 Quiz
+Plugin Name: Planet 4 - GPMENA Quiz
 Description: Creates the Greenpeace quiz functionality and a template to be selected when creating the quiz landing page from Wordpress dashboard. To get started, got to Pages (from the left side menu) then add new. In the page attributes (Right Side), under template select _Quiz. 
-Version: 0.0.1
+Version: 0.2
 Author: Aimtech
 Author URI: https://aimtech.am/
 **/
