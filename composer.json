@@ -1,6 +1,6 @@
 {
-    "name": "greenpeace/planet4-plugin-quiz",
-    "description": "Provides Planet4 quiz functionality",
+    "name": "greenpeace/planet4-gpmena-plugin-quiz",
+    "description": "Provides Planet4 quiz functionality for GP MENA",
     "type": "wordpress-plugin",
-    "license": "MIT"
+    "license": "GPL-3.0+"
 }
