@@ -1,0 +1,6 @@
+{
+    "name": "greenpeace/planet4-plugin-quiz",
+    "description": "Provides Planet4 quiz functionality",
+    "type": "wordpress-plugin",
+    "license": "MIT"
+}
