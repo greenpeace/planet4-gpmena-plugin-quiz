@@ -5,9 +5,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-.panel-start-quiz {
-  background: url("../img/bg.png") 1px 1px;
-}
 
 .progressBar {
   width: 700px;
@@ -370,6 +367,6 @@
     width: 90%;
   }
   .panelsWrapperOuter {
-    height: 840px;
+    height: inherit;
   }
 }

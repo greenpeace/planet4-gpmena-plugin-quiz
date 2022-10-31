@@ -1,8 +1,8 @@
 <?php
 /**
-Plugin Name: Planet 4 - GPMENA Quiz
+Plugin Name: Planet 4 Quiz
 Description: Creates the Greenpeace quiz functionality and a template to be selected when creating the quiz landing page from Wordpress dashboard. To get started, got to Pages (from the left side menu) then add new. In the page attributes (Right Side), under template select _Quiz. 
-Version: 0.2
+Version: 0.0.1
 Author: Aimtech
 Author URI: https://aimtech.am/
 **/
@@ -103,13 +103,7 @@ function my_template_select($template){
 }
 add_filter('template_include' , 'my_template_select',99);
 /* PART 2 */
-add_action('wp_enqueue_scripts','Load_Template_Scripts_wpa83855');
-function Load_Template_Scripts_wpa83855(){
-    if ( is_page_template('quiz-page.php') ) {
-		wp_enqueue_style( 'style-name-plugin', plugin_dir_url(__FILE__ ).'css/style.css?v='.time() );
-        wp_enqueue_script('my-script', plugin_dir_url(__FILE__ ).'js/quiz.js?v='.time() , array('jquery'));
-    } 
-}
+
 add_action('rest_api_init', function () {
 	register_rest_route( 'v1', '/quiz-posts/(?P<lang>[^/]+)',array(
 				  'methods' => 'GET',
@@ -179,6 +173,27 @@ if(function_exists('pll_register_string')){
     
 }
 
+
+function quiz_functionality($atts){
+    define( 'PLUGIN_DIR', dirname(__FILE__).'/' );
+
+    $content = include( PLUGIN_DIR."/templates/quiz-page.php" );
+    $default = array(
+        'html' => $content
+    );
+    $r = shortcode_atts( $default, $atts);
+    return $r['html'];
+}
+add_shortcode( 'quiz_html', 'quiz_functionality' );
+
+
+add_action('wp_enqueue_scripts','Load_Template_Scripts_wpa83855');
+
+function Load_Template_Scripts_wpa83855(){
+    if ( is_page_template('quiz-page.php') ) {
+        wp_enqueue_script('my-script', plugin_dir_url(__FILE__ ).'js/quiz.js?v='.time() , array('jquery'));
+    } 
+}
 
 
 function mts($key){

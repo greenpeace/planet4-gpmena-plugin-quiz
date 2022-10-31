@@ -71,7 +71,7 @@ jQuery(document).ready(function ($) {
       }
       $(".perc").html(perc + "%");
       
-      window.location.href = templateUrl+'/find-action-for-you?r='+redirect+'&pts='+perc;
+      window.location.href = templateUrl+'/'+my_slug+'?r='+redirect+'&pts='+perc;
       
     }
 
