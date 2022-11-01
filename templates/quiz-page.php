@@ -18,9 +18,7 @@ $json = json_decode($string, true);
 $redirect = isset($_GET['r']) ? $_GET['r'] : 0;
 $pts = isset($_GET['pts']) ? $_GET['pts'] : 0;
 wp_enqueue_script('my-script', plugin_dir_url(__DIR__ ).'js/quiz.js?v='.time() , array('jquery') ,false );
-
 $pst = get_post();
-$redirect_link;
 $html='<style>.page-id-'.$pst->ID.'{background: url("'.plugin_dir_url(__DIR__ ).'/img/bg.png") 1px 1px; }</style>
 <script type="text/javascript">var templateUrl = "'.get_option('siteurl').'";var my_slug = "'.$pst->slug.'";</script>
 <div class="QUIZ-proj-wrapper'.($ln=='ar' ? ' lang_ar' :'').'" PID="'.$pst->ID.'">
@@ -31,8 +29,8 @@ $html='<style>.page-id-'.$pst->ID.'{background: url("'.plugin_dir_url(__DIR__ ).
     </div>
     <div class="quiz_title">'.$pst->post_title.'</div>
     <div class="quiz_content">'.($ln =="ar" ? $trand['Lorum_ar'] : $trand['Lorum']) .'</div>
-    <div class="btn-quiz btn-quiz-green pointer btn-startquiz"><span>'.($ln =="ar" ? $trand['Start Quiz'] : 'Start Quiz') .'</span><img
-            src="'. plugin_dir_url(__DIR__).'/img/arrow-right.png" /></div>
+    <div class="btn-quiz btn-quiz-green pointer btn-startquiz"><span>'.($ln =="ar" ? $trand['Start Quiz'] : 'Start Quiz') .'</span>
+    <img src="'. plugin_dir_url(__DIR__).'/img/arrow-right.png" /></div>
 </div>
 <div class="panelsWrapperOuter hidden">
     <div class="progressBar">
