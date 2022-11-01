@@ -14,7 +14,7 @@ add_shortcode( 'quiz_html', 'quiz_functionality' );
 add_action('wp_enqueue_scripts','load_quiz_javascript');
 function load_quiz_javascript(){
     if ( is_page_template('quiz-page.php') ) {
-        wp_enqueue_script('quiz-script', plugin_dir_url(__FILE__ ).'js/quiz.js?v='.time() , array('jquery'));
+        wp_enqueue_script('quiz-script', plugin_dir_url(__FILE__ ).'js/quiz.js?v='.time());
     } 
 }
 function place_code_inside_head() {
