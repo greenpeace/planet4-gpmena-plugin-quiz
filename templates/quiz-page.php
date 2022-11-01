@@ -27,7 +27,7 @@ $pst = get_post();
 $redirect_link;
 
 $html='
-<style>'.$styless.'.panel-start-quiz {background: url("'.plugin_dir_url(__DIR__ ).'/img/bg.png") 1px 1px; }</style>
+<style>'.$styless.' .page-id-10877{background: url("'.plugin_dir_url(__DIR__ ).'/img/bg.png") 1px 1px; }</style>
 <script type="text/javascript">var templateUrl = "'.get_option('siteurl').'";var my_slug = "'.$pst->slug.'";</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="QUIZ-proj-wrapper'.($ln=='ar' ? ' lang_ar' :'').'" PID="'.$pst->ID.'">

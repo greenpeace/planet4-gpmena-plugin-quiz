@@ -142,8 +142,7 @@
 .panelsWrapperOuter {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 740px;
+  align-items: center;  
 }
 
 .panelsWrapper .options {
