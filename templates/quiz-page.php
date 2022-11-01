@@ -17,15 +17,11 @@ $trand = json_decode($tran, true);
 $json = json_decode($string, true);
 $redirect = isset($_GET['r']) ? $_GET['r'] : 0;
 $pts = isset($_GET['pts']) ? $_GET['pts'] : 0;
-
-$styless = file_get_contents( PLUGIN_DIR."/css/style.css" );
-
 wp_enqueue_script('my-script', plugin_dir_url(__DIR__ ).'js/quiz.js?v='.time() , array('jquery') ,false );
 
 $pst = get_post();
 $redirect_link;
-$html='
-<style>'.$styless.' .page-id-'.$pst->ID.'{background: url("'.plugin_dir_url(__DIR__ ).'/img/bg.png") 1px 1px; }</style>
+$html='<style>.page-id-'.$pst->ID.'{background: url("'.plugin_dir_url(__DIR__ ).'/img/bg.png") 1px 1px; }</style>
 <script type="text/javascript">var templateUrl = "'.get_option('siteurl').'";var my_slug = "'.$pst->slug.'";</script>
 <div class="QUIZ-proj-wrapper'.($ln=='ar' ? ' lang_ar' :'').'" PID="'.$pst->ID.'">
 <div class="quiz_main '.($redirect != 0 ? ' hidden' :'').'">

@@ -195,6 +195,12 @@ function Load_Template_Scripts_wpa83855(){
     } 
 }
 
+function place_code_inside_head() {
+    $styless = file_get_contents( plugin_dir_url(__FILE__)."css/style.css" );
+        echo'<style>'.$styless.'</style>';
+    }
+    add_action('wp_head', 'place_code_inside_head');
+
 
 function mts($key){
     global $wpdb;
