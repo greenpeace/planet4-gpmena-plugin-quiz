@@ -22,10 +22,8 @@ $styless = file_get_contents( PLUGIN_DIR."/css/style.css" );
 
 wp_enqueue_script('my-script', plugin_dir_url(__DIR__ ).'js/quiz.js?v='.time() , array('jquery') ,false );
 
-//10695 (EN)
 $pst = get_post();
 $redirect_link;
-
 $html='
 <style>'.$styless.' .page-id-10877{background: url("'.plugin_dir_url(__DIR__ ).'/img/bg.png") 1px 1px; }</style>
 <script type="text/javascript">var templateUrl = "'.get_option('siteurl').'";var my_slug = "'.$pst->slug.'";</script>
