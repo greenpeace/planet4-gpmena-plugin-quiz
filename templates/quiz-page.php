@@ -24,8 +24,8 @@ $id_ar = apply_filters( 'wpml_object_id', $pst->ID, 'object', false, 'ar' );
 
 
 $html='<style>
-.page-id-'.$pst->ID.' .page-header-title,
-.page-id-'.$id_ar.' .page-header-title{display:none}
+.page-id-'.$pst->ID.' .page-header,
+.page-id-'.$id_ar.' .page-header{display:none}
 .page-id-'.$pst->ID.'{background: url("'.plugin_dir_url(__DIR__ ).'/img/bg.png") 1px 1px; }</style>
 <script type="text/javascript">var templateUrl = "'.get_option('siteurl').'";var my_slug = "'.$pst->slug.'";</script>
 <div class="QUIZ-proj-wrapper'.($ln=='ar' ? ' lang_ar' :'').'" PID="'.$pst->ID.'">
