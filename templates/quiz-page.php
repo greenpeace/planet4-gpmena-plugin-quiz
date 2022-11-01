@@ -10,10 +10,18 @@ $pts = isset($_GET['pts']) ? $_GET['pts'] : 0;
 wp_enqueue_script('my-script', plugin_dir_url(__DIR__ ).'js/quiz.js?v='.time() , array('jquery') ,false );
 $pst = get_post();
 $id_ar = apply_filters( 'wpml_object_id', $pst->ID, 'object', false, 'ar' );
+
+$resultsArray=array(
+    1=>array(10863,10771,10807,10815,10759),
+    2=>array(10711,10721,10700),
+    3=>array(10652,10644,10621,10619,10611)
+);
+
+
 $html='<style>
 .page-id-'.$pst->ID.' .page-header .container,
 .page-id-'.$id_ar.' .page-header .container{display:none}
-.page-id-'.$pst->ID.'{background: url("'.plugin_dir_url(__DIR__ ).'/img/bg.png") 1px 1px; }</style>
+.page-id-'.$pst->ID.'{background: url("'.plugin_dir_url(__DIR__ ).'/img/bg.png") 1px 1px no-repeat ;}</style>
 <script type="text/javascript">var templateUrl = "'.get_option('siteurl').'";var my_slug = "'.$pst->slug.'";</script>
 <div class="QUIZ-proj-wrapper'.($ln=='ar' ? ' lang_ar' :'').'" PID="'.$pst->ID.'">
 <div class="quiz_main '.($redirect != 0 ? ' hidden' :'').'">
@@ -84,6 +92,31 @@ $html='<style>
         <div class="donateBtn">'. ($ln=='ar' ? $trand['Donate Now'] : 'Donate Now') .'</div>
     </div>
 </div>
+<div class="actionsWrapper">
+        <div class="impactfull_title">'.($ln=="ar" ? $trand['Take more impactful action'] : 'Take more impactful action').'</div>
+        <div class="impactfull_desc">'.($ln=="ar" ? $trand['ACTIONTXT_AR'] : $trand['ACTIONTXT']).'</div>
+        <div class="impactfull_sub_green">'.($ln=="ar" ? $trand['Here are the easiest ways you can create momentum'] : 'Here are the easiest ways you can create momentum').'</div>
+
+        <div class="cardsWrapper">';
+        if($redirect!=0){
+            foreach ($resultsArray[$redirect] as $res) {
+            $card = get_post( $res );
+            $image = wp_get_attachment_image_src( get_post_thumbnail_id( $res ), 'large' );
+            $cats = get_the_category($res);
+            
+            $html.='<div class="card card-'.$res.'">
+                    <div><img src="'.$image[0].'" alt="" /></div>
+                    <div class="cardTitle">'.$card->post_title.'</div>
+                    <div class="cardCat"><a href="'.$cats[0]->cat_link.'">'.$cats[0]->cat_name.'</a></div>
+                    <div><a class="btn-quiz btn-quiz-green" href="'.get_permalink( $res ).'">Join Us</a></div>
+                </div>';
+
+        }}
+
+
+        $html.='</div>
+</div>
+
 </div>
 </div>';
 echo $html;

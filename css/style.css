@@ -293,6 +293,19 @@
   padding: 12px 28px;
   cursor: pointer;
 }
+.actionsWrapper{background-color:#3A3A3A ;color:#ffffff}
+.impactfull_title{font-size: 48px;font-weight: bold;}
+.impactfull_desc{margin-top: 15px;font-size: 24px;width:630px;}
+.impactfull_sub_green{margin-top: 15px;font-size: 24px;color: #66cc00;}
+.cardsWrapper{display: flex;}
+.cardsWrapper .cardTitle{font-size: 18px;font-weight: 700;padding-top: 15px;width: 320px;min-height: 44px;}
+.cardsWrapper .cardCat{font-size: 18px;font-weight: 400;padding-top: 8px;}
+.cardsWrapper .cardCat a{color:#66cc00}
+.cardsWrapper a{text-decoration: none;}
+.cardsWrapper img{width: 320px;}
+.cardsWrapper .btn-quiz{margin-top: 15px;}
+
+
 
 /* ARABIC */
 
