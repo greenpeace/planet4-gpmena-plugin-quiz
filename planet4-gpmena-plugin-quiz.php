@@ -7,8 +7,11 @@ Author: Aimtech
 Author URI: https://aimtech.am/
 **/
 function quiz_functionality($atts){
-    $content = include( dirname(__FILE__)."/templates/quiz-page.php" );
-    return $content;
+    ob_start();
+    include( dirname(__FILE__)."/templates/quiz-page.php" );
+    $ob_str=ob_get_contents();
+    ob_end_clean();
+    return $ob_str;
 }
 add_shortcode( 'quiz_html', 'quiz_functionality' );
 add_action('wp_enqueue_scripts','load_quiz_javascript');
