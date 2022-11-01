@@ -296,7 +296,7 @@
 
 /* ARABIC */
 
-.QUIZ-proj-wrapper.lang_ar{direction: rtl;}
+.QUIZ-proj-wrapper.lang_ar{direction: rtl;font-family: inherit;}
 
 .QUIZ-proj-wrapper.lang_ar .has_long_title .thebtn span{margin-right: 12px;margin-left: inherit;}
 .QUIZ-proj-wrapper.lang_ar .btn-quiz.btn-startquiz img{rotate: 180deg;margin: 0 5px 0 0;} 
