@@ -28,14 +28,9 @@ $morForYouArray=array(
 );
 ?>
 <style>
-#post-<?php echo $id_ar;?> .page-content.container,
-#post-<?php echo $pst->ID;?> .page-content.container{max-width:100%}
-#post-<?php echo $id_ar;?> .article-h1,
-#post-<?php echo $pst->ID;?> .article-h1,
-.page-id-<?php echo $pst->ID;?> .page-header .container,
-.page-id-<?php echo $id_ar;?> .page-header .container {
-    display: none
-}
+.page-id-<?php echo $pst->ID;?> .page-content.container{max-width:100%}
+.page-id-<?php echo $pst->ID;?> .article-h1,
+.page-id-<?php echo $pst->ID;?> .page-header .container{display: none}
 .page-id-<?php echo $pst->ID;?> {
     background: url("<?php echo plugin_dir_url(__DIR__ );?>/img/bg.png") 1px 1px no-repeat;
 }
