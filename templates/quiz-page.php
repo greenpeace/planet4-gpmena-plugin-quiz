@@ -154,7 +154,7 @@ var my_slug = "<?php echo $pst->slug;?>";
                 $cats = get_the_category($res);?>
                         <div class="qcard qcard-<?php echo $res;?>">
                             <div class="flexmecol">
-                                <div><img src="<?php echo $image[0];?>" alt="" /></div>
+                                <div><a href="<?php echo get_permalink( $res );?>"><img src="<?php echo $image[0];?>" alt="" /></a></div>
                                 <div class="cardTitle"><?php echo $card->post_title;?></div>
                                 <div class="cardCat"><a
                                         href="<?php echo $cats[0]->cat_link;?>"><?php echo $cats[0]->cat_name;?></a>
