@@ -148,7 +148,7 @@ var my_slug = "<?php echo $pst->slug;?>";
                 $card = get_post( $res );
                 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $res ), 'large' );
                 $cats = get_the_category($res);?>
-                        <div class="card card-<?php echo $res;?>">
+                        <div class="qcard qcard-<?php echo $res;?>">
                             <div class="flexmecol">
                                 <div><img src="<?php echo $image[0];?>" alt="" /></div>
                                 <div class="cardTitle"><?php echo $card->post_title;?></div>
@@ -173,7 +173,7 @@ var my_slug = "<?php echo $pst->slug;?>";
                                     <div class="col-xs-6 col-6 flexrightmore">
                                         <div class="tittell"><?php echo $card->post_title;?></div>
                                         <div class="conti mt-15"><?php echo $card->post_content;?></div>
-                                        <div class="flxend"><a class="read-more-lnk mt-15" href="<?php echo get_permalink( $res );?>"><span class="txt">Learn more</span><span class="bg"></span></a></div>
+                                        <div class="flxend"><a class="read-more-lnk mt-15" href="<?php echo get_permalink( $res );?>"><span class="txt"><?php echo ($ln=="ar" ? $trand['Learn more'] : 'Learn more');?></span><span class="bg"></span></a></div>
                                     </div>
                                 </div>
                             <?php }?>
