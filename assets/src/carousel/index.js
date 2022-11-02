@@ -13,6 +13,7 @@
                 autoplaySpeed: 1000,
                 slidesToShow: screen.width <= 600 ? 1 : 3,
                 slidesToScroll: 1,
+                infinite: false
             } );
         }
     }
