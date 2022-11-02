@@ -28,6 +28,9 @@ $morForYouArray=array(
 );
 ?>
 <style>
+#post-<?php echo $id_ar;?> .page-content.container,
+#post-<?php echo $pst->ID;?> .page-content.container{max-width:100%}
+#post-<?php echo $id_ar;?> .article-h1,
 #post-<?php echo $pst->ID;?> .article-h1,
 .page-id-<?php echo $pst->ID;?> .page-header .container,
 .page-id-<?php echo $id_ar;?> .page-header .container {
@@ -133,6 +136,7 @@ var my_slug = "<?php echo $pst->slug;?>";
         </div>
         <div class="actionsWrapper">
             <div class="ResBlock1">
+            <div class="container">
                     <div class="impactfull_title">
                         <?php echo ($ln=="ar" ? $trand['Take more impactful action'] : 'Take more impactful action');?>
                     </div>
@@ -160,6 +164,7 @@ var my_slug = "<?php echo $pst->slug;?>";
                         </div>
                         <?php }}?>
                     </div>
+            </div>
             </div>
             <?php if($redirect!=0 && sizeof($morForYouArray[$redirect])!=0){?>
             <div class="ResBlock2">

@@ -305,7 +305,7 @@
 .cardsWrapper .cardCat{font-size: 18px;font-weight: 400;padding-top: 8px;}
 .cardsWrapper .cardCat a{color:#66cc00}
 .cardsWrapper .flexmecol{display: flex;flex-direction: column;justify-content: space-between ;min-height: 450px;}
-.cardsWrapper a{text-decoration: none;}
+.cardsWrapper a{text-decoration: none;color:#ffffff}
 .cardsWrapper img{width: 94%;}
 .cardsWrapper .btn-quiz{margin-top: 15px;font-weight: 500;}
 
