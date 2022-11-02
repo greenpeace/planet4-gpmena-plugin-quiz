@@ -133,7 +133,6 @@ var my_slug = "<?php echo $pst->slug;?>";
         </div>
         <div class="actionsWrapper">
             <div class="ResBlock1">
-                <div class="container">
                     <div class="impactfull_title">
                         <?php echo ($ln=="ar" ? $trand['Take more impactful action'] : 'Take more impactful action');?>
                     </div>
@@ -161,11 +160,9 @@ var my_slug = "<?php echo $pst->slug;?>";
                         </div>
                         <?php }}?>
                     </div>
-                </div>
             </div>
             <?php if($redirect!=0 && sizeof($morForYouArray[$redirect])!=0){?>
             <div class="ResBlock2">
-                <div class="container">
                     <div class="impactfull_title"><?php echo ($ln=="ar" ? $trand['More for You'] : 'More for You');?></div>
                         <div class="parente">
                             <?php foreach($morForYouArray[$redirect] as $res){
@@ -181,7 +178,6 @@ var my_slug = "<?php echo $pst->slug;?>";
                                 </div>
                             <?php }?>
                         </div>
-                </div>
             </div>
             <?php }?>
 
