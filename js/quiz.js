@@ -55,7 +55,7 @@ jQuery(document).ready(function ($) {
       if (perc > 60) {
         perc_txt = "Above 60%";
         $(".res_image_glob.per_above-60").removeClass("hidden");
-        redirect = 3;
+        redirect = 3; 
       }
       if (perc >= 30 && perc <= 60) {
         perc_txt = "30-60%";
