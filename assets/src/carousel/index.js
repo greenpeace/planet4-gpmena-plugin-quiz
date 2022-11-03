@@ -8,7 +8,6 @@
             }
             
             initiateCarousel() {
-                console.log(window.innerWidth)
             $(".posts-carousel").slick({
                 autoplay: false,
                 autoplaySpeed: 1000,
