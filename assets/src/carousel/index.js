@@ -8,10 +8,11 @@
             }
             
             initiateCarousel() {
-            $(".posts-carousel").not('.slick-initialized').slick( {
+                console.log(window.innerWidth)
+            $(".posts-carousel").slick({
                 autoplay: false,
                 autoplaySpeed: 1000,
-                slidesToShow: screen.width <= 600 ? 1 : 3,
+                slidesToShow: window.innerWidth <= 600 ? 1 : 3,
                 slidesToScroll: 1,
                 infinite: false
             } );

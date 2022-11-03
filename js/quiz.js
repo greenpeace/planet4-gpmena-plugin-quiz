@@ -49,18 +49,18 @@ jQuery(document).ready(function ($) {
       $(".result_main").removeClass("hidden");
       if (perc < 30) {
         perc_txt = "Below 30%";
-        redirect = 1;
+        redirect = 'below_30_1';
         $(".res_image_glob.per_below_60").removeClass("hidden");
       }
       if (perc > 60) {
         perc_txt = "Above 60%";
         $(".res_image_glob.per_above-60").removeClass("hidden");
-        redirect = 3; 
+        redirect = 'above_60_3';
       }
       if (perc >= 30 && perc <= 60) {
         perc_txt = "30-60%";
         $(".res_image_glob.per_30-60").removeClass("hidden");
-        redirect = 2;
+        redirect = '30_60_2';
       }
       $(".perc").html(perc + "%");
       
