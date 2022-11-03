@@ -304,7 +304,7 @@
 .cardsWrapper .cardTitle{font-size: 18px;font-weight: 700;padding-top: 15px;width: 320px;min-height: 44px;}
 .cardsWrapper .cardCat{font-size: 18px;font-weight: 400;padding-top: 8px;}
 .cardsWrapper .cardCat a{color:#66cc00}
-.cardsWrapper .flexmecol{display: flex;flex-direction: column;justify-content: space-between ;min-height: 490px;}
+.cardsWrapper .flexmecol{display: flex;flex-direction: column;justify-content: space-between ;min-height: 550px;}
 .cardsWrapper a{text-decoration: none;color:#ffffff}
 
 
