@@ -103,18 +103,14 @@
     "slug": "%d9%85%d8%a7-%d9%87%d9%8a-%d8%a7%d9%84%d8%aa%d8%ba%d9%8a%d9%8a%d8%b1%d8%a7%d8%aa-%d8%a7%d9%84%d9%85%d9%8f%d8%b3%d8%aa%d8%af%d8%a7%d9%85%d8%a9-%d8%a7%d9%84%d8%aa%d9%8a-%d8%a3%d8%ac%d8%b1%d9%8a%d8%aa",
     "has_long_title": "normal",
     "answers": [
+      
       {
         "answer": "التقليل من استهلاك المياه",
         "point": "4",
         "behavior": ["none"],
         "POSTID": 110
       },
-      {
-        "answer": "لا شيء من هذه الخيارات",
-        "point": "1",
-        "behavior": "none",
-        "POSTID": 110
-      },
+      
       {
         "answer": "تقليل كمية النفايات",
         "point": "4",
@@ -125,6 +121,12 @@
         "answer": "تركيب ألواح طاقة شمسية",
         "point": "4",
         "behavior": ["none"],
+        "POSTID": 110
+      },
+      {
+        "answer": "لا شيء من هذه الخيارات",
+        "point": "1",
+        "behavior": "none",
         "POSTID": 110
       }
     ]

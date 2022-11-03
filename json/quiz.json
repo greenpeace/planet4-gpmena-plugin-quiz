@@ -25,7 +25,7 @@
   {
   "answer": "I don’t know",
   "point": "1",
-  "behavior": "",
+  "behavior": "none",
   "POSTID": 33
   },
   {
@@ -99,7 +99,7 @@
   {
   "answer": "Other",
   "point": "1",
-  "behavior": "",
+  "behavior": "none",
   "POSTID": 48
   }
   ]
@@ -223,19 +223,19 @@
   {
   "answer": "Yes",
   "point": "4",
-  "behavior": "",
+  "behavior": "none",
   "POSTID": 73
   },
   {
   "answer": "Not really",
   "point": "1",
-  "behavior": "",
+  "behavior": "none",
   "POSTID": 73
   },
   {
   "answer": "Sometimes",
   "point": "3",
-  "behavior": "",
+  "behavior": "none",
   "POSTID": 73
   }
   ]

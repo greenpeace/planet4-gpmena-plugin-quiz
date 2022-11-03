@@ -79,7 +79,7 @@ $morForYouArray=array(
 
 </style>
 <script type="text/javascript">
-var templateUrl = "<?php echo get_option('siteurl') . ($ln=="ar" ? "/ar/" :"") ;?>";
+var templateUrl = "<?php echo get_option('siteurl') . ($ln=="ar" ? "/ar/" :"/en/") ;?>";
 var my_slug = "<?php echo $pst->post_name;?>";
 </script>
 <div class="QUIZ-proj-wrapper<?php echo ($ln=='ar' ? ' lang_ar' :'');?>" PID="<?php echo $pst->ID;?>">
@@ -228,15 +228,14 @@ var my_slug = "<?php echo $pst->post_name;?>";
                     <div class="impactfull_title"><?php echo ($ln=="ar" ? $trand['More for You'] : 'More for You');?></div>
                         <div class="parente">
                             <?php foreach($morForYouArray[$redirect] as $res){
-
                                 $card = get_post( $res['id'] );
                                 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $res['id'] ), 'large' );?>
                                 <div class="moreyoucardswrap row">
                                     <div class="col-xs-6 col-6"><div class="imgfruwrp"><img src="<?php echo $image[0];?>" alt="" /></div></div>
                                     <div class="col-xs-6 col-6 flexrightmore">
                                         <div class="tittell"><?php echo $card->post_title;?></div>
-                                        <div class="conti mt-15"><?php echo $res['desc'];?></div>
-                                        <div class="flxend"><a class="read-more-lnk mt-15" href="<?php echo get_permalink( $res );?>"><span class="txt"><?php echo ($ln=="ar" ? $trand['Learn more'] : 'Learn more');?></span><span class="bg"></span></a></div>
+                                        <div class="conti mt-15"><?php echo $res['desc'] != '' ? $res['desc']  : $card->post_content ;?></div>
+                                        <div class="flxend"><a class="read-more-lnk mt-15" href="<?php echo get_permalink( $res['id'] );?>"><span class="txt"><?php echo ($ln=="ar" ? $trand['Learn more'] : 'Learn more');?></span><span class="bg"></span></a></div>
                                     </div>
                                 </div>
                                 
