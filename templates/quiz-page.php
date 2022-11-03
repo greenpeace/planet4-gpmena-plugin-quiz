@@ -194,7 +194,7 @@ var my_slug = "<?php echo $pst->post_name;?>";
                         <div class="qcard qcard-<?php echo $res['id'];?>">
                             <div class="flexmecol">
                                 <div class="carsImg">
-                                    <img src="<?php echo $image[0];?>" />
+                                <a href="<?php echo get_permalink( $res['id'] );?>"><img src="<?php echo $image[0];?>" /></a>
                                 </div>
                                     <div class="cardTitle"><?php echo $card->post_title;?></div>
                                     <div class="cardCat"><a
@@ -207,7 +207,7 @@ var my_slug = "<?php echo $pst->post_name;?>";
                             <div class="qcard qcard-<?php echo $res;?>">
                             <div class="flexmecol">
                                 <div class="carsImg">
-                                    <img src="<?php echo  plugin_dir_url(__DIR__);?>/img/incident.JPG" />
+                                <a target="_blank" href="https://gpmena.secure.force.com/StripePaymentScreen?_gl=1*ntt4hg*_ga*MTgwNzE3Njc3NS4xNjM0MzA2MzM0*_ga_BF1TLGDGBK*MTY2MTg2NzA5NC4xMDguMS4xNjYxODcyNTAxLjAuMC4w"><img src="<?php echo  plugin_dir_url(__DIR__);?>/img/incident.JPG" /></a>
                                 </div>
                                     <div class="cardTitle"><?php echo $ln == "ar" ? $trand["Web Donations"] : "Web Donations";?></div>
                                     <div class="cardCat"></div>

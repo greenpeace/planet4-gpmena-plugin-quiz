@@ -361,7 +361,7 @@
   align-items: flex-start;
   padding: 35px !important;
 }
-.flexrightmore .conti{height: 115px;overflow: hidden;}
+.flexrightmore .conti{height: 115px;overflow: hidden;width: 100%;}
 .mt-15{margin-top: 35px;}
 .tittell{font-size: 32px;font-weight: 700;}
 
