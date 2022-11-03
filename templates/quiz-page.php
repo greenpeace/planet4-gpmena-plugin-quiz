@@ -79,8 +79,8 @@ $morForYouArray=array(
 
 </style>
 <script type="text/javascript">
-var templateUrl = "<?php echo get_option('siteurl');?>";
-var my_slug = "<?php echo $pst->slug;?>";
+var templateUrl = "<?php echo get_option('siteurl') . ($ln=="ar" ? "/ar/" :"") ;?>";
+var my_slug = "<?php echo $pst->post_name;?>";
 </script>
 <div class="QUIZ-proj-wrapper<?php echo ($ln=='ar' ? ' lang_ar' :'');?>" PID="<?php echo $pst->ID;?>">
     <div class="quiz_main <?php echo ($redirect != '0' ? ' hidden' :'');?>">
@@ -90,10 +90,13 @@ var my_slug = "<?php echo $pst->slug;?>";
             </div>
             <div class="quiz_title"><?php echo $pst->post_title;?></div>
             <div class="quiz_content"><?php echo ($ln =="ar" ? $trand['Lorum_ar'] : $trand['Lorum']) ;?></div>
-            <div class="btn-quiz btn-quiz-green pointer btn-startquiz">
-                <span><?php echo ($ln =="ar" ? $trand['Start Quiz'] : 'Start Quiz') ;?></span>
-                <img src="<?php echo  plugin_dir_url(__DIR__);?>/img/arrow-right.png" />
+            <div class="navig flex-raw-center mt-15">
+                <div class="btn-quiz btn-quiz-green pointer btn-startquiz">
+                    <span><?php echo ($ln =="ar" ? $trand['Start Quiz'] : 'Start Quiz') ;?></span>
+                    <img src="<?php echo  plugin_dir_url(__DIR__);?>/img/arrow-right.png" />
+                </div>
             </div>
+
         </div>
         <div class="panelsWrapperOuter hidden">
             <div class="progressBar">
@@ -190,7 +193,8 @@ var my_slug = "<?php echo $pst->slug;?>";
                 $cats = get_the_category($res['id']);?>
                         <div class="qcard qcard-<?php echo $res['id'];?>">
                             <div class="flexmecol">
-                                <div style="background:url(<?php echo $image[0];?>) no-repeat 0 0;background-size:cover;width:360px;height:320px;">
+                                <div class="carsImg">
+                                    <img src="<?php echo $image[0];?>" />
                                 </div>
                                     <div class="cardTitle"><?php echo $card->post_title;?></div>
                                     <div class="cardCat"><a
@@ -202,13 +206,12 @@ var my_slug = "<?php echo $pst->slug;?>";
                         <?php }else{?>
                             <div class="qcard qcard-<?php echo $res;?>">
                             <div class="flexmecol">
-                                <div style="background:url(<?php echo $image[0];?>) no-repeat 0 0;background-size:cover;width:360px;height:320px;">
+                                <div class="carsImg">
+                                    <img src="<?php echo  plugin_dir_url(__DIR__);?>/img/incident.JPG" />
                                 </div>
-                                    <div class="cardTitle"><?php echo $card->post_title;?></div>
-                                    <div class="cardCat"><a
-                                    href="<?php echo $cats[0]->cat_link;?>"><?php echo $cats[0]->cat_name;?></a>
-                                </div>
-                                <div><a class="btn-quiz btn-quiz-green" href="<?php echo get_permalink( $res );?>">Join Us</a></div>
+                                    <div class="cardTitle"><?php echo $ln == "ar" ? $trand["Web Donations"] : "Web Donations";?></div>
+                                    <div class="cardCat"></div>
+                                <div><a class="btn-quiz btn-quiz-green" target="_blank" href="https://gpmena.secure.force.com/StripePaymentScreen?_gl=1*ntt4hg*_ga*MTgwNzE3Njc3NS4xNjM0MzA2MzM0*_ga_BF1TLGDGBK*MTY2MTg2NzA5NC4xMDguMS4xNjYxODcyNTAxLjAuMC4w">Join Us</a></div>
                             </div>
                         </div>
 
