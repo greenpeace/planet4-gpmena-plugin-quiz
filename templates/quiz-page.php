@@ -234,7 +234,7 @@ var my_slug = "<?php echo $pst->post_name;?>";
                                     <div class="col-sm-6"><div class="imgfruwrp"><img src="<?php echo $image[0];?>" alt="" /></div></div>
                                     <div class="col-sm-6 flexrightmore">
                                         <div class="tittell"><?php echo $card->post_title;?></div>
-                                        <div class="conti mt-15"><?php echo $res['desc'] != '' ? $res['desc']  : $card->post_content ;?></div>
+                                        <div class="conti mt-15"><?php echo $res['desc'] != '' ? $res['desc']  : wp_strip_all_tags($card->post_content).' ...' ;?></div>
                                         <div class="flxend"><a class="read-more-lnk mt-15" href="<?php echo get_permalink( $res['id'] );?>"><span class="txt"><?php echo ($ln=="ar" ? $trand['Learn more'] : 'Learn more');?></span><span class="bg"></span></a></div>
                                     </div>
                                 </div>
