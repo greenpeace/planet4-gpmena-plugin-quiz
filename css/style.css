@@ -347,9 +347,6 @@
 
 .moreyoucardswrap:nth-child(1){margin-top: 0;}
 .moreyoucardswrap:nth-child(even){flex-direction: row-reverse;}
-.moreyoucardswrap:nth-child(even) .read-more-lnk{flex-direction: row-reverse;}
-.moreyoucardswrap:nth-child(even) .read-more-lnk .bg{rotate: 180deg;}
-.moreyoucardswrap:nth-child(even) .flxend{justify-content:flex-start}
 
 
 
