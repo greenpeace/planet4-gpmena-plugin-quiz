@@ -163,7 +163,7 @@ var my_slug = "<?php echo $pst->slug;?>";
             </div>
             <?php if($redirect!=0 && sizeof($morForYouArray[$redirect])!=0){?>
             <div class="ResBlock2">
-            <div class="doNotShip-container">
+            <div class="container">
                     <div class="impactfull_title"><?php echo ($ln=="ar" ? $trand['More for You'] : 'More for You');?></div>
                         <div class="parente">
                             <?php foreach($morForYouArray[$redirect] as $res){
