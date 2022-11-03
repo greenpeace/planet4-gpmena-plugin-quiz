@@ -245,6 +245,6 @@ var my_slug = "<?php echo $pst->post_name;?>";
             </div>
             <?php }?>
 
-        </div>
+        </div>`
     </div>
 </div>
