@@ -189,7 +189,7 @@ var my_slug = "<?php echo $pst->post_name;?>";
             foreach ($resultsArray[$redirect] as $res) {
                 if($res['id']!='SF'){
                 $card = get_post( $res['id'] );
-                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $res ), 'large' );
+                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $res['id'] ), 'large' );
                 $cats = get_the_category($res['id']);?>
                         <div class="qcard qcard-<?php echo $res['id'];?>">
                             <div class="flexmecol">
