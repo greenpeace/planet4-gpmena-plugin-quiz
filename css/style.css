@@ -363,6 +363,15 @@
 .mt-15{margin-top: 35px;}
 .tittell{font-size: 32px;font-weight: 700;}
 
+.imgfruwrp{width:auto;height: auto;}
+.imgfruwrp img{
+  width: 100%;
+  height: 514px; 
+  object-fit: cover;
+}
+
+
+
 /* ARABIC */
 
 .QUIZ-proj-wrapper.lang_ar{direction: rtl;font-family: inherit;}

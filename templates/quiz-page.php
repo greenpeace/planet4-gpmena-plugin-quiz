@@ -140,7 +140,6 @@ var my_slug = "<?php echo $pst->slug;?>";
                     <div class="impactfull_sub_green">
                         <?php echo ($ln=="ar" ? $trand['Here are the easiest ways you can create momentum'] : 'Here are the easiest ways you can create momentum');?>
                     </div>
-
                     <div class="cardsWrapper posts-carousel">
                         <?php if($redirect!=0){
             foreach ($resultsArray[$redirect] as $res) {
@@ -164,13 +163,14 @@ var my_slug = "<?php echo $pst->slug;?>";
             </div>
             <?php if($redirect!=0 && sizeof($morForYouArray[$redirect])!=0){?>
             <div class="ResBlock2">
+            <div class="doNotShip-container">
                     <div class="impactfull_title"><?php echo ($ln=="ar" ? $trand['More for You'] : 'More for You');?></div>
                         <div class="parente">
                             <?php foreach($morForYouArray[$redirect] as $res){
                                 $card = get_post( $res );
                                 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $res ), 'large' );?>
                                 <div class="moreyoucardswrap row">
-                                    <div class="col-xs-6 col-6"><img src="<?php echo $image[0];?>" alt="" /></div>
+                                    <div class="col-xs-6 col-6"><div class="imgfruwrp"><img src="<?php echo $image[0];?>" alt="" /></div></div>
                                     <div class="col-xs-6 col-6 flexrightmore">
                                         <div class="tittell"><?php echo $card->post_title;?></div>
                                         <div class="conti mt-15"><?php echo $card->post_content;?></div>
@@ -179,6 +179,7 @@ var my_slug = "<?php echo $pst->slug;?>";
                                 </div>
                             <?php }?>
                         </div>
+            </div>
             </div>
             <?php }?>
 
