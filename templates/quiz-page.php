@@ -1,15 +1,3 @@
-<div class="toast-container toast-pos-right toast-pos-top">
-
-<!-- Toast -->
-<div class="toast" id="toast-name-2">
-<div class="toast-flex">
-    <span><b>The result URl</b> has been copied to the clipboard.</span>
-    <a href="#" class="close-toast">X</a>
-</div>
-</div>
-
-</div>
-
 <?php
 $ln = get_locale();
 define( 'PLUGIN_DIR', dirname(__DIR__)  );
@@ -96,6 +84,14 @@ var templateUrl = "<?php echo get_option('siteurl') . ($ln=="ar" ? "/ar/" :"/en/
 var my_slug = "<?php echo $pst->post_name;?>";
 </script>
 <div class="QUIZ-proj-wrapper<?php echo ($ln=='ar' ? ' lang_ar' :'');?>" PID="<?php echo $pst->ID;?>">
+<div class="toast-container toast-pos-right toast-pos-top">
+<div class="toast" id="toast-name-2">
+<div class="toast-flex">
+    <span><b>The result URl</b> has been copied to the clipboard.</span>
+    <a href="#" class="close-toast">X</a>
+</div>
+</div>
+</div>
     <div class="quiz_main <?php echo ($redirect != '0' ? ' hidden' :'');?>">
         <div class="panel-start-quiz flex-center-column">
             <div class="quiz_image">
