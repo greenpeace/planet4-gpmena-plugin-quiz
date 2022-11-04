@@ -359,11 +359,10 @@
 
 [class*="toast-pos-"] {
   position: absolute;
-  padding: 10px;
 }
 
 .toast-pos-top {
-  top: 25%;
+  top: 0;
 }
 
 .toast-pos-right {
@@ -381,7 +380,6 @@
 .toast {
   display: none;
   padding: 20px;
-  margin: 20px 0;
   background: #66cc00 ;
   border-radius: 4px;  
 }
