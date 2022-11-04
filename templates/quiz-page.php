@@ -23,7 +23,7 @@ $pts = isset($_GET['pts']) ? $_GET['pts'] : 0;
 wp_enqueue_script('quiz-script', PLUGINDIRQUIZ.'js/quiz.js?v='.time() ,['jquery']);
 wp_enqueue_style( 'slick-css', PLUGINDIRQUIZ.'assets/src/library/css/slick.css', [], false, 'all' );
 wp_enqueue_style( 'slick-theme-css', PLUGINDIRQUIZ.'assets/src/library/css/slick-theme.css', ['slick-css'], false, 'all' );
-wp_enqueue_style( 'quiz-css', PLUGINDIRQUIZ  . 'css/style.css', false, 'all' );
+wp_enqueue_style( 'quiz-css', PLUGINDIRQUIZ  . 'css/style.css?v='.time(), false, false , 'all' );
 wp_enqueue_script( 'slick-js', PLUGINDIRQUIZ.'assets/src/library/js/slick.min.js', ['jquery'] );
 wp_enqueue_script( 'carousel-js', ( PLUGINDIRQUIZ ) . 'assets/src/carousel/index.js', ['jquery', 'slick-js'] );
 $pst = get_post();
@@ -73,7 +73,7 @@ $morForYouArray=array(
         ['id'=>7783,'desc'=>'']
     ),
     '30_60_2' =>array(
-        ['id'=>0,'desc'=>'']
+        ['id'=>100000000,'desc'=>'']
     ),
     'above_60_3' =>array(
         ['id'=>10238,'desc'=>''],
