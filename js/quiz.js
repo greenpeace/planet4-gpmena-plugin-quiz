@@ -1,4 +1,28 @@
 jQuery(document).ready(function ($) {
+
+
+  $(".toast-trigger").click(function(e){
+    if($(this).hasClass('clicked')) return;
+    
+    $(this).addClass('clicked').html('Copied');
+    var currentURL = window.location.href;
+    navigator.clipboard.writeText(window.location.href);
+
+    datatoast = $(this).attr("data-toast");
+    if ( $( this ).hasClass( "toast-auto" ) && !$("#" + datatoast).is(":visible") ){ 
+      $("#" + datatoast).fadeIn(400).delay(2000).fadeOut(400);
+    }
+    else if ( !$("#" + datatoast).is(":visible") ){
+      $("#" + datatoast).fadeIn(400);
+    };
+  });
+  
+  $(".close-toast").click(function(e){
+    e.preventDefault();
+    $(this).closest('.toast-container').fadeOut(400);
+  });
+
+
   var step = 0;
   var totalSteps = $(".panelsWrapper").children(".panel").length;
   $(".btn-startquiz").click(function () {
@@ -71,15 +95,8 @@ jQuery(document).ready(function ($) {
 
     
   });
-  function toggleImage(clicked) {
-    if ($(clicked).find("img.selected").hasClass("hidden")) {
-      $(clicked).find("img.selected").removeClass("hidden");
-      $(clicked).find("img.not-selected").addClass("hidden");
-    } else {
-      $(clicked).find("img.selected").addClass("hidden");
-      $(clicked).find("img.not-selected").removeClass("hidden");
-    }
-  }
+
+  
   $(".thebtn").click(function (e) {
     e.preventDefault();
     $optionsParent = $(this).closest(".options");
@@ -167,4 +184,11 @@ jQuery(document).ready(function ($) {
     //console.log('perc' , perc.toFixed(0)+"%" , "cnt:" , cnt  )
     return perc.toFixed(0);
   }
+  function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+}
 });

@@ -1,3 +1,15 @@
+<div class="toast-container toast-pos-right toast-pos-top">
+
+<!-- Toast -->
+<div class="toast" id="toast-name-2">
+<div class="toast-flex">
+    <span><b>The result URl</b> has been copied to the clipboard.</span>
+    <a href="#" class="close-toast">X</a>
+</div>
+</div>
+
+</div>
+
 <?php
 $ln = get_locale();
 define( 'PLUGIN_DIR', dirname(__DIR__)  );
@@ -70,7 +82,7 @@ $morForYouArray=array(
 );
 ?>
 <style>
-.page-id-<?php echo $pst->ID;?> .page-content.container{max-width:100%}
+.page-id-<?php echo $pst->ID;?> .page-content.container{max-width:100%;padding: 0;}
 .page-id-<?php echo $pst->ID;?> .article-h1,
 .page-id-<?php echo $pst->ID;?> .page-header .container{display: none}
 .page-id-<?php echo $pst->ID;?> {
@@ -79,6 +91,7 @@ $morForYouArray=array(
 
 </style>
 <script type="text/javascript">
+    
 var templateUrl = "<?php echo get_option('siteurl') . ($ln=="ar" ? "/ar/" :"/en/") ;?>";
 var my_slug = "<?php echo $pst->post_name;?>";
 </script>
@@ -156,10 +169,11 @@ var my_slug = "<?php echo $pst->post_name;?>";
                 <div class="percentage-phrase">&nbsp;<span
                         class="perc"><?php echo  $pts;?>%</span>&nbsp;<span><?php echo  ($ln=='ar' ? $trand['of people get this result'] : 'of people get this result');?></span>&nbsp;
                 </div>
-                <div class="share-btn flex">
+
+                <div class="share-btn flex toast-trigger toast-auto" data-toast="toast-name-2">
                     <div class="inner flex">
                         <img src="<?php echo  plugin_dir_url(__DIR__);?>img/share.png" width="13" height="13" />
-                        <span><?php echo  ($ln=='ar' ? $trand['Share'] : 'Share' );?></span>
+                        <span class="shareconti"><?php echo  ($ln=='ar' ? $trand['Share'] : 'Share' );?></span>
                     </div>
                 </div>
             </div>
