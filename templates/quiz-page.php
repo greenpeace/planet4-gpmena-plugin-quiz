@@ -72,7 +72,7 @@ $morForYouArray=array(
 <style>
 .page-id-<?php echo $pst->ID;?> .page-content.container{max-width:100%;padding: 0;}
 .page-id-<?php echo $pst->ID;?> .article-h1,
-.page-id-<?php echo $pst->ID;?> .page-header .container{display: none}
+.page-id-<?php echo $pst->ID;?> .page-header {display: none}
 .page-id-<?php echo $pst->ID;?> {
     background: url("<?php echo plugin_dir_url(__DIR__ );?>/img/bg.png") 1px 1px no-repeat;
 }
@@ -208,14 +208,14 @@ var my_slug = "<?php echo $pst->post_name;?>";
                                 <a href="<?php echo get_permalink( $res['id'] );?>"><img src="<?php echo $image[0];?>" /></a>
                                 </div>
                                     <div class="cardTitle"><?php echo $card->post_title;?></div>
-                                    <div class="cardCat"><a
-                                    href="<?php echo $cats[0]->cat_link;?>"><?php echo $cats[0]->cat_name;?></a>
+                                    <div class="cardCat">
+                                        <a href="<?php echo $cats[0]->cat_link;?>"><?php echo $cats[0]->cat_name;?></a>
                                 </div>
                                 <div><a class="btn-quiz btn-quiz-green" href="<?php echo get_permalink( $res['id'] );?>">Join Us</a></div>
                             </div>
                         </div>
                         <?php }else{?>
-                            <div class="qcard qcard-<?php echo $res;?>">
+                            <div class="qcard qcard-<?php echo $res['id'];?>">
                             <div class="flexmecol">
                                 <div class="carsImg">
                                 <a target="_blank" href="https://gpmena.secure.force.com/StripePaymentScreen?_gl=1*ntt4hg*_ga*MTgwNzE3Njc3NS4xNjM0MzA2MzM0*_ga_BF1TLGDGBK*MTY2MTg2NzA5NC4xMDguMS4xNjYxODcyNTAxLjAuMC4w"><img src="<?php echo  plugin_dir_url(__DIR__);?>/img/incident.JPG" /></a>
