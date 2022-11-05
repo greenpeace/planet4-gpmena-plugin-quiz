@@ -197,9 +197,9 @@ var my_slug = "<?php echo $pst->post_name;?>";
                     <div class="cardsWrapper posts-carousel">
                         <?php if($redirect!='0'){
             foreach ($resultsArray[$redirect] as $res) {
-                if($res['id']!='SF'){
+                if($res['id'] != 'SF'){
                 $card = get_post( $res['id'] );
-                print_r($card);
+
                 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $res['id'] ), 'large' );
                 $cats = get_the_category($res['id']);?>
                         <div class="qcard qcard-<?php echo $res['id'];?>">
