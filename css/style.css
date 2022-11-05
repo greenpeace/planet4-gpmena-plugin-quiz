@@ -1,7 +1,7 @@
 /* QUIZzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz   */
 /* Rectangle 4354 */
 .QUIZ-proj-wrapper {
-  font-family: "Roboto", sans-serif;
+  margin-top:176px;
 }
 .progressBar {
   width: 700px;
@@ -358,7 +358,8 @@
 }
 
 [class*="toast-pos-"] {
-  position: absolute;
+    display: flex;
+    justify-content: center;
 }
 
 .toast-pos-top {
