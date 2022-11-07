@@ -24,11 +24,19 @@ function load_quiz_js_css(){
     } 
 }
 //add_action('wp_enqueue_scripts','load_quiz_js_css');
-
-
-
 function place_code_inside_head() {
     $styless = file_get_contents( plugin_dir_url(__FILE__)."css/style.css" );
         //echo'<style>'.$styless.'</style>';
     }
 add_action('wp_head', 'place_code_inside_head');
+
+function d($var){
+    $bt = debug_backtrace();
+    $caller = array_shift($bt);
+    echo "<pre >";
+    echo "<code>";
+    echo '<span style="font-weight:bold;">Source: '.$caller['file'] .' Line:'. $caller['line']."\n\n</span>";
+    print_r($var);
+    echo "</code>";
+    echo "</pre>";
+}

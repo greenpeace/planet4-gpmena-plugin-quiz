@@ -5,6 +5,15 @@ define( 'PLUGINDIRQUIZ', plugin_dir_url(__DIR__) );
 $string = file_get_contents( PLUGIN_DIR."/json/quiz".($ln=='ar' ? '_ar' :'').".json" );
 $tran = file_get_contents( PLUGIN_DIR."/json/strings.json" );
 $trand = json_decode($tran, true);
+$newArr = [];
+foreach( $trand as $k=>$v){
+    $translations[$k]=array(
+        'en' =>$k,
+        'ar' =>$v,
+        'fr' =>'FR',
+    );
+}
+//d(json_encode($newArr));
 $json = json_decode($string, true);
 $redirect = isset($_GET['r']) ? $_GET['r'] : '0';
 $pts = isset($_GET['pts']) ? $_GET['pts'] : 0;
@@ -83,7 +92,7 @@ $morForYouArray=array(
 var templateUrl = "<?php echo get_option('siteurl') . ($ln=="ar" ? "/ar/" :"/en/") ;?>";
 var my_slug = "<?php echo $pst->post_name;?>";
 </script>
-<div class="QUIZ-proj-wrapper<?php echo ($ln=='ar' ? ' lang_ar' :'');?>" PID="<?php echo $pst->ID;?>">
+<div class="QUIZ-proj-wrapper<?php echo ($ln=='ar' ? ' lang_ar' :'');?>" ln="<?php echo $ln?>" PID="<?php echo $pst->ID;?>">
 <div class="toast-container toast-pos-right toast-pos-top">
 <div class="toast" id="toast-name-2">
 <div class="toast-flex">
