@@ -99,7 +99,7 @@ $morForYouArray=array(
 var templateUrl = "<?php echo get_option('siteurl') . "/$ln/" ;?>";
 var my_slug = "<?php echo $pst->post_name;?>";
 </script>
-<div class="QUIZ-proj-wrapper<?php echo "lang_$ln";?>" ln="<?php echo $ln?>" PID="<?php echo $pst->ID;?>">
+<div class="QUIZ-proj-wrapper<?php echo " lang_$ln";?>" ln="<?php echo $ln?>" PID="<?php echo $pst->ID;?>">
 <div class="toast-container toast-pos-right toast-pos-top">
 <div class="toast" id="toast-name-2">
 <div class="toast-flex">
