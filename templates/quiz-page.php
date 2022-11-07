@@ -1,11 +1,13 @@
 <?php
-$getlocal = get_locale();
 
-switch($getlocal){
-    case 'en_US': $ln= 'en';break;
-    case 'fr_FR': $ln= 'fr';break;
-    case 'ar': $ln= 'ar';break;
-}
+$ln = get_locale();
+
+// $getlocal = get_locale();
+// switch($getlocal){
+//     case 'en_US': $ln= 'en';break;
+//     case 'fr_FR': $ln= 'fr';break;
+//     case 'ar': $ln= 'ar';break;
+// }
 
 define( 'PLUGIN_DIR', dirname(__DIR__)  );
 define( 'PLUGINDIRQUIZ', plugin_dir_url(__DIR__) );
