@@ -1,0 +1,354 @@
+[
+  {
+    "post_title": "Where does the waste from your home go?",
+    "slug": "where-does-the-waste-from-your-home-go",
+    "has_long_title": "",
+    "answers": [
+      {
+        "answer": "Recycling Facility",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 33
+      },
+      {
+        "answer": "Landfill",
+        "point": "3",
+        "behavior": "",
+        "POSTID": 33
+      },
+      {
+        "answer": "Zero waste, I compost and produce minimal non-organic waste",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 33
+      },
+      {
+        "answer": "I don’t know",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 33
+      },
+      {
+        "answer": "None of these",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 33
+      }
+    ]
+  },
+  {
+    "post_title": "How aware are you of your carbon footprint?",
+    "slug": "how-aware-are-you-of-your-carbon-footprint",
+    "has_long_title": "has_long_title",
+    "answers": [
+      {
+        "answer": "I have clear understanding of the impact of the products I purchase on the environment and climate",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 40
+      },
+      {
+        "answer": "I understand the basic principles around the impact of purchasing imported products and those manufactured without/minimal consideration of impacts",
+        "point": "3",
+        "behavior": "",
+        "POSTID": 40
+      },
+      {
+        "answer": "I am not aware that my choices have any impact on the climate and environment",
+        "point": "1",
+        "behavior": "",
+        "POSTID": 40
+      }
+    ]
+  },
+  {
+    "post_title": "Are you aware of the amount of energy utilized to bring water to your home?",
+    "slug": "are-you-aware-of-the-amount-of-energy-utilized-to-bring-water-to-your-home",
+    "has_long_title": "has_long_title",
+    "answers": [
+      {
+        "answer": "Water to my home is pumped from a river/lake/groundwater nearby through an efficient national grid",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 48
+      },
+      {
+        "answer": "Water to my home is pumped more than 100km from its source using fossil fuels",
+        "point": "3",
+        "behavior": "",
+        "POSTID": 48
+      },
+      {
+        "answer": "Water to my home is pumped from a local well using fossil fuels",
+        "point": "2",
+        "behavior": "",
+        "POSTID": 48
+      },
+      {
+        "answer": "Water to my home is pumped from a local well using renewable energy",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 48
+      },
+      {
+        "answer": "I don’t have running water to my home and depend on trucks that utilise fossil fuels",
+        "point": "1",
+        "behavior": "",
+        "POSTID": 48
+      },
+      {
+        "answer": "Other",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 48
+      }
+    ]
+  },
+  {
+    "post_title": "What sustainable changes have you made at home so far?",
+    "slug": "what-sustainable-changes-have-you-made-at-home-so-far",
+    "has_long_title": "",
+    "answers": [
+      {
+        "answer": "Recycling",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 55
+      },
+      {
+        "answer": "Installing solar panels",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 55
+      },
+      {
+        "answer": "Reducing waste",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 55
+      },
+      {
+        "answer": "None of these",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 55
+      },
+      {
+        "answer": "Reducing water consumption",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 55
+      }
+    ]
+  },
+  {
+    "post_title": "Your main form of transportation is",
+    "slug": "your-main-form-of-transportation-is",
+    "has_long_title": "",
+    "answers": [
+      {
+        "answer": "Car",
+        "point": "1",
+        "behavior": "",
+        "POSTID": 61
+      },
+      {
+        "answer": "Motorcycle",
+        "point": "2",
+        "behavior": "",
+        "POSTID": 61
+      },
+      {
+        "answer": "Bus, train or other rapid transit",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 61
+      },
+      {
+        "answer": "Bicycle or walking",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 61
+      },
+      {
+        "answer": "Electric Scooter or Electric car",
+        "point": "5",
+        "behavior": "",
+        "POSTID": 61
+      }
+    ]
+  },
+  {
+    "post_title": "How do you reduce single-use of plastic?",
+    "slug": "how-do-you-reduce-single-use-of-plastic",
+    "has_long_title": "has_long_title",
+    "answers": [
+      {
+        "answer": "I bring my own reusable water bottle instead of buying plastic water bottles",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 67
+      },
+      {
+        "answer": "I avoid using plastic straws, cutlery and cotton buds",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 67
+      },
+      {
+        "answer": "I use reusable containers instead of plastic bags when packing my lunch",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 67
+      },
+      {
+        "answer": "None of the above to be honest",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 67
+      },
+      {
+        "answer": "I do all of those",
+        "point": "4",
+        "behavior": "all",
+        "POSTID": 67
+      }
+    ]
+  },
+  {
+    "post_title": "Do you turn off the water while you brush your teeth?",
+    "slug": "do-you-turn-off-the-water-while-you-brush-your-teeth",
+    "has_long_title": "",
+    "answers": [
+      {
+        "answer": "Yes",
+        "point": "4",
+        "behavior": "none",
+        "POSTID": 73
+      },
+      {
+        "answer": "Not really",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 73
+      },
+      {
+        "answer": "Sometimes",
+        "point": "3",
+        "behavior": "none",
+        "POSTID": 73
+      }
+    ]
+  },
+  {
+    "post_title": "What do you use to carry your groceries?",
+    "slug": "what-do-you-use-to-carry-your-groceries",
+    "has_long_title": "",
+    "answers": [
+      {
+        "answer": "Paper bags",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 83
+      },
+      {
+        "answer": "Plastic bag",
+        "point": "1",
+        "behavior": "",
+        "POSTID": 83
+      },
+      {
+        "answer": "Paper or plastic that I recycle after",
+        "point": "3",
+        "behavior": "",
+        "POSTID": 83
+      },
+      {
+        "answer": "Re-usable canvas bags",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 83
+      }
+    ]
+  },
+  {
+    "post_title": "How do you mainly shop for food?",
+    "slug": "how-do-you-mainly-shop-for-food",
+    "has_long_title": "has_long_title",
+    "answers": [
+      {
+        "answer": "I rarely do, most of it is home produced",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 84
+      },
+      {
+        "answer": "I buy organic food",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 84
+      },
+      {
+        "answer": "I shop for local products only",
+        "point": "2",
+        "behavior": "",
+        "POSTID": 84
+      },
+      {
+        "answer": "I buy whatever is available at supermarkets",
+        "point": "1",
+        "behavior": "",
+        "POSTID": 84
+      }
+    ]
+  },
+  {
+    "post_title": "How do you make your voice heard?",
+    "slug": "how-do-you-make-your-voice-heard",
+    "has_long_title": "has_long_title",
+    "answers": [
+      {
+        "answer": "Talking to friends and family",
+        "point": "2",
+        "behavior": "",
+        "POSTID": 97
+      },
+      {
+        "answer": "Writing to government",
+        "point": "3",
+        "behavior": "",
+        "POSTID": 97
+      },
+      {
+        "answer": "Meeting with my council",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 97
+      },
+      {
+        "answer": "Attending rallies",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 97
+      },
+      {
+        "answer": "Signing petitions",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 97
+      },
+      {
+        "answer": "Volunteering time to support environmental action",
+        "point": "3",
+        "behavior": ["none"],
+        "POSTID": 97
+      },
+      {
+        "answer": "None of these",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 97
+      }
+    ]
+  }
+]

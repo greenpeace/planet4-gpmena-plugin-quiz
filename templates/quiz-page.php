@@ -1,9 +1,16 @@
 <?php
-$ln = get_locale();
+$getlocal = get_locale();
+
+switch($getlocal){
+    case 'en_US': $ln= 'en';break;
+    case 'fr_FR': $ln= 'fr';break;
+    case 'ar': $ln= 'ar';break;
+}
+
 define( 'PLUGIN_DIR', dirname(__DIR__)  );
 define( 'PLUGINDIRQUIZ', plugin_dir_url(__DIR__) );
-$string = file_get_contents( PLUGIN_DIR."/json/quiz".($ln=='ar' ? '_ar' :'').".json" );
-$tran = file_get_contents( PLUGIN_DIR."/json/strings.json" );
+$string = file_get_contents( PLUGIN_DIR."/json/quiz_$ln.json" );
+$tran = file_get_contents( PLUGIN_DIR."/json/translation.json" );
 $trand = json_decode($tran, true);
 $newArr = [];
 foreach( $trand as $k=>$v){
@@ -89,10 +96,10 @@ $morForYouArray=array(
 </style>
 <script type="text/javascript">
     
-var templateUrl = "<?php echo get_option('siteurl') . ($ln=="ar" ? "/ar/" :"/en/") ;?>";
+var templateUrl = "<?php echo get_option('siteurl') . "/$ln/" ;?>";
 var my_slug = "<?php echo $pst->post_name;?>";
 </script>
-<div class="QUIZ-proj-wrapper<?php echo ($ln=='ar' ? ' lang_ar' :'');?>" ln="<?php echo $ln?>" PID="<?php echo $pst->ID;?>">
+<div class="QUIZ-proj-wrapper<?php echo "lang_$ln";?>" ln="<?php echo $ln?>" PID="<?php echo $pst->ID;?>">
 <div class="toast-container toast-pos-right toast-pos-top">
 <div class="toast" id="toast-name-2">
 <div class="toast-flex">
@@ -107,10 +114,10 @@ var my_slug = "<?php echo $pst->post_name;?>";
                 <img src="<?php echo  plugin_dir_url(__DIR__);?>/img/find-action-for-you.png" />
             </div>
             <div class="quiz_title"><?php echo $pst->post_title;?></div>
-            <div class="quiz_content"><?php echo ($ln =="ar" ? $trand['Lorum_ar'] : $trand['Lorum']) ;?></div>
+            <div class="quiz_content"><?php echo $trand['TAKE_OUR_environmental_quiz'][$ln];?></div>
             <div class="navig flex-raw-center mt-15">
                 <div class="btn-quiz btn-quiz-green pointer btn-startquiz">
-                    <span><?php echo ($ln =="ar" ? $trand['Start Quiz'] : 'Start Quiz') ;?></span>
+                    <span><?php echo $trand['Start Quiz'][$ln];?></span>
                     <img src="<?php echo  plugin_dir_url(__DIR__);?>/img/arrow-right.png" />
                 </div>
             </div>
@@ -127,9 +134,9 @@ var my_slug = "<?php echo $pst->post_name;?>";
                 <div class="panel hidden" step="<?php echo $i;?>">
                     <div class="question"><?php echo $item['post_title'];?></div>
                     <div class="instructions">
-                        <?php echo  ($ln=="ar" ? $trand['Select at least one that applies to you to continue'] : "Select at least one that applies to you to continue" );?>
+                        <?php echo $trand['Select at least one that applies to you to continue'][$ln];?>
                     </div>
-                    <div class="options <?php echo  trim($item['has_long_title']);?>">
+                    <div class="options <?php echo trim($item['has_long_title']);?>">
                         <?php foreach($item['answers'] as $answer){?>
 
                         <label
@@ -155,11 +162,11 @@ var my_slug = "<?php echo $pst->post_name;?>";
         </div>
         <div class="navig flex-raw-center hidden">
             <div class="btn-quiz prev-btn-quiz btn-quiz-white pointer">
-                <span><?php echo  ($ln =="ar" ? $trand['Back'] : 'Back') ;?></span>
+                <span><?php echo $trand['Back'][$ln];?></span>
                 <img src="<?php echo  plugin_dir_url(__DIR__);?>img/arrow-left.png" />
             </div>
             <div class="btn-quiz next-btn-quiz btn-quiz-green pointer disabled">
-                <span><?php echo  ($ln=="ar" ? $trand['Next'] : 'Next') ;?></span>
+                <span><?php echo $trand['Next'][$ln];?></span>
                 <img src="<?php echo  plugin_dir_url(__DIR__);?>img/arrow-right.png" />
             </div>
         </div>
@@ -167,18 +174,18 @@ var my_slug = "<?php echo $pst->post_name;?>";
     <div class="result_main <?php echo  ($redirect != '0' ? '' :' hidden');?>">
         <div class="result_inner flex">
             <div class="txtc">
-                <div class="big-tit"><?php echo  ($ln=='ar' ? $trand['Your Result'] : 'Your Result') ;?></div>
+                <div class="big-tit"><?php echo $trand['Your Result'][$ln] ;?></div>
                 <div class="quote">
-                    <?php echo  ($ln=='ar' ? $trand['You don’t just live by principlesYour Result'] : 'You don’t just live by principlesYour Result') ;?>
+                    <?php echo $trand['YOU_DON_t just live by principles'][$ln];?>
                 </div>
                 <div class="percentage-phrase">&nbsp;<span
-                        class="perc"><?php echo  $pts;?>%</span>&nbsp;<span><?php echo  ($ln=='ar' ? $trand['of people get this result'] : 'of people get this result');?></span>&nbsp;
+                        class="perc"><?php echo  $pts;?>%</span>&nbsp;<span><?php echo $trand['of people get this result'][$ln];?></span>&nbsp;
                 </div>
 
                 <div class="share-btn flex toast-trigger toast-auto" data-toast="toast-name-2">
                     <div class="inner flex">
                         <img src="<?php echo  plugin_dir_url(__DIR__);?>img/share.png" width="13" height="13" />
-                        <span class="shareconti"><?php echo  ($ln=='ar' ? $trand['Share'] : 'Share' );?></span>
+                        <span class="shareconti"><?php echo $trand['Share'][$ln];?></span>
                     </div>
                 </div>
             </div>
@@ -189,19 +196,19 @@ var my_slug = "<?php echo $pst->post_name;?>";
                     class="res_image_glob per_30-60 <?php echo  ($redirect != '30_60_2' ? ' hidden' :'');?>" />
                 <img src="<?php echo  plugin_dir_url(__DIR__);?>img/Above-60-per.png"
                     class="res_image_glob per_above-60 <?php echo  ($redirect != 'above_60_3' ? ' hidden' :'');?>" />
-                <div class="donateBtn"><?php echo  ($ln=='ar' ? $trand['Donate Now'] : 'Donate Now') ;?></div>
+                <div class="donateBtn"><?php echo $trand['Donate Now'][$ln];?></div>
             </div>
         </div>
         <div class="actionsWrapper">
             <div class="ResBlock1">
             <div class="container">
                     <div class="impactfull_title">
-                        <?php echo ($ln=="ar" ? $trand['Take more impactful action'] : 'Take more impactful action');?>
+                        <?php echo $trand['Take more impactful action'][$ln];?>
                     </div>
                     <div class="impactfull_desc">
-                        <?php echo ($ln=="ar" ? $trand['ACTIONTXT_AR'] : $trand['ACTIONTXT']);?></div>
+                        <?php echo $trand['ACTIONTXT'][$ln];?></div>
                     <div class="impactfull_sub_green">
-                        <?php echo ($ln=="ar" ? $trand['Here are the easiest ways you can create momentum'] : 'Here are the easiest ways you can create momentum');?>
+                        <?php echo $trand['Here are the easiest ways you can create momentum'][$ln];?>
                     </div>
                     <div class="cardsWrapper posts-carousel">
                         <?php if($redirect!='0'){
@@ -229,7 +236,7 @@ var my_slug = "<?php echo $pst->post_name;?>";
                                 <div class="carsImg">
                                 <a target="_blank" href="https://gpmena.secure.force.com/StripePaymentScreen?_gl=1*ntt4hg*_ga*MTgwNzE3Njc3NS4xNjM0MzA2MzM0*_ga_BF1TLGDGBK*MTY2MTg2NzA5NC4xMDguMS4xNjYxODcyNTAxLjAuMC4w"><img src="<?php echo  plugin_dir_url(__DIR__);?>/img/incident.JPG" /></a>
                                 </div>
-                                    <div class="cardTitle"><?php echo $ln == "ar" ? $trand["Web Donations"] : "Web Donations";?></div>
+                                    <div class="cardTitle"><?php echo $trand["Web Donations"][$ln];?></div>
                                     <div class="cardCat"></div>
                                 <div><a class="btn-quiz btn-quiz-green" target="_blank" href="https://gpmena.secure.force.com/StripePaymentScreen?_gl=1*ntt4hg*_ga*MTgwNzE3Njc3NS4xNjM0MzA2MzM0*_ga_BF1TLGDGBK*MTY2MTg2NzA5NC4xMDguMS4xNjYxODcyNTAxLjAuMC4w">Join Us</a></div>
                             </div>
@@ -245,7 +252,7 @@ var my_slug = "<?php echo $pst->post_name;?>";
             <?php if($redirect!='0' && sizeof($morForYouArray[$redirect])!=0){?>
             <div class="ResBlock2">
             <div class="container">
-                    <div class="impactfull_title"><?php echo ($ln=="ar" ? $trand['More for You'] : 'More for You');?></div>
+                    <div class="impactfull_title"><?php echo $trand['More for You'][$ln];?></div>
                         <div class="parente">
                             <?php foreach($morForYouArray[$redirect] as $res){
                                 $card = get_post( $res['id'] );
@@ -255,7 +262,7 @@ var my_slug = "<?php echo $pst->post_name;?>";
                                     <div class="col-sm-6 flexrightmore">
                                         <div class="tittell"><?php echo $card->post_title;?></div>
                                         <div class="conti mt-15"><?php echo $res['desc'] != '' ? $res['desc']  : wp_strip_all_tags($card->post_content).' ...' ;?></div>
-                                        <div class="flxend"><a class="read-more-lnk mt-15" href="<?php echo get_permalink( $res['id'] );?>"><span class="txt"><?php echo ($ln=="ar" ? $trand['Learn more'] : 'Learn more');?></span><span class="bg"></span></a></div>
+                                        <div class="flxend"><a class="read-more-lnk mt-15" href="<?php echo get_permalink( $res['id'] );?>"><span class="txt"><?php echo $trand['Learn more'][$ln]?></span><span class="bg"></span></a></div>
                                     </div>
                                 </div>
                                 

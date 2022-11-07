@@ -1,0 +1,354 @@
+[
+  {
+  "post_title": "Où vont vos déchets ménagères",
+  "slug": "ou-vont-vos-dechets-menageres",
+  "has_long_title": "normal",
+  "answers": [
+  {
+  "answer": "Des établissements de recyclage",
+  "point": "4",
+  "behavior": "normal",
+  "POSTID": 10879
+  },
+  {
+  "answer": "Bureau des déchets",
+  "point": "3",
+  "behavior": "normal",
+  "POSTID": 10879
+  },
+  {
+  "answer": "Zéro Déchet, je composte et génère un minimum de déchets inorganiques",
+  "point": "4",
+  "behavior": "normal",
+  "POSTID": 10879
+  },
+  {
+  "answer": "Je ne sais pas",
+  "point": "1",
+  "behavior": "none",
+  "POSTID": 10879
+  },
+  {
+  "answer": "Aucune réponse",
+  "point": "1",
+  "behavior": "none",
+  "POSTID": 10879
+  }
+  ]
+  },
+  {
+  "post_title": "Connaissez-vous bien votre empreinte carbone ?",
+  "slug": "connaissez-vous-bien-votre-empreinte-carbone",
+  "has_long_title": "has_long_title",
+  "answers": [
+  {
+  "answer": "J'ai une compréhension claire de l'impact des produits que j'achète sur l'environnement et le climat",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10880
+  },
+  {
+  "answer": "Je comprends les principes de base concernant l'achat de produits importés et manufacturés sans observant des impacts",
+  "point": "3",
+  "behavior": "none",
+  "POSTID": 10880
+  },
+  {
+  "answer": "Je ne suis pas sure de l’impact des produits que je consomme sur le climat",
+  "point": "1",
+  "behavior": "none",
+  "POSTID": 10880
+  },
+  {
+  "answer": "Je ne savais pas que les produits que je consomme ont un impact sur le climat",
+  "point": "1",
+  "behavior": "none",
+  "POSTID": 10880
+  }
+  ]
+  },
+  {
+  "post_title": "Connaissez-vous la quantité d'énergie utilisée pour fournir de l'eau à votre domicile ?",
+  "slug": "connaissez-vous-la-quantite-denergie-utilisee-pour-fournir-de-leau-a-votre-domicile",
+  "has_long_title": "has_long_title",
+  "answers": [
+  {
+  "answer": "Elle est pompée à ma maison en utilisant les eaux des rivières/ lacs/nappe fréatique à proximité et via un réseau d'approvisionnement national efficace",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10881
+  },
+  {
+  "answer": "L'eau est pompée jusqu'à ma maison à plus de 100 km de sa source à l'aide de combustibles fossiles",
+  "point": "3",
+  "behavior": "none",
+  "POSTID": 10881
+  },
+  {
+  "answer": "L'eau est pompée dans ma maison à partir d'un puits local utilisant des combustibles fossiles",
+  "point": "2",
+  "behavior": "none",
+  "POSTID": 10881
+  },
+  {
+  "answer": "L'eau est pompée jusqu'à ma maison à partir d'un puits local utilisant de l'énergie renouvelable",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10881
+  },
+  {
+  "answer": "L'eau courante n'atteint pas ma maison et je compte sur des camions qui utilisent des combustibles fossiles",
+  "point": "1",
+  "behavior": "none",
+  "POSTID": 10881
+  },
+  {
+  "answer": "Une autre option",
+  "point": "1",
+  "behavior": "normal",
+  "POSTID": 10881
+  }
+  ]
+  },
+  {
+  "post_title": "Quels changements durables avez-vous apportés à votre maison jusqu'à présent ?",
+  "slug": "quels-changements-durables-avez-vous-apportes-a-votre-maison-jusqua-present",
+  "has_long_title": "normal",
+  "answers": [
+  {
+  "answer": "Recycler",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10882
+  },
+  {
+  "answer": "Installation de panneaux solaires",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10882
+  },
+  {
+  "answer": "Réduire la quantité de déchets",
+  "point": "1",
+  "behavior": "none",
+  "POSTID": 10882
+  },
+  {
+  "answer": "Pour être honnête, aucune de ces options",
+  "point": "1",
+  "behavior": "none",
+  "POSTID": 10882
+  },
+  {
+  "answer": "Réduire la consommation d'eau",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10882
+  }
+  ]
+  },
+  {
+  "post_title": "Quel est votre moyen principal de transport principal ?",
+  "slug": "quel-est-votre-moyen-principal-de-transport-principal",
+  "has_long_title": "normal",
+  "answers": [
+  {
+  "answer": "voiture",
+  "point": "1",
+  "behavior": "none",
+  "POSTID": 10883
+  },
+  {
+  "answer": "Moto",
+  "point": "2",
+  "behavior": "none",
+  "POSTID": 10883
+  },
+  {
+  "answer": "Bus, train ou autre moyen de transport courant",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10883
+  },
+  {
+  "answer": "Vélo ou marcher",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10883
+  }
+  ]
+  },
+  {
+  "post_title": "Comment réduisez-vous la consommation de plastique à usage unique ?",
+  "slug": "comment-reduisez-vous-la-consommation-de-plastique-a-usage-unique",
+  "has_long_title": "has_long_title",
+  "answers": [
+  {
+  "answer": "J'utilise ma propre bouteille d'eau réutilisable au lieu d'acheter des bouteilles d'eau en plastique",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10884
+  },
+  {
+  "answer": "J'évite d'utiliser des pailles, des couverts en plastique et des cotons-tiges",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10884
+  },
+  {
+  "answer": "J'utilise des contenants réutilisables au lieu de sacs en plastique pour emballer ma nourriture",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10884
+  },
+  {
+  "answer": "Pour être honnête, aucune de ces options",
+  "point": "1",
+  "behavior": "none",
+  "POSTID": 10884
+  },
+  {
+  "answer": "J’applique tous ces points",
+  "point": "4",
+  "behavior": "all",
+  "POSTID": 10884
+  }
+  ]
+  },
+  {
+  "post_title": "Coupez-vous l'eau pendant que vous vous brossez les dents ?",
+  "slug": "coupez-vous-leau-pendant-que-vous-vous-brossez-les-dents",
+  "has_long_title": "normal",
+  "answers": [
+  {
+  "answer": "Oui",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10885
+  },
+  {
+  "answer": "Non",
+  "point": "1",
+  "behavior": "none",
+  "POSTID": 10885
+  },
+  {
+  "answer": "Ça m’arrive de le faire",
+  "point": "3",
+  "behavior": "none",
+  "POSTID": 10885
+  }
+  ]
+  },
+  {
+  "post_title": "Qu'utilisez-vous pour emballer et transporter vos courses ?",
+  "slug": "quutilisez-vous-pour-emballer-et-transporter-vos-courses",
+  "has_long_title": "normal",
+  "answers": [
+  {
+  "answer": "Des sacs en papier",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10886
+  },
+  {
+  "answer": "Des sac plastique",
+  "point": "1",
+  "behavior": "none",
+  "POSTID": 10886
+  },
+  {
+  "answer": "Papier ou plastique recyclé plus tard",
+  "point": "3",
+  "behavior": "none",
+  "POSTID": 10886
+  },
+  {
+  "answer": "Sacs en tissu réutilisables",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10886
+  }
+  ]
+  },
+  {
+  "post_title": "Comment faites-vous habituellement vos courses alimentaires ?",
+  "slug": "comment-faites-vous-habituellement-vos-courses-alimentaires",
+  "has_long_title": "has_long_title",
+  "answers": [
+  {
+  "answer": "La plupart du temps je consomme des produits locaux",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10887
+  },
+  {
+  "answer": "J’achete des aliments bio",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10887
+  },
+  {
+  "answer": "Je n'achète que des produits locaux",
+  "point": "2",
+  "behavior": "none",
+  "POSTID": 10887
+  },
+  {
+  "answer": "J'achète tout ce qui est disponible au supermarché",
+  "point": "1",
+  "behavior": "none",
+  "POSTID": 10887
+  }
+  ]
+  },
+  {
+  "post_title": "Comment faites-vous entendre votre voix ?",
+  "slug": "comment-faites-vous-entendre-votre-voix",
+  "has_long_title": "has_long_title",
+  "answers": [
+  {
+  "answer": "J’en parle autour de moi à mes amis et à ma famille",
+  "point": "2",
+  "behavior": "none",
+  "POSTID": 10888
+  },
+  {
+  "answer": "Par correspondance gouvernementale",
+  "point": "3",
+  "behavior": "none",
+  "POSTID": 10888
+  },
+  {
+  "answer": "Rencontre avec le Conseil Municipal",
+  "point": "4",
+  "behavior": "normal",
+  "POSTID": 10888
+  },
+  {
+  "answer": "Je participe à des marches solidaires",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10888
+  },
+  {
+  "answer": "Je signe des pétitions",
+  "point": "4",
+  "behavior": "none",
+  "POSTID": 10888
+  },
+  {
+  "answer": "Je fais du bénévolat pour soutenir le travail environnemental",
+  "point": "3",
+  "behavior": "none",
+  "POSTID": 10888
+  },
+  {
+  "answer": "Aucune réponse",
+  "point": "1",
+  "behavior": "none",
+  "POSTID": 10888
+  }
+  ]
+  }
+  ]
