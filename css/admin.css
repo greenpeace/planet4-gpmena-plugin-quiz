@@ -1,0 +1,21 @@
+
+  .ptsnumber{width:50px}
+  .flex{display:flex;}
+   .row_options_quiz {
+     display: flex;
+     align-content: center;
+     align-items: center;
+     margin:6px 0;
+ }
+   .nsr_inpt{width:650px;height: 50px;margin:0 12px;}
+   .row_options_quiz textarea{width:650px;margin:0 12px;font-size:20px;}
+   .myadmin_quiz_fld_wrp{font-weight:bold;min-width:100px}
+   .main_row_q_p .answers{margin-left:125px;}
+   .answer_row{display: flex;align-content: space-around;}
+
+
+   .hideme{display: none;}
+   .show_nsr_trigger{margin-left: 12px;}
+  .tabs_admin_quiz_lng {display: flex;width: 250px;justify-content:space-between}
+  .tabs_admin_quiz_lng h1{cursor: pointer;padding: 8px;border: 1px solid #000000;margin-right:2px;}
+  .tabs_admin_quiz_lng h1.selected{background-color: #c7c7c7;}

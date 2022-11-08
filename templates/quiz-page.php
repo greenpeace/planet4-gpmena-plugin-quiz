@@ -1,13 +1,20 @@
 <?php
-
 $ln = get_locale();
 
-// $getlocal = get_locale();
-// switch($getlocal){
-//     case 'en_US': $ln= 'en';break;
-//     case 'fr_FR': $ln= 'fr';break;
-//     case 'ar': $ln= 'ar';break;
-// }
+
+$whitelist = array(
+    '127.0.0.1',
+    '::1'
+);
+
+if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){ 
+    $getlocal = get_locale();
+    switch($getlocal){
+            case 'en_US': $ln= 'en';break;
+            case 'fr_FR': $ln= 'fr';break;
+            case 'ar': $ln= 'ar';break;
+        }
+    }
 
 define( 'PLUGIN_DIR', dirname(__DIR__)  );
 define( 'PLUGINDIRQUIZ', plugin_dir_url(__DIR__) );
@@ -86,6 +93,31 @@ $morForYouArray=array(
         ['id'=>10178,'desc'=>'']
     )
 );
+
+$quiz_data_db = get_option( 'p4menaq_options' );
+
+d($quiz_data_db);
+
+$in=0;
+
+
+foreach($quiz_data_db as $k=>$op){
+    
+    if( strpos($k,'question' ) ){
+        $quiz_data['ar']["question"]["question $in"]=$op;
+    }
+        
+    if( strpos($k,'has_long_title' ) ){
+        $quiz_data['ar']['has_long_title'][]=$op;
+    }
+    
+    $in++;
+}
+
+
+
+ d($quiz_data);
+
 ?>
 <style>
 .page-id-<?php echo $pst->ID;?> .page-content.container{max-width:100%;padding: 0;}
