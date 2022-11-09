@@ -36,7 +36,7 @@ $pts = isset($_GET['pts']) ? $_GET['pts'] : 0;
 wp_enqueue_script('quiz-script', PLUGINDIRQUIZ.'js/quiz.js?v='.time() ,['jquery']);
 wp_enqueue_style( 'slick-css', PLUGINDIRQUIZ.'assets/src/library/css/slick.css', [], false, 'all' );
 wp_enqueue_style( 'slick-theme-css', PLUGINDIRQUIZ.'assets/src/library/css/slick-theme.css', ['slick-css'], false, 'all' );
-wp_enqueue_style( 'quiz-css', PLUGINDIRQUIZ  . 'css/style.css?v='.time(), false, false , 'all' );
+wp_enqueue_style( 'quiz-css', PLUGINDIRQUIZ  . 'css/style.css?v='.time(), [], false , 'all' );
 wp_enqueue_script( 'slick-js', PLUGINDIRQUIZ.'assets/src/library/js/slick.min.js', ['jquery'] );
 wp_enqueue_script( 'carousel-js', ( PLUGINDIRQUIZ ) . 'assets/src/carousel/index.js?v='.time(), ['jquery', 'slick-js'] , null );
 $pst = get_post();
@@ -102,7 +102,7 @@ $morForYouArray=array(
 var templateUrl = "<?php echo get_option('siteurl') . "/$ln/" ;?>";
 var my_slug = "<?php echo $pst->post_name;?>";
 </script>
-<div class="QUIZ-proj-wrapper<?php echo " lang_$ln";?>" ln="<?php echo $ln?>" PID="<?php echo $pst->ID;?>">
+<div class="QUIZ-proj-wrapper<?php echo " lang_$ln";?>" ln="<?php echo $ln?>" PID="<?php echo $pst->ID;?>" style="display:none">
 <div class="toast-container toast-pos-right toast-pos-top">
 <div class="toast" id="toast-name-2">
 <div class="toast-flex">

@@ -184,11 +184,12 @@ jQuery(document).ready(function ($) {
     //console.log('perc' , perc.toFixed(0)+"%" , "cnt:" , cnt  )
     return perc.toFixed(0);
   }
-  function copyToClipboard(element) {
-    var $temp = $("<input>");
-    $("body").append($temp);
-    $temp.val($(element).text()).select();
-    document.execCommand("copy");
-    $temp.remove();
-}
+    
+  if($('.QUIZ-proj-wrapper')){
+    setTimeout(function(){
+      $('.QUIZ-proj-wrapper').css('display','block')
+    },100)
+  }
+
+
 });
