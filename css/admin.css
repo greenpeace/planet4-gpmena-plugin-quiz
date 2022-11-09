@@ -17,5 +17,21 @@
    .hideme{display: none;}
    .show_nsr_trigger{margin-left: 12px;}
   .tabs_admin_quiz_lng {display: flex;width: 250px;justify-content:space-between}
-  .tabs_admin_quiz_lng h1{cursor: pointer;padding: 8px;border: 1px solid #000000;margin-right:2px;}
-  .tabs_admin_quiz_lng h1.selected{background-color: #c7c7c7;}
+  .tabs_admin_quiz_lng a{cursor: pointer;padding: 8px;border: 1px solid #000000;margin-right:2px;}
+  .tabs_admin_quiz_lng a.selected{background-color: #c7c7c7;}
+
+  .pll-dir-ltr textarea.rtl{direction: rtl;}
+  
+
+  .wrapper_admin_qqq .answers{
+    transition: all .5s linear;
+    /* transform: translateY(0px); */
+    opacity: 1;
+    height: 100%;
+  }
+  .wrapper_admin_qqq .answers.dontshow{
+    /* transform: translateY(-30px); */
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }

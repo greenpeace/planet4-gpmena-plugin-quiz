@@ -1,12 +1,9 @@
 <?php
 $ln = get_locale();
-
-
 $whitelist = array(
     '127.0.0.1',
     '::1'
 );
-
 if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){ 
     $getlocal = get_locale();
     switch($getlocal){
@@ -15,7 +12,6 @@ if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
             case 'ar': $ln= 'ar';break;
         }
     }
-
 define( 'PLUGIN_DIR', dirname(__DIR__)  );
 define( 'PLUGINDIRQUIZ', plugin_dir_url(__DIR__) );
 $string = file_get_contents( PLUGIN_DIR."/json/quiz_$ln.json" );
@@ -41,7 +37,6 @@ wp_enqueue_script( 'slick-js', PLUGINDIRQUIZ.'assets/src/library/js/slick.min.js
 wp_enqueue_script( 'carousel-js', ( PLUGINDIRQUIZ ) . 'assets/src/carousel/index.js?v='.time(), ['jquery', 'slick-js'] , null );
 $pst = get_post();
 $id_ar = apply_filters( 'wpml_object_id', $pst->ID, 'object', false, 'ar' );
-
 $resultsArray=array(
         'below_30_1' =>array(
             [
@@ -61,7 +56,6 @@ $resultsArray=array(
             ['id'=>'SF',
             'desc'=>''
             ],
-
         ),
     '30_60_2' =>array(
         ['id'=>5141,'desc'=>''],
@@ -78,9 +72,6 @@ $resultsArray=array(
         ['id'=>2823,'desc'=>''],
     )
 );
-
-
-
 $morForYouArray=array(
     'below_30_1' =>array(
         ['id'=>7783,'desc'=>'']
@@ -93,31 +84,8 @@ $morForYouArray=array(
         ['id'=>10178,'desc'=>'']
     )
 );
-
 $quiz_data_db = get_option( 'p4menaq_options' );
-
-d($quiz_data_db);
-
-$in=0;
-
-
-foreach($quiz_data_db as $k=>$op){
-    
-    if( strpos($k,'question' ) ){
-        $quiz_data['ar']["question"]["question $in"]=$op;
-    }
-        
-    if( strpos($k,'has_long_title' ) ){
-        $quiz_data['ar']['has_long_title'][]=$op;
-    }
-    
-    $in++;
-}
-
-
-
- d($quiz_data);
-
+d($quiz_data_db[$ln]);
 ?>
 <style>
 .page-id-<?php echo $pst->ID;?> .page-content.container{max-width:100%;padding: 0;}
@@ -126,10 +94,8 @@ foreach($quiz_data_db as $k=>$op){
 .page-id-<?php echo $pst->ID;?> {
     background: url("<?php echo plugin_dir_url(__DIR__ );?>/img/bg.png") 1px 1px no-repeat;
 }
-
 </style>
 <script type="text/javascript">
-    
 var templateUrl = "<?php echo get_option('siteurl') . "/$ln/" ;?>";
 var my_slug = "<?php echo $pst->post_name;?>";
 </script>
@@ -155,7 +121,6 @@ var my_slug = "<?php echo $pst->post_name;?>";
                     <img src="<?php echo  plugin_dir_url(__DIR__);?>/img/arrow-right.png" />
                 </div>
             </div>
-
         </div>
         <div class="panelsWrapperOuter hidden">
             <div class="progressBar">
@@ -164,7 +129,6 @@ var my_slug = "<?php echo $pst->post_name;?>";
             <div class="counterPer"><span class="stepNumber">1</span>/<span class="totalSteps">10</span></div>
             <div class="panelsWrapper">
                 <?php $i=0; foreach($json as $item){ $i++;?>
-
                 <div class="panel hidden" step="<?php echo $i;?>">
                     <div class="question"><?php echo $item['post_title'];?></div>
                     <div class="instructions">
@@ -172,7 +136,6 @@ var my_slug = "<?php echo $pst->post_name;?>";
                     </div>
                     <div class="options <?php echo trim($item['has_long_title']);?>">
                         <?php foreach($item['answers'] as $answer){?>
-
                         <label
                             class="thebtn <?php echo  ($answer['behavior'] ? "behavior-".$answer['behavior'] : "");?>"
                             points="<?php echo  $answer['point'];?>">
@@ -183,8 +146,6 @@ var my_slug = "<?php echo $pst->post_name;?>";
                                 <img class="selected hidden"
                                     src="<?php echo  plugin_dir_url(__DIR__);?>/img/checkbox-selected.png" />
                                 <?php }?>
-                                <input name="<?php echo  str_replace("-" , "_" , $item['slug']);?>" type="checkbox"
-                                    class="hidecheck" value="<?php echo  $answer['answer'];?>">
                                 <span><?php echo  $answer['answer'];?></span>
                             </div>
                         </label>
@@ -215,7 +176,6 @@ var my_slug = "<?php echo $pst->post_name;?>";
                 <div class="percentage-phrase">&nbsp;<span
                         class="perc"><?php echo  $pts;?>%</span>&nbsp;<span><?php echo $trand['of people get this result'][$ln];?></span>&nbsp;
                 </div>
-
                 <div class="share-btn flex toast-trigger toast-auto" data-toast="toast-name-2">
                     <div class="inner flex">
                         <img src="<?php echo  plugin_dir_url(__DIR__);?>img/share.png" width="13" height="13" />
@@ -249,7 +209,6 @@ var my_slug = "<?php echo $pst->post_name;?>";
             foreach ($resultsArray[$redirect] as $res) {
                 if($res['id'] != 'SF'){
                 $card = get_post( $res['id'] );
-
                 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $res['id'] ), 'large' );
                 $cats = get_the_category($res['id']);?>
                         <div class="qcard qcard-<?php echo $res['id'];?>">
@@ -275,10 +234,7 @@ var my_slug = "<?php echo $pst->post_name;?>";
                                 <div><a class="btn-quiz btn-quiz-green" target="_blank" href="https://gpmena.secure.force.com/StripePaymentScreen?_gl=1*ntt4hg*_ga*MTgwNzE3Njc3NS4xNjM0MzA2MzM0*_ga_BF1TLGDGBK*MTY2MTg2NzA5NC4xMDguMS4xNjYxODcyNTAxLjAuMC4w">Join Us</a></div>
                             </div>
                         </div>
-
                         <?php }?>
-                        
-                        
                         <?php }}?>
                     </div>
             </div>
@@ -299,13 +255,11 @@ var my_slug = "<?php echo $pst->post_name;?>";
                                         <div class="flxend"><a class="read-more-lnk mt-15" href="<?php echo get_permalink( $res['id'] );?>"><span class="txt"><?php echo $trand['Learn more'][$ln]?></span><span class="bg"></span></a></div>
                                     </div>
                                 </div>
-                                
                             <?php }?>
                         </div>
             </div>
             </div>
             <?php }?>
-
         </div>`
     </div>
 </div>
