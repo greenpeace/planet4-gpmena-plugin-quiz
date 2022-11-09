@@ -27,6 +27,10 @@ foreach( $trand as $k=>$v){
 }
 //d(json_encode($newArr));
 $json = json_decode($string, true);
+$quiz_data_db = get_option( 'p4menaq_options' );
+//echo '<div class="flex">';d($quiz_data_db[$ln]);d($json);echo '</div>';
+
+
 $redirect = isset($_GET['r']) ? $_GET['r'] : '0';
 $pts = isset($_GET['pts']) ? $_GET['pts'] : 0;
 wp_enqueue_script('quiz-script', PLUGINDIRQUIZ.'js/quiz.js?v='.time() ,['jquery']);
@@ -84,8 +88,7 @@ $morForYouArray=array(
         ['id'=>10178,'desc'=>'']
     )
 );
-$quiz_data_db = get_option( 'p4menaq_options' );
-d($quiz_data_db[$ln]);
+
 ?>
 <style>
 .page-id-<?php echo $pst->ID;?> .page-content.container{max-width:100%;padding: 0;}
@@ -128,7 +131,10 @@ var my_slug = "<?php echo $pst->post_name;?>";
             </div>
             <div class="counterPer"><span class="stepNumber">1</span>/<span class="totalSteps">10</span></div>
             <div class="panelsWrapper">
-                <?php $i=0; foreach($json as $item){ $i++;?>
+                <?php $i=0; 
+                //foreach($quiz_data_db[$ln] as $item){
+                foreach($json as $item){
+                     $i++;?>
                 <div class="panel hidden" step="<?php echo $i;?>">
                     <div class="question"><?php echo $item['post_title'];?></div>
                     <div class="instructions">

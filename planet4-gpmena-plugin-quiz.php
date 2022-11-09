@@ -39,6 +39,3 @@ function d($var){
     echo "</code>";
     echo "</pre>";
 }
-
-
-
