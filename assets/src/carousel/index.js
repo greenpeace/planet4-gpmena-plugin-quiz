@@ -17,7 +17,6 @@
                     slidesToShow = 3
                     slidesToScroll = 3
                 }
-                console.log(slidesToShow)
 
             $(".posts-carousel").slick({
                 autoplay: false,

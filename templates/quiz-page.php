@@ -88,7 +88,7 @@ $morForYouArray=array(
         ['id'=>10178,'desc'=>'']
     )
 );
-
+//d($resultsArray[$redirect]);
 ?>
 <style>
 .page-id-<?php echo $pst->ID;?> .page-content.container{max-width:100%;padding: 0;}
@@ -223,9 +223,9 @@ var my_slug = "<?php echo $pst->post_name;?>";
                                 <a href="<?php echo get_permalink( $res['id'] );?>"><img src="<?php echo $image[0];?>" /></a>
                                 </div>
                                     <div class="cardTitle"><?php echo $card->post_title;?></div>
-                                    <div class="cardCat">
+                                    <!-- <div class="cardCat">
                                         <a href="<?php echo $cats[0]->cat_link;?>"><?php echo $cats[0]->cat_name;?></a>
-                                </div>
+                                </div> -->
                                 <div><a class="btn-quiz btn-quiz-green" href="<?php echo get_permalink( $res['id'] );?>">Join Us</a></div>
                             </div>
                         </div>
