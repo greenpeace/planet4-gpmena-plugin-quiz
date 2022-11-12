@@ -45,35 +45,35 @@ $resultsArray=array(
         'below_30_1' =>array(
             [
             'id'=>2813,
-            'desc'=>''
+            'desc'=>'Renewable energy is cheap, sustainable, and already making our planet more green and peaceful. It disrupts corporate energy...'
             ],
             [
             'id'=>2802,
-            'desc'=>''
+            'desc'=>'Greenpeace has been protecting the environment for decades. We’ve stopped many crimes against the planet and held...'
             ],
             ['id'=>2826,
-            'desc'=>''
+            'desc'=>'We are calling on people around the world to create a “Million Acts of Blue” — actions to push retailers, corporations and businesses to...'
             ],
             ['id'=>8355,
-            'desc'=>''
+            'desc'=>'The series of webinars organized by Greenpeace and the Arab Forum for Alternatives around “An alternative economy...'
             ],
             ['id'=>'SF',
-            'desc'=>''
+            'desc'=>'Make a special online donation with a regular or one-off contribution and support Greenpeace MENA’s climate action.'
             ],
         ),
     '30_60_2' =>array(
         ['id'=>5141,'desc'=>''],
         ['id'=>9446,'desc'=>''],
-        ['id'=>6169,'desc'=>''],
-        ['id'=>'SF','desc'=>''],
-        ['id'=>2789,'desc'=>'']
+        ['id'=>6169,'desc'=>'Are you concerned about an environmental issue? The solution is now one step away!'],
+        ['id'=>'SF','desc'=>'Make a special online donation with a regular or one-off contribution and support Greenpeace MENA’s climate action.'],
+        ['id'=>2789,'desc'=>"Climate change is happening. Those who have contributed the least to the climate crisis are the most at risk. That/'s why a growing..."]
     ),
     'above_60_3' =>array(
-        ['id'=>2789,'desc'=>''],
-        ['id'=>2393,'desc'=>''],
-        ['id'=>8670,'desc'=>''],
-        ['id'=>'SF','desc'=>''],
-        ['id'=>2823,'desc'=>''],
+        ['id'=>2789,'desc'=>"Climate change is happening. Those who have contributed the least to the climate crisis are the most at risk. That/'s why a growing..."],
+        ['id'=>2393,'desc'=>'Sign up to learn about volunteering with Greenpeace. We will send you details about relevant Greenpeace events, activities and upcoming meetings.'],
+        ['id'=>8670,'desc'=>'Our Ummah is amazing. YOU are amazing. We’re resilient. We’re smart. We’re in all corners of the world. With all of us working'],
+        ['id'=>'SF','desc'=>'Make a special online donation with a regular or one-off contribution and support Greenpeace MENA’s climate action.'],
+        ['id'=>2823,'desc'=>'Now we have a chance to turn things around, by putting the most vulnerable and important parts of our oceans off-limits to destructive'],
     )
 );
 $morForYouArray=array(
@@ -81,11 +81,13 @@ $morForYouArray=array(
         ['id'=>7783,'desc'=>'']
     ),
     '30_60_2' =>array(
+        ['id'=>100000000,'desc'=>''],
         ['id'=>100000000,'desc'=>'']
     ),
     'above_60_3' =>array(
-        ['id'=>10238,'desc'=>''],
-        ['id'=>10178,'desc'=>'']
+        ['id'=>100000000,'desc'=>''],
+        ['id'=>10238,'desc'=>'In a letter addressed to the Secretary-General of the League of Arab States Ahmed Aboul Gheit, Greenpeace called for coordination between member states to hold an urgent meeting for Arab…'],
+        ['id'=>10178,'desc'=>'Following the sand and dust storm that is affecting several countries in the Middle East, such as Iraq, Kuwait, Saudi Arabia and the United Arab Emirates, which started yesterday and…']
     )
 );
 //d($resultsArray[$redirect]);
