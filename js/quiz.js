@@ -29,9 +29,7 @@ jQuery(document).ready(function ($) {
 
 
 function showToast(source=null,html){
-  if($(source).hasClass('clicked')) return;
-
-    var tostContent = html ? html : '<span><b>The result URl</b> has been copied to the clipboard.</span><a href="#" class="close-toast">X</a>';
+    var tostContent = html ? html+'<a href="#" class="close-toast">X</a>' : '<span><b>The result URl</b> has been copied to the clipboard.</span><a href="#" class="close-toast">X</a>';
     $('.toast').html(tostContent)
 
     //$(this).addClass('clicked').html('Copied');
@@ -39,12 +37,25 @@ function showToast(source=null,html){
     //navigator.clipboard.writeText(currentURL);
 
     datatoast = $("#toast-name-2");
-    if ( $( datatoast ).hasClass( "toast-auto" ) && !$("#" + datatoast).is(":visible") ){ 
-      $("#" + datatoast).fadeIn(400).delay(2000).fadeOut(400);
-    }
-    else if ( !$("#" + datatoast).is(":visible") ){
-      $("#" + datatoast).fadeIn(400);
-    };
+    
+    datatoast.parent().css({
+      'display': 'flex',
+      'position': 'absolute',
+      'top': '10px',
+      'margin-left': '-50%',
+      'left': '50%',
+      'right': '0'
+    });
+    datatoast.css('display','flex')
+    $( datatoast).fadeIn(400).delay(1500).fadeOut(400);
+
+    // if ( $( datatoast ).hasClass( "toast-auto" ) && !$( datatoast).is(":visible") ){ 
+    //   console.log('up')
+    // }
+    // else if ( !$( datatoast).is(":visible") ){
+    //   console.log('doewn')
+    //   $( datatoast).fadeIn(400);
+    // };
 }
 
 
@@ -168,13 +179,13 @@ function showToast(source=null,html){
   
     
     var lengtheSelected = $optionsParent.find('.thebtn.selected').length;
-    console.log(lengtheSelected,'lengtheSelected')
 
     if( $optionsParent.attr('myrule') == 'max_2' && lengtheSelected == 2 && !$(this).hasClass('selected')){
     
-      $(".toast").removeClass('clicked');
-      $(".toast").html('<span>You can only select <strong>2</strong> options!</span>');
+      
       showToast('thebtn','<span>You can only select <strong>2</strong> options!</span>')
+      //window.scrollTo({top: 0, behavior: 'smooth'});
+      $('html, body').animate({scrollTop:0},'50');
       return;
         
     }

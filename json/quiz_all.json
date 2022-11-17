@@ -297,7 +297,7 @@
         "answer_fr": "Oui",
         "answer_ar": "نعم",
         "point": "4",
-        "behavior": "",
+        "behavior": "none",
         "POSTID": 73
       },
       {
@@ -305,7 +305,7 @@
         "answer_fr": "Non",
         "answer_ar": "كلا",
         "point": "1",
-        "behavior": "",
+        "behavior": "none",
         "POSTID": 73
       },
       {
@@ -313,7 +313,7 @@
         "answer_fr": "Ça m’arrive de le faire",
         "answer_ar": "في بعض الأحيان",
         "point": "3",
-        "behavior": "",
+        "behavior": "none",
         "POSTID": 73
       }
     ]
@@ -324,6 +324,7 @@
     "post_title_ar": "ماذا تستخدم لتعبئة وحمل البقالة الخاصة بك؟",
     "slug": "what-do-you-use-to-carry-your-groceries",
     "has_long_title": "",
+    "rule": "max_2",
     "answers": [
       {
         "answer_en": "Paper bags",
@@ -371,7 +372,7 @@
         "answer_fr": "La plupart du temps je consomme des produits locaux",
         "answer_ar": "نادراً ما أفعل ذلك، معظمه يُنتج محلياً",
         "point": "4",
-        "behavior": "",
+        "behavior": "none",
         "POSTID": 84
       },
       {
@@ -379,7 +380,7 @@
         "answer_fr": "J’achete des aliments bio",
         "answer_ar": "أشتري طعاماً عضوياً",
         "point": "4",
-        "behavior": "",
+        "behavior": "none",
         "POSTID": 84
       },
       {
@@ -387,7 +388,7 @@
         "answer_fr": "Je n'achète que des produits locaux",
         "answer_ar": "أشتري منتجات محلية فقط",
         "point": "2",
-        "behavior": "",
+        "behavior": "none",
         "POSTID": 84
       },
       {
@@ -395,7 +396,7 @@
         "answer_fr": "J'achète tout ce qui est disponible au supermarché",
         "answer_ar": "أشتري كل ما هو متوفر في السوبر ماركت",
         "point": "1",
-        "behavior": "",
+        "behavior": "none",
         "POSTID": 84
       }
     ]
