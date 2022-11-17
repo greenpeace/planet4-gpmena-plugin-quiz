@@ -63,8 +63,8 @@ if(isset($_GET['DEBB'])){
     padding: 0;
 }
 
-.page-id-<?php echo $pst->ID;?>.article-h1,
-.page-id-<?php echo $pst->ID;?>.page-header {
+.page-id-<?php echo $pst->ID;?> .article-h1,
+.page-id-<?php echo $pst->ID;?> .page-header {
     display: none
 }
 .page-id-<?php echo $pst->ID;?>
