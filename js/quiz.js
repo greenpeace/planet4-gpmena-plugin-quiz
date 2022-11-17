@@ -26,7 +26,7 @@ jQuery(document).ready(function ($) {
     } );
 }
 }
-
+new SlickCarousel();
 
 function showToast(source=null,html){
     var tostContent = html ? html+'<a href="#" class="close-toast">X</a>' : '<span><b>The result URl</b> has been copied to the clipboard.</span><a href="#" class="close-toast">X</a>';
@@ -167,6 +167,7 @@ function showToast(source=null,html){
       window.location.href = templateUrl+'/'+my_slug+'?r='+redirect+'&pts='+perc;
       $('.page-header-title').closest('.container').css('display','none');
       
+
     }
 
     
