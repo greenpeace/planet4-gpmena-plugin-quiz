@@ -1,0 +1,468 @@
+[
+  {
+    "post_title_en": "Where does the waste from your home go?",
+    "post_title_fr": "Où vont vos déchets ménagères",
+    "post_title_ar": "أين تذهب نفاياتك المنزلية؟",
+    "slug": "where-does-the-waste-from-your-home-go",
+    "has_long_title": "",
+    "answers": [
+      {
+        "answer_en": "Recycling Facility",
+        "answer_fr": "Des établissements de recyclage",
+        "answer_ar": "مُنشأة لإعادة التدوير",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 33
+      },
+      {
+        "answer_en": "Landfill",
+        "answer_fr": "Bureau des déchets",
+        "answer_ar": "مكبّ النفايات",
+        "point": "3",
+        "behavior": "",
+        "POSTID": 33
+      },
+      {
+        "answer_en": "Zero waste, I compost and produce minimal non-organic waste",
+        "answer_fr": "Zéro Déchet, je composte et génère un minimum de déchets inorganiques",
+        "answer_ar": "صفر نفايات، أقوم بالتسميد وأُنتج أقل قدر من النفايات غير العضوية",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 33
+      },
+      {
+        "answer_en": "I don’t know",
+        "answer_fr": "Je ne sais pas",
+        "answer_ar": "لا أعلم",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 33
+      },
+      {
+        "answer_en": "None of these",
+        "answer_fr": "Aucune réponse",
+        "answer_ar": "لا شيء من هذه الخيارات",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 33
+      }
+    ]
+  },
+  {
+    "post_title_en": "How aware are you of your carbon footprint?",
+    "post_title_fr": "Connaissez-vous bien votre empreinte carbone ?",
+    "post_title_ar": "ما مدى معرفتك ببصمتك الكربونية؟",
+    "slug": "how-aware-are-you-of-your-carbon-footprint",
+    "has_long_title": "has_long_title",
+    "answers": [
+      {
+        "answer_en": "I have clear understanding of the impact of the products I purchase on the environment and climate",
+        "answer_fr": "J'ai une compréhension claire de l'impact des produits que j'achète sur l'environnement et le climat",
+        "answer_ar": "لدي فهم واضح لتأثير المنتجات التي أشتريها على البيئة والمناخ",
+        "point": "4",
+        "behavior": "none",
+        "POSTID": 40
+      },
+      {
+        "answer_en": "I understand the basic principles around the impact of purchasing imported products and those manufactured without/minimal consideration of impacts",
+        "answer_fr": "Je comprends les principes de base concernant l'achat de produits importés et manufacturés sans observant des impacts",
+        "answer_ar": "أفهم المبادئ الأساسية حول تأثير شراء المنتجات المستوردة وتلك المصنعة بدون/ مراعاة الحد الأدنى من التأثيرات",
+        "point": "3",
+        "behavior": "none",
+        "POSTID": 40
+      },
+      {
+        "answer_en": "I am not aware that my choices have any impact on the climate and environment",
+        "answer_fr": "Je ne savais pas que les produits que je consomme ont un impact sur le climat",
+        "answer_ar": "لستُ مدركاً بأن خياراتي لها أي تأثير على المناخ والبيئة",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 40
+      }
+    ]
+  },
+  {
+    "post_title_en": "Are you aware of the amount of energy utilized to bring water to your home?",
+    "post_title_fr": "Connaissez-vous la quantité d'énergie utilisée pour fournir de l'eau à votre domicile ?",
+    "post_title_ar": "هل أنت على دراية بكمية الطاقة المستخدمة لإيصال المياه إلى منزلك؟",
+    "slug": "are-you-aware-of-the-amount-of-energy-utilized-to-bring-water-to-your-home",
+    "has_long_title": "has_long_title",
+    "answers": [
+      {
+        "answer_en": "Water to my home is pumped from a river/lake/groundwater nearby through an efficient national grid",
+        "answer_fr": "Elle est pompée à ma maison en utilisant les eaux des rivières/ lacs/nappe fréatique à proximité et via un réseau d'approvisionnement national efficace",
+        "answer_ar": "يتم ضخّ المياه إلى منزلي باستخدام مياه نهر/ بحيرة / مياه جوفية قريبة وعبر شبكة إمدادات وطنية فعالة",
+        "point": "4",
+        "behavior": "none",
+        "POSTID": 48
+      },
+      {
+        "answer_en": "Water to my home is pumped more than 100km from its source using fossil fuels",
+        "answer_fr": "L'eau est pompée jusqu'à ma maison à plus de 100 km de sa source à l'aide de combustibles fossiles",
+        "answer_ar": "يتم ضخّ المياه إلى منزلي على بعد أكثر من 100 كيلومتر من مصدرها باستخدام الوقود الأحفوري",
+        "point": "3",
+        "behavior": "none",
+        "POSTID": 48
+      },
+      {
+        "answer_en": "Water to my home is pumped from a local well using fossil fuels",
+        "answer_fr": "L'eau est pompée dans ma maison à partir d'un puits local utilisant des combustibles fossiles",
+        "answer_ar": "يتم ضخّ المياه إلى منزلي من بئر محلي باستخدام الوقود الأحفوري",
+        "point": "2",
+        "behavior": "none",
+        "POSTID": 48
+      },
+      {
+        "answer_en": "Water to my home is pumped from a local well using renewable energy",
+        "answer_fr": "L'eau est pompée jusqu'à ma maison à partir d'un puits local utilisant de l'énergie renouvelable",
+        "answer_ar": "يتم ضخ المياه إلى منزلي من بئر محلي باستخدام الطاقة المتجددة",
+        "point": "4",
+        "behavior": "none",
+        "POSTID": 48
+      },
+      {
+        "answer_en": "I don’t have running water to my home and depend on trucks that utilise fossil fuels",
+        "answer_fr": "L'eau courante n'atteint pas ma maison et je compte sur des camions qui utilisent des combustibles fossiles",
+        "answer_ar": "المياه الجارية لا تصل إلى منزلي وأعتمد على الشاحنات التي تستخدم الوقود الأحفوري",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 48
+      },
+      {
+        "answer_en": "Other",
+        "answer_fr": "Une autre option",
+        "answer_ar": "خيارٌ آخر",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 48
+      }
+    ]
+  },
+  {
+    "post_title_en": "What sustainable changes have you made at home so far?",
+    "post_title_fr": "Quels changements durables avez-vous apportés à votre maison jusqu'à présent ?",
+    "post_title_ar": "ما هي التغييرات المُستدامة التي أجريتها في منزلك حتى الآن؟",
+    "slug": "what-sustainable-changes-have-you-made-at-home-so-far",
+    "has_long_title": "",
+    "answers": [
+      {
+        "answer_en": "Recycling",
+        "answer_fr": "Recycler",
+        "answer_ar": "إعادة التدوير",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 55
+      },
+      {
+        "answer_en": "Installing solar panels",
+        "answer_fr": "Installation de panneaux solaires",
+        "answer_ar": "تركيب ألواح طاقة شمسية",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 55
+      },
+      {
+        "answer_en": "Reducing waste",
+        "answer_fr": "Réduire la quantité de déchets",
+        "answer_ar": "تقليل كمية النفايات",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 55
+      },      
+      {
+        "answer_en": "Reducing water consumption",
+        "answer_fr": "Réduire la consommation d'eau",
+        "answer_ar": "التقليل من استهلاك المياه",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 55
+      },{
+        "answer_en": "None of these",
+        "answer_fr": "Aucune réponse",
+        "answer_ar": "لا شيء من هذه الخيارات",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 55
+      }
+    ]
+  },
+  {
+    "post_title_en": "Your main form of transportation is",
+    "post_title_fr": "Quel est votre moyen principal de transport principal ?",
+    "post_title_ar": "وسيلة النقل الرئيسية الخاصة بك هي:",
+    "slug": "your-main-form-of-transportation-is",
+    "has_long_title": "",
+    "rule": "max_2",
+    "answers": [
+      {
+        "answer_en": "Car",
+        "answer_fr": "voiture",
+        "answer_ar": "سيارة",
+        "point": "1",
+        "behavior": "",
+        "POSTID": 61
+      },
+      {
+        "answer_en": "Motorcycle",
+        "answer_fr": "Moto",
+        "answer_ar": "دراجة نارية",
+        "point": "2",
+        "behavior": "",
+        "POSTID": 61
+      },
+      {
+        "answer_en": "Bus, train or other rapid transit",
+        "answer_fr": "Bus, train ou autre moyen de transport courant",
+        "answer_ar": "الحافلة، القطار أو غيرها من وسائل النقل المشترك",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 61
+      },
+      {
+        "answer_en": "Bicycle or walking",
+        "answer_fr": "Vélo ou marcher",
+        "answer_ar": "ركوب الدراجة أو المشي",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 61
+      },
+      {
+        "answer_en": "Electric Scooter or Electric car",
+        "answer_fr": null,
+        "answer_ar": "سكوتر كهربائي أو سيارة كهربائية",
+        "point": "5",
+        "behavior": "",
+        "POSTID": 61
+      }
+    ]
+  },
+  {
+    "post_title_en": "How do you reduce single-use of plastic?",
+    "post_title_fr": "Comment réduisez-vous la consommation de plastique à usage unique ?",
+    "post_title_ar": "كيف تقلّل استهلاك البلاستيك أحادي الاستخدام؟",
+    "slug": "how-do-you-reduce-single-use-of-plastic",
+    "has_long_title": "has_long_title",
+    "answers": [
+      {
+        "answer_en": "I bring my own reusable water bottle instead of buying plastic water bottles",
+        "answer_fr": "J'utilise ma propre bouteille d'eau réutilisable au lieu d'acheter des bouteilles d'eau en plastique",
+        "answer_ar": "أستخدم زجاجة مياه خاصة بي قابلة لإعادة الاستخدام بدلاً من شراء عبوات المياه البلاستيكية",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 67
+      },
+      {
+        "answer_en": "I avoid using plastic straws, cutlery and cotton buds",
+        "answer_fr": "J'évite d'utiliser des pailles, des couverts en plastique et des cotons-tiges",
+        "answer_ar": "أتجنب استخدام قشّة الشرب وأدوات المائدة البلاستيكية وأعواد تنظيف الأذن القطنية",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 67
+      },
+      {
+        "answer_en": "I use reusable containers instead of plastic bags when packing my lunch",
+        "answer_fr": "J'utilise des contenants réutilisables au lieu de sacs en plastique pour emballer ma nourriture",
+        "answer_ar": "أستخدم حاويات قابلة لإعادة الاستخدام بدلاً من الأكياس البلاستيكية لتوضيب طعامي",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 67
+      },
+      {
+        "answer_en": "None of the above to be honest",
+        "answer_fr": "Pour être honnête, aucune de ces options",
+        "answer_ar": "لا شيء من هذه الخيارات لأكون صادقاً",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 67
+      },
+      {
+        "answer_en": "I do all of those",
+        "answer_fr": "J’applique tous ces points",
+        "answer_ar": "أطبّق كل ما سبق",
+        "point": "4",
+        "behavior": "all",
+        "POSTID": 67
+      }
+    ]
+  },
+  {
+    "post_title_en": "Do you turn off the water while you brush your teeth?",
+    "post_title_fr": "Coupez-vous l'eau pendant que vous vous brossez les dents ?",
+    "post_title_ar": "هل تغلق الماء أثناء تنظيف أسنانك؟",
+    "slug": "do-you-turn-off-the-water-while-you-brush-your-teeth",
+    "has_long_title": "",
+    "answers": [
+      {
+        "answer_en": "Yes",
+        "answer_fr": "Oui",
+        "answer_ar": "نعم",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 73
+      },
+      {
+        "answer_en": "Not really",
+        "answer_fr": "Non",
+        "answer_ar": "كلا",
+        "point": "1",
+        "behavior": "",
+        "POSTID": 73
+      },
+      {
+        "answer_en": "Sometimes",
+        "answer_fr": "Ça m’arrive de le faire",
+        "answer_ar": "في بعض الأحيان",
+        "point": "3",
+        "behavior": "",
+        "POSTID": 73
+      }
+    ]
+  },
+  {
+    "post_title_en": "What do you use to carry your groceries?",
+    "post_title_fr": "Qu'utilisez-vous pour emballer et transporter vos courses ?",
+    "post_title_ar": "ماذا تستخدم لتعبئة وحمل البقالة الخاصة بك؟",
+    "slug": "what-do-you-use-to-carry-your-groceries",
+    "has_long_title": "",
+    "answers": [
+      {
+        "answer_en": "Paper bags",
+        "answer_fr": "Des sacs en papier",
+        "answer_ar": "الأكياس الورقية",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 83
+      },
+      {
+        "answer_en": "Plastic bag",
+        "answer_fr": "Des sac plastique",
+        "answer_ar": "كيس بلاستيكي",
+        "point": "1",
+        "behavior": "",
+        "POSTID": 83
+      },
+      {
+        "answer_en": "Paper or plastic that I recycle after",
+        "answer_fr": "Papier ou plastique recyclé plus tard",
+        "answer_ar": "الورق أو البلاستيك الذي أعيد تدويره لاحقاً",
+        "point": "3",
+        "behavior": "",
+        "POSTID": 83
+      },
+      {
+        "answer_en": "Re-usable canvas bags",
+        "answer_fr": "Sacs en tissu réutilisables",
+        "answer_ar": "أكياس قماشية قابلة لإعادة الاستخدام",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 83
+      }
+    ]
+  },
+  {
+    "post_title_en": "How do you mainly shop for food?",
+    "post_title_fr": "Comment faites-vous habituellement vos courses alimentaires ?",
+    "post_title_ar": "كيف تتسوّق عادةً لشراء الطعام؟",
+    "slug": "how-do-you-mainly-shop-for-food",
+    "has_long_title": "has_long_title",
+    "answers": [
+      {
+        "answer_en": "I rarely do, most of it is home produced",
+        "answer_fr": "La plupart du temps je consomme des produits locaux",
+        "answer_ar": "نادراً ما أفعل ذلك، معظمه يُنتج محلياً",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 84
+      },
+      {
+        "answer_en": "I buy organic food",
+        "answer_fr": "J’achete des aliments bio",
+        "answer_ar": "أشتري طعاماً عضوياً",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 84
+      },
+      {
+        "answer_en": "I shop for local products only",
+        "answer_fr": "Je n'achète que des produits locaux",
+        "answer_ar": "أشتري منتجات محلية فقط",
+        "point": "2",
+        "behavior": "",
+        "POSTID": 84
+      },
+      {
+        "answer_en": "I buy whatever is available at supermarkets",
+        "answer_fr": "J'achète tout ce qui est disponible au supermarché",
+        "answer_ar": "أشتري كل ما هو متوفر في السوبر ماركت",
+        "point": "1",
+        "behavior": "",
+        "POSTID": 84
+      }
+    ]
+  },
+  {
+    "post_title_en": "How do you make your voice heard?",
+    "post_title_fr": "Comment faites-vous entendre votre voix ?",
+    "post_title_ar": "كيف تجعل صوتك مسموعاً؟",
+    "slug": "how-do-you-make-your-voice-heard",
+    "has_long_title": "has_long_title",
+    "answers": [
+      {
+        "answer_en": "Talking to friends and family",
+        "answer_fr": "J’en parle autour de moi à mes amis et à ma famille",
+        "answer_ar": "التحدث مع الأصدقاء والعائلة",
+        "point": "2",
+        "behavior": "",
+        "POSTID": 97
+      },
+      {
+        "answer_en": "Writing to government",
+        "answer_fr": "Par correspondance gouvernementale",
+        "answer_ar": "مراسلة الحكومة",
+        "point": "3",
+        "behavior": "",
+        "POSTID": 97
+      },
+      {
+        "answer_en": "Meeting with my council",
+        "answer_fr": "Rencontre avec le Conseil Municipal",
+        "answer_ar": "الاجتماع بالمجلس البلدي",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 97
+      },
+      {
+        "answer_en": "Attending rallies",
+        "answer_fr": "Je participe à des marches solidaires",
+        "answer_ar": "المشاركة في المسيرات",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 97
+      },
+      {
+        "answer_en": "Signing petitions",
+        "answer_fr": "Je signe des pétitions",
+        "answer_ar": "توقيع العرائض",
+        "point": "4",
+        "behavior": "",
+        "POSTID": 97
+      },
+      {
+        "answer_en": "Volunteering time to support environmental action",
+        "answer_fr": "Je fais du bénévolat pour soutenir le travail environnemental",
+        "answer_ar": "أتطوّع بوقتي لدعم العمل البيئي",
+        "point": "3",
+        "behavior": ["none"],
+        "POSTID": 97
+      },
+      {
+        "answer_en": "None of these",
+        "answer_fr": "Aucune réponse",
+        "answer_ar": "لا شيء من هذه الخيارات",
+        "point": "1",
+        "behavior": "none",
+        "POSTID": 97
+      }
+    ]
+  }
+]

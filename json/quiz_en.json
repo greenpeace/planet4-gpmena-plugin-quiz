@@ -1,6 +1,8 @@
 [
   {
-    "post_title": "Where does the waste from your home go?",
+    "post_title_en": "Where does the waste from your home go?",
+    "post_title_fr":"",
+    "post_title_ar":"",
     "slug": "where-does-the-waste-from-your-home-go",
     "has_long_title": "",
     "answers": [
@@ -37,7 +39,9 @@
     ]
   },
   {
-    "post_title": "How aware are you of your carbon footprint?",
+    "post_title_en": "How aware are you of your carbon footprint?",
+    "post_title_fr":"",
+    "post_title_ar":"",
     "slug": "how-aware-are-you-of-your-carbon-footprint",
     "has_long_title": "has_long_title",
     "answers": [
@@ -62,7 +66,9 @@
     ]
   },
   {
-    "post_title": "Are you aware of the amount of energy utilized to bring water to your home?",
+    "post_title_en": "Are you aware of the amount of energy utilized to bring water to your home?",
+    "post_title_fr":"",
+    "post_title_ar":"",
     "slug": "are-you-aware-of-the-amount-of-energy-utilized-to-bring-water-to-your-home",
     "has_long_title": "has_long_title",
     "answers": [
@@ -105,7 +111,9 @@
     ]
   },
   {
-    "post_title": "What sustainable changes have you made at home so far?",
+    "post_title_en": "What sustainable changes have you made at home so far?",
+    "post_title_fr":"",
+    "post_title_ar":"",
     "slug": "what-sustainable-changes-have-you-made-at-home-so-far",
     "has_long_title": "",
     "answers": [
@@ -142,7 +150,9 @@
     ]
   },
   {
-    "post_title": "Your main form of transportation is",
+    "post_title_en": "Your main form of transportation is",
+    "post_title_fr":"",
+    "post_title_ar":"",
     "slug": "your-main-form-of-transportation-is",
     "has_long_title": "",
     "answers": [
@@ -179,7 +189,9 @@
     ]
   },
   {
-    "post_title": "How do you reduce single-use of plastic?",
+    "post_title_en": "How do you reduce single-use of plastic?",
+    "post_title_fr":"",
+    "post_title_ar":"",
     "slug": "how-do-you-reduce-single-use-of-plastic",
     "has_long_title": "has_long_title",
     "answers": [
@@ -216,7 +228,9 @@
     ]
   },
   {
-    "post_title": "Do you turn off the water while you brush your teeth?",
+    "post_title_en": "Do you turn off the water while you brush your teeth?",
+    "post_title_fr":"",
+    "post_title_ar":"",
     "slug": "do-you-turn-off-the-water-while-you-brush-your-teeth",
     "has_long_title": "",
     "answers": [
@@ -241,7 +255,9 @@
     ]
   },
   {
-    "post_title": "What do you use to carry your groceries?",
+    "post_title_en": "What do you use to carry your groceries?",
+    "post_title_fr":"",
+    "post_title_ar":"",
     "slug": "what-do-you-use-to-carry-your-groceries",
     "has_long_title": "",
     "answers": [
@@ -272,7 +288,9 @@
     ]
   },
   {
-    "post_title": "How do you mainly shop for food?",
+    "post_title_en": "How do you mainly shop for food?",
+    "post_title_fr":"",
+    "post_title_ar":"",
     "slug": "how-do-you-mainly-shop-for-food",
     "has_long_title": "has_long_title",
     "answers": [
@@ -303,7 +321,9 @@
     ]
   },
   {
-    "post_title": "How do you make your voice heard?",
+    "post_title_en": "How do you make your voice heard?",
+    "post_title_fr":"",
+    "post_title_ar":"",
     "slug": "how-do-you-make-your-voice-heard",
     "has_long_title": "has_long_title",
     "answers": [

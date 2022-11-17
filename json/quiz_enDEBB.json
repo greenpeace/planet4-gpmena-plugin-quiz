@@ -1,0 +1,107 @@
+[
+    {
+      "post_title": "Where does the waste from your home go?",
+      "slug": "where-does-the-waste-from-your-home-go",
+      "has_long_title": "",
+      "answers": [
+        {
+          "answer": "Recycling Facility",
+          "point": "4",
+          "behavior": "",
+          "POSTID": 33
+        },
+        {
+          "answer": "Landfill",
+          "point": "3",
+          "behavior": "",
+          "POSTID": 33
+        },
+        {
+          "answer": "Zero waste, I compost and produce minimal non-organic waste",
+          "point": "4",
+          "behavior": "",
+          "POSTID": 33
+        },
+        {
+          "answer": "I don’t know",
+          "point": "1",
+          "behavior": "none",
+          "POSTID": 33
+        },
+        {
+          "answer": "None of these",
+          "point": "1",
+          "behavior": "none",
+          "POSTID": 33
+        }
+      ]
+    },
+    {
+      "post_title": "How aware are you of your carbon footprint?",
+      "slug": "how-aware-are-you-of-your-carbon-footprint",
+      "has_long_title": "has_long_title",
+      "answers": [
+        {
+          "answer": "I have clear understanding of the impact of the products I purchase on the environment and climate",
+          "point": "4",
+          "behavior": "",
+          "POSTID": 40
+        },
+        {
+          "answer": "I understand the basic principles around the impact of purchasing imported products and those manufactured without/minimal consideration of impacts",
+          "point": "3",
+          "behavior": "",
+          "POSTID": 40
+        },
+        {
+          "answer": "I am not aware that my choices have any impact on the climate and environment",
+          "point": "1",
+          "behavior": "",
+          "POSTID": 40
+        }
+      ]
+    },
+    {
+      "post_title": "Are you aware of the amount of energy utilized to bring water to your home?",
+      "slug": "are-you-aware-of-the-amount-of-energy-utilized-to-bring-water-to-your-home",
+      "has_long_title": "has_long_title",
+      "answers": [
+        {
+          "answer": "Water to my home is pumped from a river/lake/groundwater nearby through an efficient national grid",
+          "point": "4",
+          "behavior": "",
+          "POSTID": 48
+        },
+        {
+          "answer": "Water to my home is pumped more than 100km from its source using fossil fuels",
+          "point": "3",
+          "behavior": "",
+          "POSTID": 48
+        },
+        {
+          "answer": "Water to my home is pumped from a local well using fossil fuels",
+          "point": "2",
+          "behavior": "",
+          "POSTID": 48
+        },
+        {
+          "answer": "Water to my home is pumped from a local well using renewable energy",
+          "point": "4",
+          "behavior": "",
+          "POSTID": 48
+        },
+        {
+          "answer": "I don’t have running water to my home and depend on trucks that utilise fossil fuels",
+          "point": "1",
+          "behavior": "",
+          "POSTID": 48
+        },
+        {
+          "answer": "Other",
+          "point": "1",
+          "behavior": "none",
+          "POSTID": 48
+        }
+      ]
+    }]
+  

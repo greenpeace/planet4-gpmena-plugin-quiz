@@ -14,7 +14,9 @@ if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
     }
 define( 'PLUGIN_DIR', dirname(__DIR__)  );
 define( 'PLUGINDIRQUIZ', plugin_dir_url(__DIR__) );
-$string = file_get_contents( PLUGIN_DIR."/json/quiz_$ln.json" );
+$string = file_get_contents( PLUGIN_DIR."/json/quiz_all.json" );
+//$string = file_get_contents( PLUGIN_DIR."/json/quiz_enDEBB.json" );
+
 $tran = file_get_contents( PLUGIN_DIR."/json/translation.json" );
 $trand = json_decode($tran, true);
 $newArr = [];
@@ -36,83 +38,52 @@ $pts = isset($_GET['pts']) ? $_GET['pts'] : 0;
 wp_enqueue_script('quiz-script', PLUGINDIRQUIZ.'js/quiz.js?v='.time() ,['jquery']);
 wp_enqueue_style( 'slick-css', PLUGINDIRQUIZ.'assets/src/library/css/slick.css', [], false, 'all' );
 wp_enqueue_style( 'slick-theme-css', PLUGINDIRQUIZ.'assets/src/library/css/slick-theme.css', ['slick-css'], false, 'all' );
-wp_enqueue_style( 'quiz-css', PLUGINDIRQUIZ  . 'css/style.css?v='.time(), [], false , 'all' );
+//wp_enqueue_style( 'quiz-css', PLUGINDIRQUIZ  . 'css/style.css?v='.time(), false , null, 'all' );
 wp_enqueue_script( 'slick-js', PLUGINDIRQUIZ.'assets/src/library/js/slick.min.js', ['jquery'] );
 wp_enqueue_script( 'carousel-js', ( PLUGINDIRQUIZ ) . 'assets/src/carousel/index.js?v='.time(), ['jquery', 'slick-js'] , null );
 $pst = get_post();
 $id_ar = apply_filters( 'wpml_object_id', $pst->ID, 'object', false, 'ar' );
-$resultsArray=array(
-        'below_30_1' =>array(
-            [
-            'id'=>2813,
-            'desc'=>'Renewable energy is cheap, sustainable, and already making our planet more green and peaceful. It disrupts corporate energy...'
-            ],
-            [
-            'id'=>2802,
-            'desc'=>'Greenpeace has been protecting the environment for decades. We’ve stopped many crimes against the planet and held...'
-            ],
-            ['id'=>2826,
-            'desc'=>'We are calling on people around the world to create a “Million Acts of Blue” — actions to push retailers, corporations and businesses to...'
-            ],
-            ['id'=>8355,
-            'desc'=>'The series of webinars organized by Greenpeace and the Arab Forum for Alternatives around “An alternative economy...'
-            ],
-            ['id'=>'SF',
-            'desc'=>'Make a special online donation with a regular or one-off contribution and support Greenpeace MENA’s climate action.'
-            ],
-        ),
-    '30_60_2' =>array(
-        ['id'=>5141,'desc'=>''],
-        ['id'=>9446,'desc'=>''],
-        ['id'=>6169,'desc'=>'Are you concerned about an environmental issue? The solution is now one step away!'],
-        ['id'=>'SF','desc'=>'Make a special online donation with a regular or one-off contribution and support Greenpeace MENA’s climate action.'],
-        ['id'=>2789,'desc'=>"Climate change is happening. Those who have contributed the least to the climate crisis are the most at risk. That/'s why a growing..."]
-    ),
-    'above_60_3' =>array(
-        ['id'=>2789,'desc'=>"Climate change is happening. Those who have contributed the least to the climate crisis are the most at risk. That/'s why a growing..."],
-        ['id'=>2393,'desc'=>'Sign up to learn about volunteering with Greenpeace. We will send you details about relevant Greenpeace events, activities and upcoming meetings.'],
-        ['id'=>8670,'desc'=>'Our Ummah is amazing. YOU are amazing. We’re resilient. We’re smart. We’re in all corners of the world. With all of us working'],
-        ['id'=>'SF','desc'=>'Make a special online donation with a regular or one-off contribution and support Greenpeace MENA’s climate action.'],
-        ['id'=>2823,'desc'=>'Now we have a chance to turn things around, by putting the most vulnerable and important parts of our oceans off-limits to destructive'],
-    )
-);
-$morForYouArray=array(
-    'below_30_1' =>array(
-        ['id'=>7783,'desc'=>'']
-    ),
-    '30_60_2' =>array(
-        ['id'=>100000000,'desc'=>''],
-        ['id'=>100000000,'desc'=>'']
-    ),
-    'above_60_3' =>array(
-        ['id'=>100000000,'desc'=>''],
-        ['id'=>10238,'desc'=>'In a letter addressed to the Secretary-General of the League of Arab States Ahmed Aboul Gheit, Greenpeace called for coordination between member states to hold an urgent meeting for Arab…'],
-        ['id'=>10178,'desc'=>'Following the sand and dust storm that is affecting several countries in the Middle East, such as Iraq, Kuwait, Saudi Arabia and the United Arab Emirates, which started yesterday and…']
-    )
-);
-//d($resultsArray[$redirect]);
+
+include( PLUGIN_DIR."/templates/inc-results-source.php" );
+
+$classDebug="";
+if(isset($_GET['DEBB'])){
+    $classDebug="DEBB";
+}
+
+// if(isset($_GET['DEBB'])){
+//     d($resultsArray[$redirect]);
+//     d($morForYouArray[$redirect]);
+// }
+
 ?>
 <style>
-.page-id-<?php echo $pst->ID;?> .page-content.container{max-width:100%;padding: 0;}
-.page-id-<?php echo $pst->ID;?> .article-h1,
-.page-id-<?php echo $pst->ID;?> .page-header {display: none}
-.page-id-<?php echo $pst->ID;?> {
+.page-id-<?php echo $pst->ID;?>.page-content.container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.page-id-<?php echo $pst->ID;?>.article-h1,
+.page-id-<?php echo $pst->ID;?>.page-header {
+    display: none
+}
+.page-id-<?php echo $pst->ID;?>
+ {
     background: url("<?php echo plugin_dir_url(__DIR__ );?>/img/bg.png") 1px 1px no-repeat;
 }
 </style>
 <script type="text/javascript">
 var templateUrl = "<?php echo get_option('siteurl') . "/$ln/" ;?>";
 var my_slug = "<?php echo $pst->post_name;?>";
+var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>
 </script>
-<div class="QUIZ-proj-wrapper<?php echo " lang_$ln";?>" ln="<?php echo $ln?>" PID="<?php echo $pst->ID;?>" style="display:none">
-<div class="toast-container toast-pos-right toast-pos-top">
-<div class="toast" id="toast-name-2">
-<div class="toast-flex">
-    <span><b>The result URl</b> has been copied to the clipboard.</span>
-    <a href="#" class="close-toast">X</a>
-</div>
-</div>
-</div>
+<div class="QUIZ-proj-wrapper<?php echo " lang_$ln" .($classDebug ? ' DEBB':'') ;?>" ln="<?php echo $ln?>" PID="<?php echo $pst->ID;?>">
+    <div class="toast-container toast-pos-right toast-pos-top">
+        <div class="toast" id="toast-name-2">
+            <div class="toast-flex">
+            </div>
+        </div>
+    </div>
     <div class="quiz_main <?php echo ($redirect != '0' ? ' hidden' :'');?>">
         <div class="panel-start-quiz flex-center-column">
             <div class="quiz_image">
@@ -120,7 +91,7 @@ var my_slug = "<?php echo $pst->post_name;?>";
             </div>
             <div class="quiz_title"><?php echo $pst->post_title;?></div>
             <div class="quiz_content"><?php echo $trand['TAKE_OUR_environmental_quiz'][$ln];?></div>
-            <div class="navig flex-raw-center mt-15">
+            <div class="navig-start flex-raw-center mt-15">
                 <div class="btn-quiz btn-quiz-green pointer btn-startquiz">
                     <span><?php echo $trand['Start Quiz'][$ln];?></span>
                     <img src="<?php echo  plugin_dir_url(__DIR__);?>/img/arrow-right.png" />
@@ -131,18 +102,18 @@ var my_slug = "<?php echo $pst->post_name;?>";
             <div class="progressBar">
                 <div class="progressBarInner"></div>
             </div>
-            <div class="counterPer"><span class="stepNumber">1</span>/<span class="totalSteps">10</span></div>
+            <div class="counterPer"><span class="stepNumber"></span>/<span class="totalSteps"></span></div>
             <div class="panelsWrapper">
                 <?php $i=0; 
                 //foreach($quiz_data_db[$ln] as $item){
                 foreach($json as $item){
                      $i++;?>
                 <div class="panel hidden" step="<?php echo $i;?>">
-                    <div class="question"><?php echo $item['post_title'];?></div>
+                    <div class="question"><?php echo $item['post_title_'.$ln];?></div>
                     <div class="instructions">
                         <?php echo $trand['Select at least one that applies to you to continue'][$ln];?>
                     </div>
-                    <div class="options <?php echo trim($item['has_long_title']);?>">
+                    <div class="options<?php echo ' '. trim($item['has_long_title']);?>" myrule="<?php echo $item['rule'];?>">
                         <?php foreach($item['answers'] as $answer){?>
                         <label
                             class="thebtn <?php echo  ($answer['behavior'] ? "behavior-".$answer['behavior'] : "");?>"
@@ -154,7 +125,7 @@ var my_slug = "<?php echo $pst->post_name;?>";
                                 <img class="selected hidden"
                                     src="<?php echo  plugin_dir_url(__DIR__);?>/img/checkbox-selected.png" />
                                 <?php }?>
-                                <span><?php echo  $answer['answer'];?></span>
+                                <span><?php echo  $answer['answer_'.$ln] ;?><?php if($_GET['DEBB']) echo ' - '.$answer['point'];?></span>
                             </div>
                         </label>
                         <?php }?>
@@ -203,7 +174,7 @@ var my_slug = "<?php echo $pst->post_name;?>";
         </div>
         <div class="actionsWrapper">
             <div class="ResBlock1">
-            <div class="container">
+                <div class="container">
                     <div class="impactfull_title">
                         <?php echo $trand['Take more impactful action'][$ln];?>
                     </div>
@@ -215,57 +186,72 @@ var my_slug = "<?php echo $pst->post_name;?>";
                     <div class="cardsWrapper posts-carousel">
                         <?php if($redirect!='0'){
             foreach ($resultsArray[$redirect] as $res) {
-                if($res['id'] != 'SF'){
-                $card = get_post( $res['id'] );
-                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $res['id'] ), 'large' );
-                $cats = get_the_category($res['id']);?>
-                        <div class="qcard qcard-<?php echo $res['id'];?>">
+                $id = $res['id_'.$ln];
+                
+                if($id != 'SF'){
+                $card = get_post( $id );
+                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $id ), 'large' );
+                $cats = get_the_category($id);?>
+                        <div class="qcard qcard-<?php echo $id;?>">
                             <div class="flexmecol">
                                 <div class="carsImg">
-                                <a href="<?php echo get_permalink( $res['id'] );?>"><img src="<?php echo $image[0];?>" /></a>
+                                    <a href="<?php echo get_permalink( $id );?>"><img
+                                            src="<?php echo $image[0];?>" /></a>
                                 </div>
-                                    <div class="cardTitle"><?php echo $card->post_title;?></div>
-                                    <!-- <div class="cardCat">
+                                <div class="cardTitle"><?php echo $card->post_title;?></div>
+                                <!-- <div class="cardCat">
                                         <a href="<?php echo $cats[0]->cat_link;?>"><?php echo $cats[0]->cat_name;?></a>
                                 </div> -->
-                                <div><a class="btn-quiz btn-quiz-green" href="<?php echo get_permalink( $res['id'] );?>">Join Us</a></div>
+                                <div><a class="btn-quiz btn-quiz-green" idd="<?php echo $id;?>" href="<?php echo get_permalink( $id );?>">Join Us</a></div>
                             </div>
                         </div>
                         <?php }else{?>
-                            <div class="qcard qcard-<?php echo $res['id'];?>">
+                        <div class="qcard qcard-<?php echo $id;?>">
                             <div class="flexmecol">
                                 <div class="carsImg">
-                                <a target="_blank" href="https://gpmena.secure.force.com/StripePaymentScreen?_gl=1*ntt4hg*_ga*MTgwNzE3Njc3NS4xNjM0MzA2MzM0*_ga_BF1TLGDGBK*MTY2MTg2NzA5NC4xMDguMS4xNjYxODcyNTAxLjAuMC4w"><img src="<?php echo  plugin_dir_url(__DIR__);?>/img/incident.JPG" /></a>
+                                    <a target="_blank"
+                                        href="https://gpmena.secure.force.com/StripePaymentScreen?_gl=1*ntt4hg*_ga*MTgwNzE3Njc3NS4xNjM0MzA2MzM0*_ga_BF1TLGDGBK*MTY2MTg2NzA5NC4xMDguMS4xNjYxODcyNTAxLjAuMC4w"><img
+                                            src="<?php echo  plugin_dir_url(__DIR__);?>/img/incident.JPG" /></a>
                                 </div>
-                                    <div class="cardTitle"><?php echo $trand["Web Donations"][$ln];?></div>
-                                    <div class="cardCat"></div>
-                                <div><a class="btn-quiz btn-quiz-green" target="_blank" href="https://gpmena.secure.force.com/StripePaymentScreen?_gl=1*ntt4hg*_ga*MTgwNzE3Njc3NS4xNjM0MzA2MzM0*_ga_BF1TLGDGBK*MTY2MTg2NzA5NC4xMDguMS4xNjYxODcyNTAxLjAuMC4w">Join Us</a></div>
+                                <div class="cardTitle"><?php echo $trand["Web Donations"][$ln];?></div>
+                                <div class="cardCat"></div>
+                                <div><a class="btn-quiz btn-quiz-green" target="_blank"
+                                        href="https://gpmena.secure.force.com/StripePaymentScreen?_gl=1*ntt4hg*_ga*MTgwNzE3Njc3NS4xNjM0MzA2MzM0*_ga_BF1TLGDGBK*MTY2MTg2NzA5NC4xMDguMS4xNjYxODcyNTAxLjAuMC4w">Join
+                                        Us</a></div>
                             </div>
                         </div>
                         <?php }?>
                         <?php }}?>
                     </div>
-            </div>
+                </div>
             </div>
             <?php if($redirect!='0' && sizeof($morForYouArray[$redirect])!=0){?>
             <div class="ResBlock2">
-            <div class="container">
+                <div class="container">
                     <div class="impactfull_title"><?php echo $trand['More for You'][$ln];?></div>
-                        <div class="parente">
-                            <?php foreach($morForYouArray[$redirect] as $res){
-                                $card = get_post( $res['id'] );
-                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $res['id'] ), 'large' );?>
-                                <div class="moreyoucardswrap row">
-                                    <div class="col-sm-6"><div class="imgfruwrp"><img src="<?php echo $image[0];?>" alt="" /></div></div>
-                                    <div class="col-sm-6 flexrightmore">
-                                        <div class="tittell"><?php echo $card->post_title;?></div>
-                                        <div class="conti mt-15"><?php echo $res['desc'] != '' ? $res['desc']  : wp_strip_all_tags($card->post_content).' ...' ;?></div>
-                                        <div class="flxend"><a class="read-more-lnk mt-15" href="<?php echo get_permalink( $res['id'] );?>"><span class="txt"><?php echo $trand['Learn more'][$ln]?></span><span class="bg"></span></a></div>
-                                    </div>
+                    <div class="parente">
+                        <?php foreach($morForYouArray[$redirect] as $res){
+                                $id = $res['id_'.$ln];
+                                $card = get_post( $id );
+                                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $id ), 'large' );?>
+                        <div class="moreyoucardswrap row">
+                            <div class="col-sm-6">
+                                <div class="imgfruwrp"><img src="<?php echo $image[0];?>" alt="" /></div>
+                            </div>
+                            <div class="col-sm-6 flexrightmore">
+                                <div class="tittell"><?php echo $card->post_title;?></div>
+                                <div class="conti mt-15">
+                                    <?php echo $res['desc_'.$ln] != '' ? $res['desc_'.$ln]  : wp_strip_all_tags($card->post_content).' ...' ;?>
                                 </div>
-                            <?php }?>
+                                <div class="flxend"><a class="read-more-lnk mt-15"
+                                        href="<?php echo get_permalink( $id );?>"><span
+                                            class="txt"><?php echo $trand['Learn more'][$ln]?></span><span
+                                            class="bg"></span></a></div>
+                            </div>
                         </div>
-            </div>
+                        <?php }?>
+                    </div>
+                </div>
             </div>
             <?php }?>
         </div>`

@@ -28,15 +28,35 @@ jQuery(document).ready(function ($) {
 }
 
 
+function showToast(source=null,html){
+  if($(source).hasClass('clicked')) return;
+
+    var tostContent = html ? html : '<span><b>The result URl</b> has been copied to the clipboard.</span><a href="#" class="close-toast">X</a>';
+    $('.toast').html(tostContent)
+
+    //$(this).addClass('clicked').html('Copied');
+    //var currentURL = window.location.href;
+    //navigator.clipboard.writeText(currentURL);
+
+    datatoast = $("#toast-name-2");
+    if ( $( datatoast ).hasClass( "toast-auto" ) && !$("#" + datatoast).is(":visible") ){ 
+      $("#" + datatoast).fadeIn(400).delay(2000).fadeOut(400);
+    }
+    else if ( !$("#" + datatoast).is(":visible") ){
+      $("#" + datatoast).fadeIn(400);
+    };
+}
 
 
-
-  $(".toast-trigger").click(function(e){
+  $(".toast-trigger").click(function(e,html){
     if($(this).hasClass('clicked')) return;
-    
+
+    var tostContent = '<span><b>The result URl</b> has been copied to the clipboard.</span><a href="#" class="close-toast">X</a>';
+    $('.toast').html(tostContent)
+
     $(this).addClass('clicked').html('Copied');
     var currentURL = window.location.href;
-    navigator.clipboard.writeText(window.location.href);
+    navigator.clipboard.writeText(currentURL);
 
     datatoast = $(this).attr("data-toast");
     if ( $( this ).hasClass( "toast-auto" ) && !$("#" + datatoast).is(":visible") ){ 
@@ -47,7 +67,7 @@ jQuery(document).ready(function ($) {
     };
   });
   
-  $(".close-toast").click(function(e){
+  $(".QUIZ-proj-wrapper").on('click' , '.close-toast',function(e){
     e.preventDefault();
     $(this).closest('.toast-container').fadeOut(400);
   });
@@ -55,39 +75,48 @@ jQuery(document).ready(function ($) {
 
   var step = 0;
   var totalSteps = $(".panelsWrapper").children(".panel").length;
+  $('.totalSteps').html(totalSteps)
+  //console.log(totalSteps,'totalSteps')
+  
   $(".btn-startquiz").click(function () {
     $(".panel-start-quiz").addClass("hidden");
     $(".navig").removeClass("hidden");
     $(".panelsWrapperOuter").removeClass("hidden");
     $(".panel:eq(0)").removeClass("hidden");
+    step=1;
+    $(".stepNumber").html(step );
   });
+
+
   $(".prev-btn-quiz").click(function () {
+    step -= 1;
     if (step == 0) {
       $(".panel-start-quiz").removeClass("hidden");
       $(".navig").addClass("hidden");
       $(".panelsWrapperOuter").addClass("hidden");
       $(".panel:eq(0)").addClass("hidden");
     } else {
-      step -= 1;
       $(".panel").addClass("hidden");
-      $(".panel:eq(" + step + ")").removeClass("hidden");
-      $(".stepNumber").html(step + 1);
-      $(".progressBarInner").css("width", (step + 1) * 10 + "%");
+      $(".panel:eq(" + (step-1) + ")").removeClass("hidden");
+      $(".stepNumber").html(step );
+      $(".progressBarInner").css("width", (step ) * 10 + "%");
       $(".next-btn-quiz").removeClass("disabled");
     }
   });
+
+
   $(".next-btn-quiz").click(function () {
     if ($(this).hasClass("disabled")) return;
-    if (step < totalSteps - 1) {
+    
+    if (step <= totalSteps ) {
       step += 1;
+      
       $(".panel").addClass("hidden");
-      $(".panel:eq(" + step + ")").removeClass("hidden");
-      $(".stepNumber").html(step + 1);
-      $(".progressBarInner").css("width", (step + 1) * 10 + "%");
-      if (
-        $(".panel:eq(" + step + ") .options").find(".thebtn.selected").length ==
-        0
-      ) {
+      $(".panel:eq(" + (step-1) + ")").removeClass("hidden");
+      $(".stepNumber").html(step );
+      $(".progressBarInner").css("width", (step * 10) + "%");
+
+      if ( $(".panel:eq("+(step-1)+") .options").find(".thebtn.selected").length ==  0 ) {
         $(".next-btn-quiz").addClass("disabled");
       } else {
         $(".next-btn-quiz").removeClass("disabled");
@@ -97,7 +126,13 @@ jQuery(document).ready(function ($) {
     
     var redirect=0;
     
-    if (step == totalSteps - 1) {
+
+    if (step > totalSteps) {
+
+      if(DEBUGG){
+        return;
+      }
+
       $(".res_image_glob ").addClass("hidden");
       $(".quiz_main").addClass("hidden");
       $(".result_main").removeClass("hidden");
@@ -130,6 +165,20 @@ jQuery(document).ready(function ($) {
   $(".thebtn").click(function (e) {
     e.preventDefault();
     $optionsParent = $(this).closest(".options");
+  
+    
+    var lengtheSelected = $optionsParent.find('.thebtn.selected').length;
+    console.log(lengtheSelected,'lengtheSelected')
+
+    if( $optionsParent.attr('myrule') == 'max_2' && lengtheSelected == 2 && !$(this).hasClass('selected')){
+    
+      $(".toast").removeClass('clicked');
+      $(".toast").html('<span>You can only select <strong>2</strong> options!</span>');
+      showToast('thebtn','<span>You can only select <strong>2</strong> options!</span>')
+      return;
+        
+    }
+    
     if (
       !$(this).hasClass("behavior-none") &&
       !$(this).hasClass("behavior-all")
@@ -196,31 +245,43 @@ jQuery(document).ready(function ($) {
         .find(".thebtn.behavior-none img.not-selected")
         .removeClass("hidden");
     }
+
+
+    
+    
+
+    
     if ($(this).closest(".options").find(".thebtn.selected").length == 0) {
       $(".next-btn-quiz").addClass("disabled");
     } else {
       $(".next-btn-quiz").removeClass("disabled");
     }
+  calculatePoints()
   });
+
+
   function calculatePoints() {
     var cnt = 0;
+    var selectedCount = 0;
     $(".thebtn").each(function (i, obj) {
       if ($(obj).hasClass("selected")) {
+        selectedCount+=1;
         var points = parseInt($(obj).attr("points"));
         cnt += points;
       }
     });
-    var perc = (cnt * 100) / 127;
-    //console.log('perc' , perc.toFixed(0)+"%" , "cnt:" , cnt  )
+    //var perc = (cnt * 100) / 138;
+
+    var perc = ((cnt * 20) / totalSteps)
+    //console.log(perc , cnt , selectedCount ,step, 'perc , cnt , selectedCount , step' )
+if(DEBUGG){
+  $("#toast-name-2").css('display','block')
+  $("#toast-name-2").html(`<span>Points sum: <strong>${cnt}</strong>`)
+}
+
     return perc.toFixed(0);
   }
     
-  if($('.QUIZ-proj-wrapper')){
-    setTimeout(function(){
-      $('.QUIZ-proj-wrapper').css('display','block');
-      new SlickCarousel();
-    },100)
-  }
 
   
 });

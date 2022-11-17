@@ -4,6 +4,7 @@
   margin-top:76px;
   font-family: "Roboto",sans-serif;
 }
+
 .progressBar {
   width: 700px;
   height: 10px;
@@ -49,7 +50,7 @@
   cursor: pointer;
 }
 .btn-quiz {
-  margin-top: 48px;
+  margin-top: 8px;
   width: 222px;
   border-radius: 4px;
   padding: 12px 0;
@@ -91,6 +92,7 @@
   display: block;
   visibility: visible;
 }
+.navig-start,
 .navig {
   padding-bottom: 25px;
   padding-top: 25px;
@@ -377,13 +379,13 @@
 .toast-pos-left {
   left: 0;
 }
-
 .toast {
   display: none;
   padding: 20px;
   background: #66cc00 ;
   border-radius: 4px;  
 }
+.DEBB .toast{display: block;}
 
 .close-toast {
   color: #ffffff;
