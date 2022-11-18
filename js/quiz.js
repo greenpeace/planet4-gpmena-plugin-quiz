@@ -272,6 +272,15 @@ function showToast(source=null,html){
   });
 
 
+/**
+ * 
+ so if the points are >= 82, we'll have the results for 60% and more
+
+if it's from >=41 & <= 81, we'll have 30-60%
+
+If it's >= 40, we'll have below 30%
+ */
+
   function calculatePoints() {
     var cnt = 0;
     var selectedCount = 0;
@@ -282,9 +291,10 @@ function showToast(source=null,html){
         cnt += points;
       }
     });
+
     //var perc = (cnt * 100) / 138;
 
-    var perc = ((cnt * 20) / totalSteps)
+   // var perc = ((cnt * 20) / totalSteps)
     //console.log(perc , cnt , selectedCount ,step, 'perc , cnt , selectedCount , step' )
 if(DEBUGG){
   $("#toast-name-2").css('display','block')

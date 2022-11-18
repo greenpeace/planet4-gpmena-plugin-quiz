@@ -169,7 +169,7 @@ var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>
                     class="res_image_glob per_30-60 <?php echo  ($redirect != '30_60_2' ? ' hidden' :'');?>" />
                 <img src="<?php echo  plugin_dir_url(__DIR__);?>img/Above-60-per.png"
                     class="res_image_glob per_above-60 <?php echo  ($redirect != 'above_60_3' ? ' hidden' :'');?>" />
-                <div class="donateBtn"><?php echo $trand['Donate Now'][$ln];?></div>
+                <a class="donateBtn" href="https://gpmena.secure.force.com/StripePaymentScreen" target="_blank"><?php echo $trand['Donate Now'][$ln];?></a>
             </div>
         </div>
         <div class="actionsWrapper">
@@ -184,7 +184,9 @@ var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>
                         <?php echo $trand['Here are the easiest ways you can create momentum'][$ln];?>
                     </div>
                     <div class="cardsWrapper posts-carousel">
-                        <?php if($redirect!='0'){
+                        <?php
+                        if(is_array($arrtEST)){
+            if($redirect!='0' ){
             foreach ($resultsArray[$redirect] as $res) {
                 $id = $res['id_'.$ln];
                 
@@ -221,11 +223,11 @@ var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>
                             </div>
                         </div>
                         <?php }?>
-                        <?php }}?>
+                        <?php }}}?>
                     </div>
                 </div>
             </div>
-            <?php if($redirect!='0' && sizeof($morForYouArray[$redirect])!=0){?>
+            <?php if($redirect!='0' && is_array($morForYouArray[$redirect])){?>
             <div class="ResBlock2">
                 <div class="container">
                     <div class="impactfull_title"><?php echo $trand['More for You'][$ln];?></div>
