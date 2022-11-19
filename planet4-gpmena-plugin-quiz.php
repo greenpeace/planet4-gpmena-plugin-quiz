@@ -25,8 +25,6 @@ function your_function_within_class()
         wp_enqueue_script( 'slick-js', PLUGINDIRQUIZFILE.'assets/src/library/js/slick.min.js', ['jquery'] );
         wp_enqueue_script( 'carousel-js', ( PLUGINDIRQUIZFILE ) . 'assets/src/carousel/index.js?v='.time(), ['jquery', 'slick-js'] , null );
 
-
-
         wp_register_style( 'quiz-css-p4', untrailingslashit(plugin_dir_url(__FILE__))  . '/css/style.css?vvv='.time(),null, false  );
         wp_enqueue_style('quiz-css-p4');
     }
