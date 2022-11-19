@@ -41,10 +41,11 @@ function showToast(source=null,html){
     datatoast.parent().css({
       'display': 'flex',
       'position': 'absolute',
-      'top': '10px',
+      'top': '70px',
       'margin-left': '-50%',
       'left': '50%',
-      'right': '0'
+      'right': '0',
+      'z-index':'999'
     });
     datatoast.css('display','flex')
     $( datatoast).fadeIn(400).delay(1500).fadeOut(400);
