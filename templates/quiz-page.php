@@ -244,7 +244,7 @@ var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>
                                 </div>
                                 <div class="flxend"><a class="read-more-lnk mt-15"
                                         href="<?php echo get_permalink( $id );?>"><span
-                                            class="txt"><?php echo $trand['Learn more'][$ln]?></span><span
+                                            class="txt"><?php echo $trand['Learn More'][$ln]?></span><span
                                             class="bg"></span></a></div>
                             </div>
                         </div>
