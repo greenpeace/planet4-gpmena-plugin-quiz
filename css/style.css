@@ -5,6 +5,22 @@
   font-family: "Roboto",sans-serif;
 }
 
+.QUIZ-proj-wrapper a.external-link:after {
+  content: "";
+  display: inherit !important ;
+  height: inherit !important ;
+  width: inherit !important ;
+  -webkit-margin-start: inherit !important ;
+  margin-inline-start: inherit !important ;
+  -webkit-margin-end: inherit !important ;
+  margin-inline-end: inherit !important ;
+  background-color: inherit !important ;
+  -webkit-mask-image: none !important ;
+  mask-image: none !important ;
+}
+
+
+.page-content .container{max-width:100%;padding: 0;}
 .progressBar {
   width: 700px;
   height: 10px;
