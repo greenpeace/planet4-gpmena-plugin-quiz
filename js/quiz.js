@@ -292,17 +292,18 @@ If it's >= 40, we'll have below 30%
       }
     });
 
-    //var perc = (cnt * 100) / 138;
+    var perc = ((cnt * 100) / 136.66 ).toFixed(0);
 
    // var perc = ((cnt * 20) / totalSteps)
     //console.log(perc , cnt , selectedCount ,step, 'perc , cnt , selectedCount , step' )
 if(DEBUGG){
   $("#toast-name-2").css('display','block')
-  $("#toast-name-2").html(`<span>Points sum: <strong>${cnt}</strong>`)
+  $("#toast-name-2").html(`<span>Points sum: <strong>${cnt}</strong>, Percentage: ${perc}`)
 }
 
-    return perc.toFixed(0);
-  }
+return perc;
+
+}
     
 
   
