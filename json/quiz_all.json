@@ -4,7 +4,7 @@
     "post_title_fr": "Où vont vos déchets ménagères",
     "post_title_ar": "أين تذهب نفاياتك المنزلية؟",
     "slug": "where-does-the-waste-from-your-home-go",
-    "has_long_title": "",
+    "has_long_title": "",    
     "answers": [
       {
         "answer_en": "Recycling Facility",
@@ -54,6 +54,7 @@
     "post_title_ar": "ما مدى معرفتك ببصمتك الكربونية؟",
     "slug": "how-aware-are-you-of-your-carbon-footprint",
     "has_long_title": "has_long_title",
+    "rule":"single",
     "answers": [
       {
         "answer_en": "I have clear understanding of the impact of the products I purchase on the environment and climate",
@@ -87,6 +88,7 @@
     "post_title_ar": "هل أنت على دراية بكمية الطاقة المستخدمة لإيصال المياه إلى منزلك؟",
     "slug": "are-you-aware-of-the-amount-of-energy-utilized-to-bring-water-to-your-home",
     "has_long_title": "has_long_title",
+    "rule":"single",
     "answers": [
       {
         "answer_en": "Water to my home is pumped from a river/lake/groundwater nearby through an efficient national grid",
@@ -291,6 +293,7 @@
     "post_title_ar": "هل تغلق الماء أثناء تنظيف أسنانك؟",
     "slug": "do-you-turn-off-the-water-while-you-brush-your-teeth",
     "has_long_title": "",
+    "rule":"single",
     "answers": [
       {
         "answer_en": "Yes",
@@ -366,6 +369,7 @@
     "post_title_ar": "كيف تتسوّق عادةً لشراء الطعام؟",
     "slug": "how-do-you-mainly-shop-for-food",
     "has_long_title": "has_long_title",
+    "rule":"single",
     "answers": [
       {
         "answer_en": "I rarely do, most of it is home produced",

@@ -106,9 +106,12 @@ var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>
                      $i++;?>
                 <div class="panel hidden" step="<?php echo $i;?>">
                     <div class="question"><?php echo $item['post_title_'.$ln];?></div>
+                    <?php if($item['rule'] != 'single'){?>
                     <div class="instructions">
                         <?php echo $trand['Select at least one that applies to you to continue'][$ln];?>
                     </div>
+                    <?php }?>
+
                     <div class="options<?php echo ' '. trim($item['has_long_title']);?>" myrule="<?php echo $item['rule'];?>">
                         <?php foreach($item['answers'] as $answer){?>
                         <label
@@ -148,8 +151,7 @@ var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>
                 <div class="quote">
                     <?php echo $trand['YOU_DON_t just live by principles'][$ln];?>
                 </div>
-                <div class="percentage-phrase">&nbsp;<span
-                        class="perc"><?php echo  $pts;?>%</span>&nbsp;<span><?php echo $trand['of people get this result'][$ln];?></span>&nbsp;
+                <div class="percentage-phrase"><span><?php echo str_replace('s%' , $pts.'% ' , $trand['of people get this result'][$ln]);?></span>&nbsp;
                 </div>
                 <div class="share-btn flex toast-trigger toast-auto" data-toast="toast-name-2">
                     <div class="inner flex">
@@ -199,7 +201,7 @@ var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>
                                 <!-- <div class="cardCat">
                                         <a href="<?php echo $cats[0]->cat_link;?>"><?php echo $cats[0]->cat_name;?></a>
                                 </div> -->
-                                <div><a class="btn-quiz btn-quiz-green" idd="<?php echo $id;?>" href="<?php echo get_permalink( $id );?>">Join Us</a></div>
+                                <div><a class="btn-quiz btn-quiz-green" idd="<?php echo $id;?>" href="<?php echo get_permalink( $id );?>"><?php echo $trand['Learn More'][$ln];?></a></div>
                             </div>
                         </div>
                         <?php }else{?>
