@@ -273,14 +273,6 @@ function showToast(source=null,html){
   });
 
 
-/**
- * 
- so if the points are >= 82, we'll have the results for 60% and more
-
-if it's from >=41 & <= 81, we'll have 30-60%
-
-If it's >= 40, we'll have below 30%
- */
 
   function calculatePoints() {
     var cnt = 0;

@@ -149,6 +149,7 @@
   border-top: 1px solid #d9dbe9;
   margin-top: 32px;
   text-align: center;
+  min-height: 400px;
 }
 .panelsWrapperOuter {
   display: flex;
@@ -504,4 +505,5 @@
     right: 65px;
   }
   .imgfruwrp img{height: 100%;}
+  .panelsWrapper{min-height: inherit;}
 }

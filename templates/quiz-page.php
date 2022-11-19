@@ -185,7 +185,6 @@ var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>
                     </div>
                     <div class="cardsWrapper posts-carousel">
                         <?php
-                        if(is_array($arrtEST)){
             if($redirect!='0' ){
             foreach ($resultsArray[$redirect] as $res) {
                 $id = $res['id_'.$ln];
@@ -223,7 +222,7 @@ var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>
                             </div>
                         </div>
                         <?php }?>
-                        <?php }}}?>
+                        <?php }}?>
                     </div>
                 </div>
             </div>
