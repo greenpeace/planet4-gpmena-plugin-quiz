@@ -36,11 +36,7 @@ $quiz_data_db = get_option( 'p4menaq_options' );
 $redirect = isset($_GET['r']) ? $_GET['r'] : '0';
 $pts = isset($_GET['pts']) ? $_GET['pts'] : 0;
 wp_enqueue_script('quiz-script', PLUGINDIRQUIZ.'js/quiz.js?v='.time() ,['jquery']);
-wp_enqueue_style( 'slick-css', PLUGINDIRQUIZ.'assets/src/library/css/slick.css', [], false, 'all' );
-wp_enqueue_style( 'slick-theme-css', PLUGINDIRQUIZ.'assets/src/library/css/slick-theme.css', ['slick-css'], false, 'all' );
-//wp_enqueue_style( 'quiz-css', PLUGINDIRQUIZ  . 'css/style.css?v='.time(), false , null, 'all' );
-wp_enqueue_script( 'slick-js', PLUGINDIRQUIZ.'assets/src/library/js/slick.min.js', ['jquery'] );
-wp_enqueue_script( 'carousel-js', ( PLUGINDIRQUIZ ) . 'assets/src/carousel/index.js?v='.time(), ['jquery', 'slick-js'] , null );
+
 $pst = get_post();
 $id_ar = apply_filters( 'wpml_object_id', $pst->ID, 'object', false, 'ar' );
 
