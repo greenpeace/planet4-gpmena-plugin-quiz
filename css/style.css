@@ -279,7 +279,8 @@
   background-color: #f36b35;
   border-radius: 4px;
   padding: 12px 28px;
-  cursor: pointer;  
+  cursor: pointer;
+  display:block;
 }
 .actionsWrapper{margin-top: 32px;}
 .actionsWrapper .ResBlock1{background-color:#3A3A3A;color:#ffffff;padding: 25px 25px 110px 25px;}
