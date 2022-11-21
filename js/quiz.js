@@ -168,6 +168,7 @@ function showToast(source=null,html){
       $(".perc").html(perc + "%");
       
       $('.result_main').hide();
+      
       window.location.href = templateUrl+'/'+my_slug+'?r='+redirect+'&pts='+perc;
       $('.page-header-title').closest('.container').css('display','none');
     }
@@ -289,9 +290,9 @@ if(redirect!=0){
     });
 
     var perc = ((cnt * 100) / 136.66 ).toFixed(0);
+   
+    console.log({perc , cnt})
 
-   // var perc = ((cnt * 20) / totalSteps)
-    //console.log(perc , cnt , selectedCount ,step, 'perc , cnt , selectedCount , step' )
 if(DEBUGG){
   $("#toast-name-2").css('display','block')
   $("#toast-name-2").html(`<span>Points sum: <strong>${cnt}</strong>, Percentage: ${perc}`)
