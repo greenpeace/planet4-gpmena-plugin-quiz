@@ -285,6 +285,9 @@ if(redirect!=0){
       if ($(obj).hasClass("selected")) {
         selectedCount+=1;
         var points = parseInt($(obj).attr("points"));
+        if(points == 4) points = 6;
+        if(points == 3) points = 5;
+        if(points == 2) points = 3;
         cnt += points;
       }
     });
