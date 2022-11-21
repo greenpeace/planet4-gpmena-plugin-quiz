@@ -318,7 +318,7 @@
 .cardsWrapper .cardCat a{color:#66cc00}
 .cardsWrapper .flexmecol{display: flex;flex-direction: column;justify-content: space-between ;min-height: 495px;}
 .cardsWrapper a{text-decoration: none;color:#ffffff}
-.cardsWrapper .btn-quiz{margin-top: 8px;font-weight: 500;}
+.cardsWrapper .btn-quiz{margin-top: 8px;font-weight: 500;display: block;}
 .slick-prev:before, 
 .slick-next:before{content: "";width:42px;height: 42px;display: block;z-index: 100;opacity: 1;}
 .slick-prev:hover, 

@@ -298,6 +298,8 @@ if(redirect!=0){
 
     //var perc = ((cnt * 100) / 136 ).toFixed(0);
     var perc = ((cnt * 100) / 113 ).toFixed(0);
+
+    
    
     console.log({perc , cnt})
 
