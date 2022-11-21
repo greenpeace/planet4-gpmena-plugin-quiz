@@ -201,7 +201,9 @@ var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>
                                 <!-- <div class="cardCat">
                                         <a href="<?php echo $cats[0]->cat_link;?>"><?php echo $cats[0]->cat_name;?></a>
                                 </div> -->
-                                <div><a class="btn-quiz btn-quiz-green" idd="<?php echo $id;?>" href="<?php echo get_permalink( $id );?>"><?php echo $trand['Learn More'][$ln];?></a></div>
+                                <div><a class="btn-quiz btn-quiz-green" idd="<?php echo $id;?>" href="<?php echo get_permalink( $id );?>">
+                                <?php echo $res['btn_txt_slug'] =='JoinUs' ? $trand['Join Us'][$ln] : $trand['Learn More'][$ln] ;?></a>
+                                </div>
                             </div>
                         </div>
                         <?php }else{?>

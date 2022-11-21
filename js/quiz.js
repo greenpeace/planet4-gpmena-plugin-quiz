@@ -117,6 +117,9 @@ function showToast(source=null,html){
   });
 
 
+  var redirect=0;
+
+
   $(".next-btn-quiz").click(function () {
     if ($(this).hasClass("disabled")) return;
     
@@ -136,7 +139,6 @@ function showToast(source=null,html){
     }
     var perc = calculatePoints();
     
-    var redirect=0;
     
 
     if (step > totalSteps) {
@@ -165,16 +167,17 @@ function showToast(source=null,html){
       }
       $(".perc").html(perc + "%");
       
+      $('.result_main').hide();
       window.location.href = templateUrl+'/'+my_slug+'?r='+redirect+'&pts='+perc;
       $('.page-header-title').closest('.container').css('display','none');
-      
-
     }
-
-    
   });
 
+if(redirect!=0){
+  $('.result_main').show();
+}
   
+
   $(".thebtn").click(function (e) {
     e.preventDefault();
     $optionsParent = $(this).closest(".options");

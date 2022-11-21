@@ -66,6 +66,7 @@ $resultsArray = array(
             'desc_en' => 'Are you concerned about an environmental issue? The solution is now one step away!',
             'desc_fr' => 'Are you concerned about an environmental issue? The solution is now one step away!',
             'desc_ar' => 'Are you concerned about an environmental issue? The solution is now one step away!',
+            'btn_txt_slug'=>'JoinUs'
         ],
         [
             'id_en' => 'SF',
