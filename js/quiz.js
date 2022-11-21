@@ -167,7 +167,11 @@ function showToast(source=null,html){
       }
       $(".perc").html(perc + "%");
       
-      $('.result_main').hide();
+      $('.result_main .result_inner').hide();
+      $('.result_main').css('height','600px');
+      $('.preloaderq').removeClass('hidden');
+      
+      //.html('<img src="'+templateUrl+'/img/loader.svg" />');
       
       window.location.href = templateUrl+'/'+my_slug+'?r='+redirect+'&pts='+perc;
       $('.page-header-title').closest('.container').css('display','none');

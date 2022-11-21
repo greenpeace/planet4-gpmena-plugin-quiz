@@ -5,6 +5,13 @@
   font-family: "Roboto",sans-serif;
 }
 
+.QUIZ-proj-wrapper {
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+}
+
 .QUIZ-proj-wrapper a.external-link:after {
   content: "";
   display: inherit !important ;

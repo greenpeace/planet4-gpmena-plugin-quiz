@@ -144,7 +144,10 @@ var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>
             </div>
         </div>
     </div>
-    <div class="result_main <?php echo  ($redirect != '0' ? '' :' hidden');?>">
+    <div class="result_main<?php echo  ($redirect != '0' ? '' :' hidden');?>">
+<div class="preloaderq hidden">
+<img src="<?php echo plugin_dir_url(__DIR__);?>/img/loader.svg" />
+</div>
         <div class="result_inner flex">
             <div class="txtc">
                 <div class="big-tit"><?php echo $trand['Your Result'][$ln] ;?></div>
