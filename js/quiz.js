@@ -171,7 +171,6 @@ function showToast(source=null,html){
       $('.result_main').css('height','600px');
       $('.preloaderq').removeClass('hidden');
       
-      //.html('<img src="'+templateUrl+'/img/loader.svg" />');
       
       window.location.href = templateUrl+'/'+my_slug+'?r='+redirect+'&pts='+perc;
       $('.page-header-title').closest('.container').css('display','none');

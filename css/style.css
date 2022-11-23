@@ -6,10 +6,10 @@
 }
 
 .QUIZ-proj-wrapper {
-  display: flex;
+  /* display: flex;
   align-items: center;
   align-content: space-around;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .QUIZ-proj-wrapper a.external-link:after {
@@ -27,7 +27,7 @@
 }
 
 
-.page-content .container{max-width:100%;padding: 0;}
+.page-content.container{max-width:100%;padding: 0;}
 .progressBar {
   width: 700px;
   height: 10px;
