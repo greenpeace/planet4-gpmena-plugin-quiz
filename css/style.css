@@ -4,7 +4,13 @@
   margin-top:76px;
   font-family: "Roboto",sans-serif;
 }
-
+.preloaderq{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  min-height: 500px;
+  background: none;
+}
 .QUIZ-proj-wrapper {
   /* display: flex;
   align-items: center;

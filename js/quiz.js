@@ -282,29 +282,29 @@ if(redirect!=0){
 
 
   function calculatePoints() {
-    var cnt = 0;
+    var pointsSum = 0;
     var selectedCount = 0;
+
+
     $(".thebtn").each(function (i, obj) {
       if ($(obj).hasClass("selected")) {
         selectedCount+=1;
         var points = parseInt($(obj).attr("points"));
-        // if(points == 4) points = 6;
-        // if(points == 3) points = 5;
-        // if(points == 2) points = 3;
-        cnt += points;
+         
+        pointsSum += points;
       }
     });
 
     //var perc = ((cnt * 100) / 136 ).toFixed(0);
-    var perc = ((cnt * 100) / 113 ).toFixed(0);
+    // var perc = ((pointsSum * 100) / 113 ).toFixed(0);
 
-    
-   
-    console.log({perc , cnt})
+    var perc = (((pointsSum / 5) / selectedCount) * 100).toFixed(0) ;
+
+    //console.log({perc , selectedCount})
 
 if(DEBUGG){
   $("#toast-name-2").css('display','block')
-  $("#toast-name-2").html(`<span>Points sum: <strong>${cnt}</strong>, Percentage: ${perc}`)
+  $("#toast-name-2").html(`<span>Points sum: <strong>${pointsSum}</strong>, Percentage: ${perc}`)
 }
 
 return perc;
