@@ -79,5 +79,10 @@
     "en": "Join Us",
     "ar": "\u0627\u0646\u0636\u0645 \u0625\u0644\u064a\u0646\u0627",
     "fr": "Rejoignez-nous"
+  },
+  "DONATION_LINK": {
+    "en": "https://gpmena.secure.force.com/StripePaymentScreen",
+    "ar": "https://gpmena.secure.force.com/StripePaymentScreenArabic",
+    "fr": "https://gpmena.secure.force.com/StripePaymentScreenFrench"
   }
 }

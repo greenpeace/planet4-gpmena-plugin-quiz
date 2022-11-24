@@ -3,7 +3,7 @@ $resultsArray = array(
     'below_30_1' => array(
         [
             'id_en' => 2813,
-            'id_fr' => 2813,
+            'id_fr' => 4261,
             'id_ar' => 1933,
             'desc_en' => 'Renewable energy is cheap, sustainable, and already making our planet more green and peaceful. It disrupts corporate energy...',
             'desc_fr' => '',
@@ -11,7 +11,7 @@ $resultsArray = array(
         ],
         [
             'id_en' => 2802,
-            'id_fr' => 2802,
+            'id_fr' => 4329,
             'id_ar' => 1929,
             'desc_en' => 'Greenpeace has been protecting the environment for decades. We’ve stopped many crimes against the planet and held...',
             'desc_fr' => '',
@@ -19,7 +19,7 @@ $resultsArray = array(
         ],
         [
             'id_en' => 2826,
-            'id_fr' => 2826,
+            'id_fr' => 4233,
             'id_ar' => 1915,
             'desc_en' => 'We are calling on people around the world to create a “Million Acts of Blue” — actions to push retailers, corporations and businesses to...',
             'desc_fr' => '',
@@ -45,7 +45,7 @@ $resultsArray = array(
     '30_60_2' => array(
         [
             'id_en' => 5141,
-            'id_fr' => 5141,
+            'id_fr' => 5147,
             'id_ar' => 5131,
             'desc_en' => '',
             'desc_fr' => '',

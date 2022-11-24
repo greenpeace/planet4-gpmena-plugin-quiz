@@ -22,7 +22,8 @@ jQuery(document).ready(function ($) {
         autoplaySpeed: 1000,
         slidesToShow: slidesToShow,
         slidesToScroll: slidesToScroll,
-        infinite: false
+        infinite: false,
+        rtl: $(".posts-carousel").attr('dir') =='rtl'
     } );
 }
 }

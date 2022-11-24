@@ -170,7 +170,9 @@ var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>
                     class="res_image_glob per_30-60 <?php echo  ($redirect != '30_60_2' ? ' hidden' :'');?>" />
                 <img src="<?php echo  plugin_dir_url(__DIR__);?>img/Above-60-per.png"
                     class="res_image_glob per_above-60 <?php echo  ($redirect != 'above_60_3' ? ' hidden' :'');?>" />
-                <a class="donateBtn" href="https://gpmena.secure.force.com/StripePaymentScreen" target="_blank"><?php echo $trand['Donate Now'][$ln];?></a>
+                <a class="donateBtn" href="<?php echo $trand['DONATION_LINK'][$ln]?>" target="_blank">
+                <?php echo $trand['Donate Now'][$ln];?>
+                </a>
             </div>
         </div>
         <div class="actionsWrapper">
@@ -184,7 +186,7 @@ var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>
                     <div class="impactfull_sub_green">
                         <?php echo $trand['Here are the easiest ways you can create momentum'][$ln];?>
                     </div>
-                    <div class="cardsWrapper posts-carousel">
+                    <div class="cardsWrapper posts-carousel" dir="<?php echo $ln =='ar' ? 'rtl' : 'ltr';?>">
                         <?php
             if($redirect!='0' ){
             foreach ($resultsArray[$redirect] as $res) {

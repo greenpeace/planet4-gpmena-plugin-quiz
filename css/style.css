@@ -49,6 +49,7 @@
   background: #66cc00;
   width: 10%;
   left: 0;
+  transition:width 0.5s ease-in-out
 }
 .quiz_image {
   margin-top: 57px;
@@ -435,6 +436,13 @@
 [dir="rtl"] .slick-prev:hover {opacity: 0.7;}
 [dir='rtl'] .slick-next:before,
 [dir="rtl"] .slick-prev::before {content: "";}
+
+[dir='rtl'] .slick-next{right:inherit;left:40px}
+[dir='rtl'] .slick-next:before{background: url('../assets/src/library/css/arrow-left.png') no-repeat 0 0;}
+[dir="rtl"] .slick-prev {right:inherit;left:100px}
+[dir='rtl'] .slick-prev:before{background: url('../assets/src/library/css/arrow-right.png') no-repeat 0 0;}
+
+
 .QUIZ-proj-wrapper.lang_ar{direction: rtl;font-family: inherit;}
 .QUIZ-proj-wrapper.lang_ar .has_long_title .thebtn span{margin-right: 12px;margin-left: inherit;text-align: right;}
 .QUIZ-proj-wrapper.lang_ar .btn-quiz.btn-startquiz img{rotate: 180deg;margin: 0 5px 0 0;} 
