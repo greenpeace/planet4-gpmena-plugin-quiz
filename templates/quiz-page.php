@@ -247,7 +247,7 @@ var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>
                             <div class="col-sm-6 flexrightmore">
                                 <div class="tittell"><?php echo $card->post_title;?></div>
                                 <div class="conti mt-15">
-                                    <?php echo $res['desc_'.$ln] != '' ? $res['desc_'.$ln]  : wp_strip_all_tags($card->post_content).' ...' ;?>
+                                    <?php echo $res['desc_'.$ln] != '' ? $res['desc_'.$ln]  : substr(wp_strip_all_tags($card->post_content),0,200).' ...' ;?>
                                 </div>
                                 <div class="flxend"><a class="read-more-lnk mt-15"
                                         href="<?php echo get_permalink( $id );?>"><span
