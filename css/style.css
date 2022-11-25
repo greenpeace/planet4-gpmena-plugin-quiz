@@ -446,6 +446,7 @@
 .QUIZ-proj-wrapper.lang_ar{direction: rtl;font-family: inherit;}
 .QUIZ-proj-wrapper.lang_ar .share-btn{font-size: 18px;}
 .QUIZ-proj-wrapper.lang_ar .toast{font-size: 18px;}
+.QUIZ-proj-wrapper.lang_ar .read-more-lnk .bg{rotate:180deg}
 
 .QUIZ-proj-wrapper.lang_ar .has_long_title .thebtn span{margin-right: 12px;margin-left: inherit;text-align: right;}
 .QUIZ-proj-wrapper.lang_ar .btn-quiz.btn-startquiz img{rotate: 180deg;margin: 0 5px 0 0;} 
@@ -484,7 +485,7 @@
     display: block;
   }
   .btn-quiz {
-    width: 80%;
+    width: 98%;
     margin: 0 auto;
   }
   .btn-startquiz {
@@ -522,7 +523,7 @@
   .impactfull_title{font-size: 26px;}
   .impactfull_desc{font-size: 18px;width: 98%;}
   .impactfull_sub_green{font-size: 18px;}
-  .slick-next, .slick-prev {bottom: -48px;}
+  .slick-next, .slick-prev {bottom: -80px;}
   .slick-next {
     right: 10px;
   }
@@ -532,4 +533,8 @@
   .imgfruwrp img{height: 100%;}
   .panelsWrapper{min-height: inherit;}
   .percentage-phrase{display:block}
+  .tittell{font-size:22px}
+  .cardsWrapper .cardTitle{font-size:16px}
+  .slick-prev, 
+  .slick-next{width:42px;height:42px;}
 }
