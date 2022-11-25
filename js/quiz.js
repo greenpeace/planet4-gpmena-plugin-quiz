@@ -73,7 +73,6 @@ var tranObj={
       'ar' : 'تم نسخ <b>الموقع الاكتروني</b> للنتيجة إلى الحافظة'
   },
 }
-console.log(lnVar,'lnVar')
 
   $(".toast-trigger").click(function(e,html){
     if($(this).hasClass('clicked')) return;

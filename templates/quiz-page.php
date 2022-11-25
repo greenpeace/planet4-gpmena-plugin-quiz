@@ -226,10 +226,13 @@ var lnVar = "<?php echo $ln ?>";
                                 </div>
                                 <div class="cardTitle"><?php echo $trand["Web Donations"][$ln];?></div>
                                 <div class="cardCat"></div>
-                                <div><a class="btn-quiz btn-quiz-green" target="_blank"
-                                        href="https://gpmena.secure.force.com/StripePaymentScreen?_gl=1*ntt4hg*_ga*MTgwNzE3Njc3NS4xNjM0MzA2MzM0*_ga_BF1TLGDGBK*MTY2MTg2NzA5NC4xMDguMS4xNjYxODcyNTAxLjAuMC4w">Join
-                                        Us</a></div>
-                            </div>
+                                <div>
+                                    <a 
+                                    class="btn-quiz btn-quiz-green" 
+                                    target="_blank"
+                                    href="https://gpmena.secure.force.com/StripePaymentScreen?_gl=1*ntt4hg*_ga*MTgwNzE3Njc3NS4xNjM0MzA2MzM0*_ga_BF1TLGDGBK*MTY2MTg2NzA5NC4xMDguMS4xNjYxODcyNTAxLjAuMC4w"
+                                    ><?php echo $trand['Join Us'][$ln]?></a>
+                                </div></div>
                         </div>
                         <?php }?>
                         <?php }}?>
