@@ -92,6 +92,8 @@ function showToast(source=null,html){
   //console.log(totalSteps,'totalSteps')
   
   $(".btn-startquiz").click(function () {
+    $('html, body').animate({scrollTop:0},'50');
+
     $(".panel-start-quiz").addClass("hidden");
     $(".navig").removeClass("hidden");
     $(".panelsWrapperOuter").removeClass("hidden");
@@ -102,6 +104,8 @@ function showToast(source=null,html){
 
 
   $(".prev-btn-quiz").click(function () {
+    $('html, body').animate({scrollTop:0},'50');
+
     step -= 1;
     if (step == 0) {
       $(".panel-start-quiz").removeClass("hidden");
@@ -123,6 +127,8 @@ function showToast(source=null,html){
 
   $(".next-btn-quiz").click(function () {
     if ($(this).hasClass("disabled")) return;
+    
+    $('html, body').animate({scrollTop:0},'50');
     
     if (step <= totalSteps ) {
       step += 1;

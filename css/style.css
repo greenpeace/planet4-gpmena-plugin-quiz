@@ -367,9 +367,9 @@
   align-items: flex-start;
   padding: 35px !important;
 }
-.flexrightmore .conti{height: 220px;overflow: hidden;width: 100%;}
+.flexrightmore .conti{overflow: hidden;width: 100%;}
 .mt-15{margin-top: 35px;}
-.tittell{font-size: 32px;font-weight: 700;}
+.tittell{font-size: 32px;font-weight: 700;line-height: 1.2;}
 .imgfruwrp{width:auto;height: auto;}
 .imgfruwrp img{
   width: 100%;
@@ -455,7 +455,7 @@
 }
 /*  MOBILE */
 @media only screen and (max-width: 600px) {
-  .cardsWrapper .cardTitle{min-height: inherit;}
+ 
   .quiz_image {
     width: 80%;
   }
