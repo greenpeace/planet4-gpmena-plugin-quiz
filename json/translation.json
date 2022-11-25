@@ -6,78 +6,78 @@
   },
   "Select at least one that applies to you to continue": {
     "en": "Select at least one that applies to you to continue",
-    "ar": "\u0627\u062e\u062a\u0631 \u062c\u0648\u0627\u0628\u0627\u064b \u0648\u0627\u062d\u062f\u0627\u064b \u0639\u0644\u0649 \u0627\u0644\u0623\u0642\u0644 \u064a\u0646\u0637\u0628\u0642 \u0639\u0644\u064a\u0643 \u0644\u0644\u0645\u062a\u0627\u0628\u0639\u0629",
+    "ar": "اختر جواباً واحداً على الأقل ينطبق عليك للمتابعة",
     "fr": "Choisissez au moins une seule réponse pour poursuivre"
   },
   "Next": {
     "en": "Next",
-    "ar": "\u0644\u062a\u0627\u0644\u064a",
+    "ar": "التالي",
     "fr": "Prochain"
   },
   "Back": {
     "en": "Back",
-    "ar": "\u0627\u0644\u0639\u0648\u062f\u0629",
+    "ar": "العودة",
     "fr": "Retour"
   },
-  "Share": { "en": "Share", "ar": "\u0634\u0627\u0631\u0643", "fr": "Partager" },
+  "Share": { "en": "Share", "ar": "شارك", "fr": "Partager" },
   "Donate Now": {
     "en": "Donate Now",
-    "ar": "\u062a\u0628\u0631\u0639 \u0627\u0644\u0622\u0646",
+    "ar": "تبرع الآن",
     "fr": "Faire un don maintenant"
   },
   "Your Result": {
     "en": "Your Result",
-    "ar": "\u0646\u062a\u064a\u062c\u062a\u0643",
+    "ar": "نتيجتك",
     "fr": "Ton résultat"
   },
   "YOU_DON_t just live by principles": {
     "en": "You don\u2019t just live by principles",
-    "ar": "\u0623\u0646\u062a \u0644\u0627 \u062a\u0639\u064a\u0634 \u0641\u0642\u0637 \u0648\u0641\u0642\u064b\u0627 \u0644\u0644\u0645\u0628\u0627\u062f\u0626",
+    "ar": "أنت لا تعيش فقط بالمبادئ",
     "fr": "Vous n’agissez pas seulement selon des principes"
   },
   "of people get this result": {
     "en": "You are s% eco-friendly",
-    "ar": "\u0645\u0646 \u0627\u0644\u0646\u0627\u0633 \u064a\u062d\u0635\u0644\u0648\u0646 \u0639\u0644\u0649 \u0647\u0630\u0647 \u0627\u0644\u0646\u062a\u064a\u062c\u0629",
+    "ar": "أنت صديق للبيئة بنسبة s%",
     "fr": "des participants ont eu ce résultat"
   },
   "TAKE_OUR_environmental_quiz": {
     "en": "Take our environmental quiz to see how sustainable your lifestyle habits really are, and what possible impactful actions you can take.",
-    "ar": "\u0642\u0645 \u0628\u0625\u062c\u0631\u0627\u0621 \u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631 \u0627\u0644\u0628\u064a\u0626\u064a \u0644\u0645\u0639\u0631\u0641\u0629 \u0645\u062f\u0649 \u0627\u0633\u062a\u062f\u0627\u0645\u0629 \u0627\u0644\u0639\u0627\u062f\u0627\u062a \u0627\u0644\u062a\u064a \u062a\u062a\u0628\u0639\u0647\u0627 \u0641\u064a \u0646\u0645\u0637 \u062d\u064a\u0627\u062a\u0643\u060c \u0648\u0627\u0644\u0625\u062c\u0631\u0627\u0621\u0627\u062a \u0627\u0644\u0645\u0624\u062b\u0631\u0629",
-    "fr": "Prenez le quiz de l’environment pour comprendre l’impact de votre lifestyle sur la nature, mais aussi connaitre les actions que vous pouvez entreprendre et qui auront un impact positif sur la planet"
+    "ar": "قم بإجراء الاختبار البيئي لمعرفة مدى استدامة العادات التي تتبعها في نمط حياتك، والإجراءات المؤثرة",
+    "fr": "Prenez le quiz autour de l’environment pour savoir a quel point votre lifestyle respect la nature mais aussi connaitre les actions que vous pouvez entreprendre qui auront un impact majeur"
   },
   "Take more impactful action": {
     "en": "Take more impactful action",
-    "ar": "\u0627\u062a\u062e\u0630 \u0625\u062c\u0631\u0627\u0621\u0627\u062a \u0623\u0643\u062b\u0631 \u062a\u0623\u062b\u064a\u0631\u064b\u0627",
+    "ar": "اتخذ إجراءات أكثر تأثيرًا",
     "fr": "Adopter encore plus d’action impactante"
   },
   "ACTIONTXT": {
     "en": "Whether that\u2019s making your voice heard through petitions, attending climate rallies or asking businesses for better climate policies, you\u2019re ready to spread the message for greater collective impact.",
-    "ar": "\u0644\u0627 \u064a\u0623\u062e\u0630 \u0627\u0644\u062a\u062d\u0631\u0651\u0643 \u0634\u0643\u0644\u0627 \u0645\u062d\u062f\u062f\u0627\u064b: \u0645\u0646 \u062a\u0648\u0642\u064a\u0639 \u0639\u0631\u064a\u0636\u0629\u060c \u0625\u0644\u0649 \u0627\u0644\u0627\u0646\u0636\u0645\u0627\u0645 \u0644\u0648\u0642\u0641\u0629 \u0627\u062d\u062a\u062c\u0627\u062c\u064a\u0629 \u0623\u0648 \u062d\u0631\u0627\u0643 \u0633\u0644\u0645\u064a. \u062a\u0634\u0643\u0644 \u0647\u0630\u0647 \u0627\u0644\u0646\u0634\u0627\u0637\u0627\u062a \u062c\u0632\u0621\u0627\u064b \u0644\u0627 \u064a\u062a\u062c\u0632\u0623 \u0645\u0646 \u0627\u0644\u062a\u0623\u0633\u064a\u0633 \u0644\u0644\u0645\u0633\u062a\u0642\u0628\u0644 \u0627\u0644\u0630\u064a \u064a\u0639\u064a\u0634 \u0641\u064a\u0647 \u0627\u0644\u0625\u0646\u0633\u0627\u0646 \u0641\u064a \u0639\u0627\u0644\u0645\u064d \u0645\u0633\u0627\u0644\u0645\u064d \u0648\u0635\u062f\u064a\u0642\u064d \u0644\u0644\u0628\u064a\u0626\u0629. \u0644\u062a\u062d\u0642\u064a\u0642 \u0623\u064a \u062a\u063a\u064a\u064a\u0631\u064d \u062c\u0630\u0631\u064a \u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645\u060c \u0639\u0644\u064a\u0646\u0627 \u0623\u0646 \u0646\u062a\u062d\u0644\u0649 \u0628\u062c\u0631\u0639\u0629 \u0627\u0644\u062c\u0631\u0623\u0629 \u0627\u0644\u0644\u0627\u0632\u0645\u0629 \u0644\u062f\u0639\u0645 \u0627\u0644\u0642\u0636\u0627\u064a\u0627 \u0627\u0644\u062a\u064a \u0646\u0624\u0645\u0646 \u0628\u0647\u0627. \u0627\u0628\u062f\u0623 \u0647\u0630\u0647 \u0627\u0644\u0631\u062d\u0644\u0629 \u0645\u0639\u0646\u0627 \u0627\u0644\u064a\u0648\u0645.",
+    "ar": "لا يأخذ التحرّك شكلا محدداً: من توقيع عريضة، إلى الانضمام لوقفة احتجاجية أو حراك سلمي. تشكل هذه النشاطات جزءاً لا يتجزأ من التأسيس للمستقبل الذي يعيش فيه الإنسان في عالمٍ مسالمٍ وصديقٍ للبيئة. لتحقيق أي تغييرٍ جذري في العالم، علينا أن نتحلى بجرعة الجرأة اللازمة لدعم القضايا التي نؤمن بها. ابدأ هذه الرحلة معنا اليوم.",
     "fr": "Que vous souhaitiez faire entendre votre voix par le biais de pétitions, participer à des rassemblements autour du climat ou demander aux entreprises de meilleures politiques climatiques, vous êtes maintenant prêt à diffuser le message pour un impact collectif notable."
   },
   "Here are the easiest ways you can create momentum": {
     "en": "Here are the easiest ways you can create momentum",
-    "ar": "\u0625\u0644\u064a\u0643 \u0623\u0633\u0647\u0644 \u0627\u0644\u0637\u0631\u0642 \u0627\u0644\u062a\u064a \u064a\u0645\u0643\u0646\u0643 \u0645\u0646 \u062e\u0644\u0627\u0644\u0647\u0627 \u062e\u0644\u0642 \u0627\u0644\u0632\u062e\u0645",
+    "ar": "إليك أسهل الطرق التي يمكنك من خلالها خلق الزخم",
     "fr": "Voici les moyens les plus faciles pour créer une bonne dynamique."
   },
   "More for You": {
     "en": "More for You",
-    "ar": "\u0627\u0644\u0645\u0632\u064a\u062f \u0645\u0646 \u0623\u062c\u0644\u0643",
+    "ar": "المزيد من أجلك",
     "fr": "Plus pour vous"
   },
   "Learn More": {
     "en": "Learn More",
-    "ar": "\u064a\u062a\u0639\u0644\u0645 \u0623\u0643\u062b\u0631",
+    "ar": "تعلم أكثر",
     "fr": "Learn more"
   },
   "Web Donations": {
     "en": "Web Donations",
-    "ar": "\u062a\u0628\u0631\u0639\u0627\u062a \u0627\u0644\u0648\u064a\u0628",
+    "ar": "تبرعات",
     "fr": "Dons Web"
   },
   "Join Us": {
     "en": "Join Us",
-    "ar": "\u0627\u0646\u0636\u0645 \u0625\u0644\u064a\u0646\u0627",
+    "ar": "انضم إلينا",
     "fr": "Rejoignez-nous"
   },
   "DONATION_LINK": {
