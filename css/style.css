@@ -444,6 +444,9 @@
 
 
 .QUIZ-proj-wrapper.lang_ar{direction: rtl;font-family: inherit;}
+.QUIZ-proj-wrapper.lang_ar .share-btn{font-size: 18px;}
+.QUIZ-proj-wrapper.lang_ar .toast{font-size: 18px;}
+
 .QUIZ-proj-wrapper.lang_ar .has_long_title .thebtn span{margin-right: 12px;margin-left: inherit;text-align: right;}
 .QUIZ-proj-wrapper.lang_ar .btn-quiz.btn-startquiz img{rotate: 180deg;margin: 0 5px 0 0;} 
 .QUIZ-proj-wrapper.lang_ar .btn-quiz.prev-btn-quiz img{rotate: 180deg;margin: 0 0 0 5px;}

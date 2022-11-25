@@ -70,8 +70,13 @@ if(isset($_GET['DEBB'])){
 </style>
 <script type="text/javascript">
 var templateUrl = "<?php echo get_option('siteurl') . "/$ln/" ;?>";
+
 var my_slug = "<?php echo $pst->post_name;?>";
-var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>
+
+var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>;
+
+var lnVar = "<?php echo $ln ?>";
+
 </script>
 <div class="QUIZ-proj-wrapper<?php echo " lang_$ln" .($classDebug ? ' DEBB':'') ;?>" ln="<?php echo $ln?>" PID="<?php echo $pst->ID;?>">
     <div class="toast-container toast-pos-right toast-pos-top">

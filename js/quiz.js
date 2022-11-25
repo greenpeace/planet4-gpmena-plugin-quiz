@@ -61,13 +61,28 @@ function showToast(source=null,html){
 }
 
 
+var tranObj={
+  'copied':{
+      'en' : 'Copied',
+      'fr' : 'Copié',
+      'ar' : 'نسخ'
+  },
+  'copiedSentence':{
+      'en' : '<b>The result URl</b> has been copied to the clipboard.',
+      'fr' : 'Le <b>lien de ce résultat</b> a été copié dans le presse-papiers.',
+      'ar' : 'تم نسخ <b>الموقع الاكتروني</b> للنتيجة إلى الحافظة'
+  },
+}
+console.log(lnVar,'lnVar')
+
   $(".toast-trigger").click(function(e,html){
     if($(this).hasClass('clicked')) return;
 
-    var tostContent = '<span><b>The result URl</b> has been copied to the clipboard.</span><a href="#" class="close-toast">X</a>';
+    var tostContent = '<span>'+tranObj['copiedSentence'][lnVar]+'</span><a href="#" class="close-toast">X</a>';
     $('.toast').html(tostContent)
 
-    $(this).addClass('clicked').html('Copied');
+    $(this).addClass('clicked').html(tranObj['copied'][lnVar]);
+
     var currentURL = window.location.href;
     navigator.clipboard.writeText(currentURL);
 
