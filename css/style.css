@@ -320,7 +320,7 @@
 .impactfull_desc{margin-top: 15px;font-size: 24px;width:630px;}
 .impactfull_sub_green{margin-top: 15px;font-size: 24px;color: #66cc00;}
 .cardsWrapper{display: flex;margin-top: 45px;}
-.cardsWrapper .cardTitle{font-size: 18px;font-weight: 700;padding-top: 15px;width: 320px;min-height: 75px;}
+.cardsWrapper .cardTitle{font-size: 18px;font-weight: 700;padding-top: 15px;min-height: 75px;}
 .cardsWrapper .cardCat{font-size: 18px;font-weight: 400;padding-top: 8px;}
 .cardsWrapper .cardCat a{color:#66cc00}
 .cardsWrapper .flexmecol{display: flex;flex-direction: column;justify-content: space-between ;min-height: 495px;}
@@ -531,4 +531,5 @@
   }
   .imgfruwrp img{height: 100%;}
   .panelsWrapper{min-height: inherit;}
+  .percentage-phrase{display:block}
 }
