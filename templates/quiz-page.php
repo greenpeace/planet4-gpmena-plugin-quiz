@@ -16,7 +16,6 @@ define( 'PLUGIN_DIR', dirname(__DIR__)  );
 define( 'PLUGINDIRQUIZ', plugin_dir_url(__DIR__) );
 $string = file_get_contents( PLUGIN_DIR."/json/quiz_all.json" );
 //$string = file_get_contents( PLUGIN_DIR."/json/quiz_enDEBB.json" );
-
 $tran = file_get_contents( PLUGIN_DIR."/json/translation.json" );
 $trand = json_decode($tran, true);
 $newArr = [];
@@ -31,34 +30,26 @@ foreach( $trand as $k=>$v){
 $json = json_decode($string, true);
 $quiz_data_db = get_option( 'p4menaq_options' );
 //echo '<div class="flex">';d($quiz_data_db[$ln]);d($json);echo '</div>';
-
-
 $redirect = isset($_GET['r']) ? $_GET['r'] : '0';
 $pts = isset($_GET['pts']) ? $_GET['pts'] : 0;
 wp_enqueue_script('quiz-script', PLUGINDIRQUIZ.'js/quiz.js?v='.time() ,['jquery']);
-
 $pst = get_post();
 $id_ar = apply_filters( 'wpml_object_id', $pst->ID, 'object', false, 'ar' );
-
 include( PLUGIN_DIR."/templates/inc-results-source.php" );
-
 $classDebug="";
 if(isset($_GET['DEBB'])){
     $classDebug="DEBB";
 }
-
 // if(isset($_GET['DEBB'])){
 //     d($resultsArray[$redirect]);
 //     d($morForYouArray[$redirect]);
 // }
-
 ?>
 <style>
 .page-id-<?php echo $pst->ID;?>.page-content.container {
     max-width: 100%;
     padding: 0;
 }
-
 .page-id-<?php echo $pst->ID;?> .article-h1,
 .page-id-<?php echo $pst->ID;?> .page-header {
     display: none
@@ -70,13 +61,11 @@ if(isset($_GET['DEBB'])){
 </style>
 <script type="text/javascript">
 var templateUrl = "<?php echo get_option('siteurl') . "/$ln/" ;?>";
-
 var my_slug = "<?php echo $pst->post_name;?>";
-
 var DEBUGG = <?php echo (isset($_GET['DEBB'])) ? 'true' :'false'; ?>;
-
 var lnVar = "<?php echo $ln ?>";
-
+var redirectPhp = <?php echo $redirect != '0' ? '"'.$redirect.'"' : 'null';?>;
+var percPhp = <?php echo $pts ?>
 </script>
 <div class="QUIZ-proj-wrapper<?php echo " lang_$ln" .($classDebug ? ' DEBB':'') ;?>" ln="<?php echo $ln?>" PID="<?php echo $pst->ID;?>">
     <div class="toast-container toast-pos-right toast-pos-top">
@@ -116,7 +105,6 @@ var lnVar = "<?php echo $ln ?>";
                         <?php echo $trand['Select at least one that applies to you to continue'][$ln];?>
                     </div>
                     <?php }?>
-
                     <div class="options<?php echo ' '. trim($item['has_long_title']);?>" myrule="<?php echo $item['rule'];?>">
                         <?php foreach($item['answers'] as $answer){?>
                         <label
@@ -196,7 +184,6 @@ var lnVar = "<?php echo $ln ?>";
             if($redirect!='0' ){
             foreach ($resultsArray[$redirect] as $res) {
                 $id = $res['id_'.$ln];
-                
                 if($id != 'SF'){
                 $card = get_post( $id );
                 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $id ), 'large' );

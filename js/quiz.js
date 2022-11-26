@@ -201,7 +201,15 @@ var tranObj={
 if(redirect!=0){
   $('.result_main').show();
 }
-  
+
+if($("#nav-languages").length && redirectPhp != null ){
+  $("#nav-languages .nav-link").each(function(k,elem){
+    var lnk = $(elem).attr('href');
+    lnk+='?r='+redirect+'&pts='+percPhp;
+    //console.log(lnk,'lnk')
+      $(elem).attr('href',lnk);
+  });
+}
 
   $(".thebtn").click(function (e) {
     e.preventDefault();

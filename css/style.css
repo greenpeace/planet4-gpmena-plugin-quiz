@@ -538,4 +538,6 @@
   .cardsWrapper .cardTitle{font-size:16px}
   .slick-prev, 
   .slick-next{width:42px;height:42px;}
+  [dir='rtl'] .slick-next{right:inherit;left:0}
+  [dir="rtl"] .slick-prev{right:inherit;left:55px}
 }
