@@ -212,7 +212,6 @@ var percPhp = <?php echo $pts ?>
                                             src="<?php echo  plugin_dir_url(__DIR__);?>/img/incident.JPG" /></a>
                                 </div>
                                 <div class="cardTitle"><?php echo $trand["Web Donations"][$ln];?></div>
-                                <div class="cardCat"></div>
                                 <div>
                                     <a 
                                     class="btn-quiz btn-quiz-green" 

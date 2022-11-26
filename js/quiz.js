@@ -205,7 +205,7 @@ if(redirect!=0){
 if($("#nav-languages").length && redirectPhp != null ){
   $("#nav-languages .nav-link").each(function(k,elem){
     var lnk = $(elem).attr('href');
-    lnk+='?r='+redirect+'&pts='+percPhp;
+    lnk+='?r='+redirectPhp+'&pts='+percPhp;
     //console.log(lnk,'lnk')
       $(elem).attr('href',lnk);
   });
