@@ -446,6 +446,7 @@
 .QUIZ-proj-wrapper.lang_ar{direction: rtl;font-family: inherit;}
 .QUIZ-proj-wrapper.lang_ar .share-btn{font-size: 18px;}
 .QUIZ-proj-wrapper.lang_ar .toast{font-size: 18px;}
+.QUIZ-proj-wrapper.lang_ar .read-more-lnk {width: 120px;}
 .QUIZ-proj-wrapper.lang_ar .read-more-lnk .bg{rotate:180deg}
 
 .QUIZ-proj-wrapper.lang_ar .has_long_title .thebtn span{margin-right: 12px;margin-left: inherit;text-align: right;}
