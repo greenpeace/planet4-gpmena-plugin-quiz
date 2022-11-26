@@ -320,7 +320,7 @@
 .impactfull_desc{margin-top: 15px;font-size: 24px;width:630px;}
 .impactfull_sub_green{margin-top: 15px;font-size: 24px;color: #66cc00;}
 .cardsWrapper{display: flex;margin-top: 45px;}
-.cardsWrapper .cardTitle{font-size: 18px;font-weight: 700;padding-top: 15px;min-height: 75px;width:98%}
+.cardsWrapper .cardTitle{font-size: 18px;font-weight: 700;padding: 10px 4px 0 4px;min-height: 75px;width:98%}
 .cardsWrapper .cardCat{font-size: 18px;font-weight: 400;padding-top: 8px;}
 .cardsWrapper .cardCat a{color:#66cc00}
 .cardsWrapper .flexmecol{display: flex;flex-direction: column;justify-content: space-between ;min-height: 495px;}
