@@ -28,6 +28,7 @@ $resultsArray = array(
         [
             'id_en' => 8355,
             'id_fr' => 8355,
+            'title_fr' => "Une économie alternative : justice entre les aspects environnementaux et économiques",
             'id_ar' => 8191,
             'desc_en' => 'The series of webinars organized by Greenpeace and the Arab Forum for Alternatives around “An alternative economy...',
             'desc_fr' => '',
@@ -54,6 +55,7 @@ $resultsArray = array(
         [
             'id_en' => 9446,
             'id_fr' => 9446,
+            'title_fr' => "FSO-SAFER : La bombe à retardement",
             'id_ar' => 9425,
             'desc_en' => '',
             'desc_fr' => '',
@@ -61,7 +63,7 @@ $resultsArray = array(
         ],
         [
             'id_en' => 6169,
-            'id_fr' => 6169,
+            'id_fr' => 6200,
             'id_ar' => 6115,
             'desc_en' => 'Are you concerned about an environmental issue? The solution is now one step away!',
             'desc_fr' => 'Are you concerned about an environmental issue? The solution is now one step away!',
@@ -78,7 +80,7 @@ $resultsArray = array(
         ],
         [
             'id_en' => 2789,
-            'id_fr' => 2789,
+            'id_fr' => 4224,
             'id_ar' => 1905,
             'desc_en' => "Climate change is happening. Those who have contributed the least to the climate crisis are the most at risk. That/'s why a growing...",
             'desc_fr' => "Climate change is happening. Those who have contributed the least to the climate crisis are the most at risk. That/'s why a growing...",
@@ -122,6 +124,7 @@ $resultsArray = array(
         [
             'id_en' => 2823,
             'id_fr' => 2823,
+            'title_fr' => 'Protégeons nos océans',
             'id_ar' => 1925,
             'desc_en' => 'Now we have a chance to turn things around, by putting the most vulnerable and important parts of our oceans off-limits to destructive',
             'desc_fr' => 'Now we have a chance to turn things around, by putting the most vulnerable and important parts of our oceans off-limits to destructive',

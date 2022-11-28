@@ -429,6 +429,9 @@
 
 
 
+.QUIZ-proj-wrapper.lang_fr .read-more-lnk{width: 290px;}
+
+
 /* ARABIC */
 [dir='rtl'] .slick-next,
 [dir="rtl"] .slick-prev {opacity: 1;}
