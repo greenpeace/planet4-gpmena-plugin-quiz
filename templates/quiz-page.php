@@ -194,7 +194,7 @@ var percPhp = <?php echo $pts ?>
                                     <a href="<?php echo get_permalink( $id );?>"><img
                                             src="<?php echo $image[0];?>" /></a>
                                 </div>
-                                <div class="cardTitle"><?php echo $card->post_title;?></div>
+                                <div class="cardTitle"><?php echo $res['title_'.$ln] !='' ? $res['title_'.$ln] : $card->post_title;?></div>
                                 <!-- <div class="cardCat">
                                         <a href="<?php echo $cats[0]->cat_link;?>"><?php echo $cats[0]->cat_name;?></a>
                                 </div> -->

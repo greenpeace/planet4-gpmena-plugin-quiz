@@ -88,7 +88,7 @@ $resultsArray = array(
     'above_60_3' => array(
         [
             'id_en' => 2789,
-            'id_fr' => 2789,
+            'id_fr' => 4224,
             'id_ar' => 1905,
             'desc_en' => "Climate change is happening. Those who have contributed the least to the climate crisis are the most at risk. That/'s why a growing...",
             'desc_fr' => "Climate change is happening. Those who have contributed the least to the climate crisis are the most at risk. That/'s why a growing...",
@@ -96,7 +96,7 @@ $resultsArray = array(
         ],
         [
             'id_en' => 2393,
-            'id_fr' => 2393,
+            'id_fr' => 4294,
             'id_ar' => 1909,
             'desc_en' => 'Sign up to learn about volunteering with Greenpeace. We will send you details about relevant Greenpeace events, activities and upcoming meetings.',
             'desc_fr' => 'Sign up to learn about volunteering with Greenpeace. We will send you details about relevant Greenpeace events, activities and upcoming meetings.',
@@ -105,6 +105,7 @@ $resultsArray = array(
         [
             'id_en' => 8670,
             'id_fr' => 8670,
+            'title_fr'=>'Ummah for earth, pourquoi nous rejoindre ?',
             'id_ar' => 8655,
             'desc_en' => 'Our Ummah is amazing. YOU are amazing. We’re resilient. We’re smart. We’re in all corners of the world. With all of us working',
             'desc_fr' => 'Our Ummah is amazing. YOU are amazing. We’re resilient. We’re smart. We’re in all corners of the world. With all of us working',
