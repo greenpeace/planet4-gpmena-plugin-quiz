@@ -232,6 +232,7 @@ var percPhp = <?php echo $pts ?>
                     <div class="parente">
                         <?php foreach($morForYouArray[$redirect] as $res){
                                 $id = $res['id_'.$ln];
+                                if($id !=0){
                                 $card = get_post( $id );
                                 $image = wp_get_attachment_image_src( get_post_thumbnail_id( $id ), 'large' );?>
                         <div class="moreyoucardswrap row">
@@ -239,7 +240,7 @@ var percPhp = <?php echo $pts ?>
                                 <div class="imgfruwrp"><img src="<?php echo $image[0];?>" alt="" /></div>
                             </div>
                             <div class="col-sm-6 flexrightmore">
-                                <div class="tittell"><?php echo $card->post_title;?></div>
+                                <div class="tittell"><?php echo $res['title_'.$ln] ? $res['title_'.$ln] : $card->post_title;?></div>
                                 <div class="conti mt-15">
                                     <?php echo $res['desc_'.$ln] != '' ? $res['desc_'.$ln]  : substr(wp_strip_all_tags($card->post_content),0,200).' ...' ;?>
                                 </div>
@@ -249,7 +250,7 @@ var percPhp = <?php echo $pts ?>
                                             class="bg"></span></a></div>
                             </div>
                         </div>
-                        <?php }?>
+                        <?php }}?>
                     </div>
                 </div>
             </div>
