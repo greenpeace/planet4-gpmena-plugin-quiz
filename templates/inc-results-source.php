@@ -132,11 +132,18 @@ $resultsArray = array(
         ],
     ),
 );
+
+
+
+/* MORE FOR YOU */
+
+
+
 $morForYouArray = array(
     'below_30_1' => array(
         [
             'id_en' => 7783,
-                'id_fr' => 7783,
+            'id_fr' => 710,
             'id_ar' => 710,            
             'title_fr' => "Ta voix peut nous aider à protéger le pole nord de l'avidité des mastodons du pétrol",
             'desc_fr' => "Un groupe d'activistes de Greenpeace est accusé en Russie d'intimidation depuis septembre dernier, suivant la manifestation pacifique devant une plate-forme pétrolière pour protester contre l'exploration pétrolière dans l'Arctique !",
