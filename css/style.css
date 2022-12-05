@@ -14,14 +14,14 @@
   min-height: 500px;
   background: none;
 }
-.QUIZ-proj-wrapper .QUIZ-proj-wrapper {
+.QUIZ-proj-wrapper {
  /* display: flex;
   align-items: center;
   align-content: space-around;
   justify-content: center;
   */
 }
-.QUIZ-proj-wrapper .QUIZ-proj-wrapper a.external-link:after {
+.QUIZ-proj-wrapper a.external-link:after {
   content: "";
   display: inherit !important;
   height: inherit !important;
@@ -519,7 +519,7 @@
   font-size: 18px;
   vertical-align: middle;
 }
-.QUIZ-proj-wrapper .QUIZ-proj-wrapper.lang_fr .read-more-lnk {
+.QUIZ-proj-wrapper.lang_fr .read-more-lnk {
   width: 290px;
 }
 .QUIZ-proj-wrapper [dir='rtl'] .slick-next, .QUIZ-proj-wrapper [dir="rtl"] .slick-prev {
@@ -545,36 +545,36 @@
 .QUIZ-proj-wrapper [dir='rtl'] .slick-prev:before {
   background: url('../assets/src/library/css/arrow-right.png') no-repeat 0 0;
 }
-.QUIZ-proj-wrapper .QUIZ-proj-wrapper.lang_ar {
+.QUIZ-proj-wrapper.lang_ar {
   direction: rtl;
   font-family: inherit;
 }
-.QUIZ-proj-wrapper .QUIZ-proj-wrapper.lang_ar .share-btn {
+.QUIZ-proj-wrapper.lang_ar .share-btn {
   font-size: 18px;
 }
-.QUIZ-proj-wrapper .QUIZ-proj-wrapper.lang_ar .toast {
+.QUIZ-proj-wrapper.lang_ar .toast {
   font-size: 18px;
 }
-.QUIZ-proj-wrapper .QUIZ-proj-wrapper.lang_ar .read-more-lnk {
+.QUIZ-proj-wrapper.lang_ar .read-more-lnk {
   width: 120px;
 }
-.QUIZ-proj-wrapper .QUIZ-proj-wrapper.lang_ar .read-more-lnk .bg {
+.QUIZ-proj-wrapper.lang_ar .read-more-lnk .bg {
   rotate: 180deg;
 }
-.QUIZ-proj-wrapper .QUIZ-proj-wrapper.lang_ar .has_long_title .thebtn span {
+.QUIZ-proj-wrapper.lang_ar .has_long_title .thebtn span {
   margin-right: 12px;
   margin-left: inherit;
   text-align: right;
 }
-.QUIZ-proj-wrapper .QUIZ-proj-wrapper.lang_ar .btn-quiz.btn-startquiz img {
+.QUIZ-proj-wrapper.lang_ar .btn-quiz.btn-startquiz img {
   rotate: 180deg;
   margin: 0 5px 0 0;
 }
-.QUIZ-proj-wrapper .QUIZ-proj-wrapper.lang_ar .btn-quiz.prev-btn-quiz img {
+.QUIZ-proj-wrapper.lang_ar .btn-quiz.prev-btn-quiz img {
   rotate: 180deg;
   margin: 0 0 0 5px;
 }
-.QUIZ-proj-wrapper .QUIZ-proj-wrapper.lang_ar .btn-quiz.next-btn-quiz img {
+.QUIZ-proj-wrapper.lang_ar .btn-quiz.next-btn-quiz img {
   rotate: 180deg;
   margin: 0 6px 0 0;
 }
