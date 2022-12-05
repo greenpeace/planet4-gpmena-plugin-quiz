@@ -12,6 +12,9 @@ if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
             case 'ar': $ln= 'ar';break;
         }
     }
+
+
+
 define( 'PLUGIN_DIR', dirname(__DIR__)  );
 define( 'PLUGINDIRQUIZ', plugin_dir_url(__DIR__) );
 $string = file_get_contents( PLUGIN_DIR."/json/quiz_all.json" );
