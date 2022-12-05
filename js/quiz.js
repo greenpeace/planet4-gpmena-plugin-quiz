@@ -72,6 +72,11 @@ var tranObj={
       'fr' : 'Le <b>lien de ce résultat</b> a été copié dans le presse-papiers.',
       'ar' : 'تم نسخ <b>الموقع الاكتروني</b> للنتيجة إلى الحافظة'
   },
+  'submit':{
+      'en' : 'Submit',
+      'fr' : 'Soumettre',
+      'ar' : 'إرسال'
+  },
 }
 
   $(".toast-trigger").click(function(e,html){
@@ -162,6 +167,9 @@ var tranObj={
     
     
 
+    if (step == totalSteps) {
+      $('.next-btn-quiz span').html(tranObj['submit'][lnVar])
+    }
     if (step > totalSteps) {
 
       if(DEBUGG){
