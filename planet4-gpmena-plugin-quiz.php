@@ -2,7 +2,7 @@
 /**
 Plugin Name: Planet 4 Quiz
 Description: Creates the Greenpeace quiz functionality. To get started, got to Pages (from the left side menu) then *Add New*. Paste the following shorcode: [quiz_html]
-Version: 0.0.4
+Version: 0.0.5
 Author: Aimtech
 Author URI: https://aimtech.am/
 **/
