@@ -420,6 +420,7 @@
   font-weight: 500;
   font-size: 18px;
   text-decoration: none;
+  padding-left: 12px;
 }
 .QUIZ-proj-wrapper .read-more-lnk .bg {
   background: url(../img/post-arrow-right.png) no-repeat 0;
