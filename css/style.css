@@ -413,7 +413,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 150px;
 }
 .QUIZ-proj-wrapper .read-more-lnk .txt {
   color: #161616;
@@ -556,9 +555,7 @@
 .QUIZ-proj-wrapper.lang_ar .toast {
   font-size: 18px;
 }
-.QUIZ-proj-wrapper.lang_ar .read-more-lnk {
-  width: 120px;
-}
+
 .QUIZ-proj-wrapper.lang_ar .read-more-lnk .bg {
   rotate: 180deg;
 }
